@@ -13,19 +13,19 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://drdiegorosa.com.br/birra-ou-tdah.html</loc>
+    <loc>https://drdiegorosa.com.br/sobre.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drdiegorosa.com.br/como-saber-se-meu-filho-tem-tdah.html</loc>
+    <loc>https://drdiegorosa.com.br/funcao-antes-do-rotulo.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drdiegorosa.com.br/quando-levar-ao-psiquiatra-infantil.html</loc>
+    <loc>https://drdiegorosa.com.br/o-treino-e-seu-nao-dele.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -34,6 +34,30 @@
     <loc>https://drdiegorosa.com.br/remedio-para-tdah-faz-mal.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drdiegorosa.com.br/como-saber-se-meu-filho-tem-tdah.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drdiegorosa.com.br/birra-ou-tdah.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drdiegorosa.com.br/quando-levar-ao-psiquiatra-infantil.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drdiegorosa.com.br/nao-e-preguica-e-dificuldade-de-comecar.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

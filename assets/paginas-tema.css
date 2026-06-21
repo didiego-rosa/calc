@@ -265,3 +265,9 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
 .reviews-lite .r .who{font-size:12.5px;color:var(--text-mute);font-weight:700}
 .nav-min{display:flex;align-items:center;justify-content:space-between;height:64px}
 @media(max-width:560px){.autor{flex-direction:column;text-align:center}}
+
+/* ============ Autoria (E-E-A-T) ============ */
+.autoria{display:flex;align-items:center;gap:14px;margin:24px 0 0;padding:14px 16px;background:var(--bg-elev);border:1px solid var(--border);border-radius:12px;font-size:13.5px;line-height:1.5;color:var(--text-mute)}
+.autoria img{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:none}
+.autoria b{color:var(--text-strong)}
+.autoria a{color:var(--accent);text-decoration:underline}
