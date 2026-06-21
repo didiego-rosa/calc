@@ -10,6 +10,8 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
   ExpiresByType image/png  "access plus 1 month"
   ExpiresByType image/svg+xml "access plus 1 month"
   ExpiresByType text/css   "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType image/webp "access plus 1 month"
 </IfModule>
 
 # Compressão
