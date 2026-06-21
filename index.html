@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Diego Alves Rosa — Psiquiatria da Infância e Adolescência</title>
-<meta name="description" content="Dr. Diego Alves Rosa — psiquiatra da infância e adolescência, formado pelo IPq-HC-FMUSP. Acolhimento e ciência para famílias: TDAH, neurodesenvolvimento, ansiedade e orientação de pais.">
+<title>Psiquiatra Infantil e TDAH em São Paulo | Dr. Diego Rosa</title>
+<meta name="description" content="Psiquiatra infantil em São Paulo que entende a função do comportamento do seu filho antes de rotular. TDAH, TOD e ansiedade, com orientação aos pais.">
 
 <!-- Open Graph / compartilhamento (trocar a URL absoluta da og:image ao publicar) -->
 <link rel="canonical" href="https://drdiegorosa.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://drdiegorosa.com.br/">
-<meta property="og:title" content="Dr. Diego Alves Rosa — Psiquiatria da Infância e Adolescência">
-<meta property="og:description" content="Acolhimento e ciência para famílias: TDAH, neurodesenvolvimento, ansiedade e orientação de pais. Atendimento clínico em São Paulo, com formação pelo IPq-HC-FMUSP.">
+<meta property="og:title" content="Psiquiatra Infantil e TDAH em São Paulo | Dr. Diego Rosa">
+<meta property="og:description" content="Psiquiatra infantil em São Paulo que entende a função do comportamento do seu filho antes de rotular. TDAH, TOD e ansiedade, com orientação aos pais.">
 <meta property="og:image" content="https://drdiegorosa.com.br/assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
@@ -25,25 +25,36 @@
 <link rel="preload" as="image" href="assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg" fetchpriority="high">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<!-- SEO local: dados estruturados (ajustar "url" e adicionar geo ao publicar) -->
+<!-- SEO local: dados estruturados. ATENÇÃO: conferir latitude/longitude exatas no Google Maps (botão direito no ponto) e substituir abaixo. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Physician",
+  "@type": ["Physician", "MedicalBusiness"],
+  "@id": "https://drdiegorosa.com.br/#diego",
   "name": "Dr. Diego Alves Rosa",
-  "url": "https://drdiegorosa.com.br",
+  "url": "https://drdiegorosa.com.br/",
+  "image": "https://drdiegorosa.com.br/assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg",
   "medicalSpecialty": "Psychiatric",
-  "description": "Psiquiatra da infância e adolescência em São Paulo. TDAH, neurodesenvolvimento, ansiedade e orientação de pais.",
-  "image": "assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg",
+  "description": "Médico psiquiatra da infância e adolescência em São Paulo. Entende a função do comportamento antes de rotular. TDAH, TOD, ansiedade e orientação de pais.",
   "telephone": "+5511910135794",
-  "knowsAbout": ["TDAH", "Neurodesenvolvimento", "Ansiedade infantil", "Orientação de pais"],
-  "areaServed": "São Paulo, SP",
+  "knowsAbout": ["TDAH", "TOD", "Neurodesenvolvimento", "Ansiedade infantil", "Orientação de pais"],
+  "areaServed": { "@type": "City", "name": "São Paulo" },
+  "identifier": [
+    { "@type": "PropertyValue", "name": "CRM", "value": "230017/SP" },
+    { "@type": "PropertyValue", "name": "RQE", "value": "1391111" }
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Rua Oscar Freire, 2250, cj. 105",
     "addressLocality": "São Paulo",
     "addressRegion": "SP",
+    "postalCode": "05409-011",
     "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-23.5567",
+    "longitude": "-46.6856"
   },
   "sameAs": ["https://instagram.com/diegoaalvesrosa"]
 }
@@ -58,7 +69,7 @@
       "name": "Você vai medicar meu filho?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Não é por aí que a gente começa. Remédio é uma ferramenta — entra quando faz diferença de verdade e sempre conversado com vocês. Antes disso, o trabalho é entender o que está acontecendo."
+        "text": "Não é por aí que a gente começa. Remédio é uma ferramenta, entra quando faz diferença de verdade e sempre conversado com vocês. Antes disso, o trabalho é entender o que está acontecendo."
       }
     },
     {
@@ -120,7 +131,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-/* ============ Identidade Verde Brasa — tokens por modo ============ */
+/* ============ Identidade Verde Brasa · tokens por modo ============ */
 :root{
   --bg:#15302A; --bg-elev:#1E3D34; --bg-deep:#0F2420;
   --text:#EFE7D6; --text-strong:#FAF5EB; --text-mute:#BFC6B5; --text-faint:#5E7A6E;
@@ -222,7 +233,7 @@ section.block{padding:clamp(4rem,9vw,5.75rem) 0}
 .form-list li b{color:var(--text-strong)}
 .form-list li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
 
-/* Para famílias — banda SEMPRE escura (intencional, mesmo no modo claro) */
+/* Para famílias · banda SEMPRE escura (intencional, mesmo no modo claro) */
 #maes{
   background:#15302A;
   --bg-elev:#15302A; --bg-deep:#0F2420;
@@ -241,7 +252,7 @@ section.block{padding:clamp(4rem,9vw,5.75rem) 0}
 .theme:hover{border-color:var(--accent);transform:translateY(-2px)}
 .theme .d{color:var(--kicker);margin-right:7px;font-weight:800}
 
-/* Instagram — card de perfil centralizado (avatar pequeno = foto sempre nítida) */
+/* Instagram · card de perfil centralizado (avatar pequeno = foto sempre nítida) */
 #conteudo{background:var(--bg)}
 #conteudo .sec-head{max-width:54ch;margin:0 auto 36px;text-align:center}
 .ig-card{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:520px;margin:0 auto;background:var(--bg-elev);border:1px solid var(--border);border-radius:22px;padding:48px 44px;transition:transform .15s,border-color .15s}
@@ -335,6 +346,25 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
 .cookie p{font-size:13px;color:var(--text-mute);margin:0;flex:1;min-width:220px;line-height:1.5}
 .cookie a{color:var(--accent);text-decoration:underline}
 @media (max-width:560px){.cookie{flex-direction:column;align-items:stretch}.cookie .btn{width:100%}}
+
+/* ---------- Avaliações (Google) ---------- */
+#avaliacoes{background:var(--bg-deep)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+.review{background:var(--bg-elev);border:1px solid var(--border);border-radius:16px;padding:24px}
+.review .stars{color:var(--accent);font-size:15px;letter-spacing:3px}
+.review p{color:var(--text);font-size:15px;line-height:1.6;margin:12px 0 14px}
+.review .who{font-weight:700;font-size:13px;color:var(--text-mute)}
+.reviews-foot{margin-top:24px}
+.reviews-foot a{font-weight:700;color:var(--accent);text-decoration:underline}
+@media(max-width:860px){.reviews{grid-template-columns:1fr}}
+
+/* ---------- Leia também (links internos) ---------- */
+.leia{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
+.leia a{display:block;padding:20px 22px;background:var(--bg-elev);border:1px solid var(--border);border-radius:14px;transition:.15s}
+.leia a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.leia a b{display:block;font-family:'Fraunces';font-weight:600;font-size:17px;color:var(--text-strong)}
+.leia a span{display:block;font-size:14px;color:var(--text-mute);margin-top:5px}
+@media(max-width:860px){.leia{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -355,7 +385,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       <a href="#conteudo">Instagram</a>
       <a href="#faq">Perguntas</a>
       <button class="theme-btn" onclick="flipTema()">Modo claro</button>
-      <a href="#contato" class="btn">Agendar</a>
+      <a href="agendar.html" class="btn">Agendar</a>
     </div>
   </div>
 </nav>
@@ -364,14 +394,13 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
 <header class="hero" id="topo">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="kicker">Psiquiatria da infância e adolescência</span>
-      <h1>O comportamento do seu filho tem uma
-        <span class="stroke">explicação<svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M4,9 C44,3 86,12 116,7 C150,2 176,11 196,6" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>
-        — e um caminho.
+      <span class="kicker">Psiquiatra infantil · São Paulo</span>
+      <h1>Psiquiatra infantil que entende seu filho
+        <span class="stroke">antes de rotular<svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M4,9 C44,3 86,12 116,7 C150,2 176,11 196,6" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>.
       </h1>
-      <p class="lead">Acolhimento e ciência para famílias. Atendimento clínico em São Paulo, com formação pelo Instituto de Psiquiatria do HC-FMUSP e foco em TDAH, ansiedade, desenvolvimento infantil e orientação de pais.</p>
+      <p class="lead">Para a mãe que já ouviu que é falta de limite e já passou por vários profissionais sem sair com um caminho. Aqui a gente entende a função do comportamento, seja TDAH, TOD ou suspeita, antes de qualquer rótulo, e você sai com um jeito prático de responder em casa.</p>
       <div class="hero-cta">
-        <a href="#contato" class="btn lg">Agendar uma conversa</a>
+        <a href="agendar.html" class="btn lg">Agendar a primeira consulta</a>
         <a href="#sobre" class="btn-ghost">Conhecer meu trabalho</a>
       </div>
     </div>
@@ -405,10 +434,10 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       <span class="kicker">Quem te acompanha</span>
       <h2>Olá, sou o Diego Rosa.</h2>
       <p>Sou médico psiquiatra. Fiz residência em Psiquiatria na <b>Santa Casa de São Paulo</b> e a subespecialização em Psiquiatria da Infância e Adolescência no <b>Instituto de Psiquiatria do Hospital das Clínicas da FMUSP</b> (IPq-HC-FMUSP). Lá, sigo como médico voluntário no Ambulatório de Transtornos do Neurodesenvolvimento.</p>
-      <p>No consultório e no conteúdo, eu trato o comportamento como mensagem, não como defeito. Quase sempre ele tem uma função — e <b>precisa ser entendido antes de ser corrigido</b>. Por isso a família entra junto no processo, não fica do lado de fora: não pra achar culpado, e sim pra fazer parte da solução.</p>
+      <p>No consultório, eu trato o comportamento como mensagem, não como defeito. Quase sempre ele tem uma <b>função</b>, e precisa ser entendido antes de ser corrigido. Por isso a família entra junto, não pra achar culpado, e sim pra você sair com o que fazer em casa. Trabalho em parceria com a escola e com quem já acompanha seu filho, e o meu objetivo é te deixar mais segura pra responder, não mais dependente de mim.</p>
       <div class="cred">
         <span class="tag">CRM 230017/SP</span>
-        <span class="tag">RQE 139111</span>
+        <span class="tag">RQE 1391111</span>
         <span class="tag">São Paulo · SP</span>
       </div>
     </div>
@@ -445,12 +474,12 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       </div>
       <div class="maes-body">
         <p>Se essa frase passou pela sua cabeça hoje, você está no lugar certo. <b>Não, o problema não é você.</b></p>
-        <p>Aqui o assunto é traduzido do jeito que dá pra entender depois de um dia exausto — sem termo difícil, sem promessa milagrosa e sem culpar ninguém. Os temas que mais aparecem no consultório e no conteúdo:</p>
+        <p>Aqui o assunto é traduzido do jeito que dá pra entender depois de um dia exausto, sem termo difícil, sem promessa milagrosa e sem culpar ninguém. Os temas que mais aparecem no consultório e no conteúdo:</p>
         <div class="themes">
           <span class="theme"><span class="d">·</span>TDAH</span>
           <span class="theme"><span class="d">·</span>Neurodesenvolvimento</span>
           <span class="theme"><span class="d">·</span>Ansiedade</span>
-          <span class="theme"><span class="d">·</span>Comportamento desafiador</span>
+          <span class="theme"><span class="d">·</span>TOD e comportamento desafiador</span>
           <span class="theme"><span class="d">·</span>Limites e rotina</span>
           <span class="theme"><span class="d">·</span>Orientação de pais</span>
         </div>
@@ -465,7 +494,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
     <div class="sec-head">
       <span class="kicker">Onde eu falo com você</span>
       <h2>Acompanhe no Instagram.</h2>
-      <p>É lá que eu compartilho ideias sobre comportamento infantil, neurodesenvolvimento e a vida real de quem cria — na linguagem da família, sem jargão.</p>
+      <p>É lá que eu compartilho ideias sobre comportamento infantil, neurodesenvolvimento e a vida real de quem cria, na linguagem da família, sem jargão.</p>
     </div>
     <a class="ig-card" href="https://instagram.com/diegoaalvesrosa" target="_blank" rel="noopener">
       <div class="ig-avatar">
@@ -490,7 +519,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
     <div class="faq-list">
       <details class="faq-item">
         <summary>Você vai medicar meu filho?</summary>
-        <div class="a">Não é por aí que a gente começa. Remédio é uma ferramenta — entra quando faz diferença de verdade e sempre conversado com vocês. Antes disso, o trabalho é <b>entender o que está acontecendo</b>.</div>
+        <div class="a">Não é por aí que a gente começa. Remédio é uma ferramenta, entra quando faz diferença de verdade e sempre conversado com vocês. Antes disso, o trabalho é <b>entender o que está acontecendo</b>.</div>
       </details>
       <details class="faq-item">
         <summary>Quem você atende?</summary>
@@ -506,8 +535,25 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       </details>
       <details class="faq-item">
         <summary>E os valores?</summary>
-        <div class="a">O atendimento é <b>particular, com nota para reembolso</b> — dá pra solicitar o reembolso ao seu convênio. O valor eu te passo rapidinho no WhatsApp, e a gente já aproveita pra ver o melhor horário pra você.</div>
+        <div class="a">O atendimento é <b>particular, com nota para reembolso</b>, dá pra solicitar o reembolso ao seu convênio. Os detalhes a gente vê no WhatsApp, e já aproveita pra achar o melhor horário pra você.</div>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEIA TAMBÉM (links internos) ============ -->
+<section class="block" id="leia">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Para entender melhor</span>
+      <h2>Dúvidas que toda mãe traz.</h2>
+      <p>Textos curtos, na linguagem de quem cria, que respondem o que mais pesa antes de marcar.</p>
+    </div>
+    <div class="leia">
+      <a href="birra-ou-tdah.html"><b>É birra da idade ou pode ser TDAH?</b><span>Como diferenciar o que é fase do que pede um olhar mais de perto.</span></a>
+      <a href="como-saber-se-meu-filho-tem-tdah.html"><b>Como saber se meu filho tem TDAH</b><span>Os três sinais com exemplos e o que o diagnóstico de verdade exige.</span></a>
+      <a href="quando-levar-ao-psiquiatra-infantil.html"><b>Quando levar ao psiquiatra infantil</b><span>Os sinais que pedem avaliação e por que procurar cedo é cuidar.</span></a>
+      <a href="remedio-para-tdah-faz-mal.html"><b>Remédio para TDAH faz mal?</b><span>Quando a medicação entra, quando não entra e a imagem do óculos.</span></a>
     </div>
   </div>
 </section>
@@ -523,7 +569,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       <div class="step">
         <div class="n">1</div>
         <h3>Você manda uma mensagem</h3>
-        <p>Pelo WhatsApp, no seu tempo. Sem formulário longo e sem triagem fria — você escreve e a gente combina o resto por lá.</p>
+        <p>Pelo WhatsApp, no seu tempo. Sem formulário longo e sem triagem fria, você escreve e a secretária combina o resto por lá.</p>
       </div>
       <div class="step">
         <div class="n">2</div>
@@ -539,6 +585,37 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
   </div>
 </section>
 
+<!-- ============ AVALIAÇÕES (Google) ============ -->
+<!-- Avaliações reais de pacientes. Trechos sóbrios, conforme a publicidade médica do CFM.
+     Trocar o link "ver no Google" pelo endereço direto do Perfil da Empresa quando ele estiver no ar. -->
+<section class="block" id="avaliacoes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">O que dizem os pacientes</span>
+      <h2>Avaliações reais no Google.</h2>
+      <p>Sem muro de elogios. Só alguns relatos de quem já passou pela consulta.</p>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <p>"Muito dedicado a entender o caso de cada paciente, deixa tudo muito claro sobre o que estamos passando e os objetivos do tratamento."</p>
+        <div class="who">Evandro R. · Local Guide no Google</div>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <p>"Desde a primeira consulta demonstrou preocupação genuína, explicando tudo com clareza e paciência."</p>
+        <div class="who">Talita P. · avaliação no Google</div>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <p>"Escuta ativa e atendimento com base em evidências, do começo ao fim."</p>
+        <div class="who">Juciele S. · avaliação no Google</div>
+      </div>
+    </div>
+    <p class="reviews-foot"><a href="https://www.google.com/maps/search/?api=1&amp;query=Dr.%20Diego%20Alves%20Rosa%20psiquiatra%20infantil%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Ver as avaliações no Google</a></p>
+  </div>
+</section>
+
 <!-- ============ CONTATO ============ -->
 <section class="block" id="contato">
   <div class="wrap contato-in">
@@ -550,7 +627,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       <a class="btn-ghost" href="mailto:diegoaalvesrosa@gmail.com?subject=Vim%20pelo%20site%20-%20quero%20agendar%20uma%20conversa">Enviar e-mail</a>
     </div>
     <p class="contato-local">Atendimento presencial na <strong>Acácia · Psicologia &amp; Psiquiatria</strong><br>
-      Rua Oscar Freire, 2250 · cj. 105 · São Paulo/SP —
+      Rua Oscar Freire, 2250 · cj. 105 · Pinheiros · São Paulo/SP ·
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Oscar%20Freire%202250%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">ver no mapa</a>
     </p>
   </div>
@@ -562,7 +639,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
     <div class="foot-brand">
       <div class="nm">Dr. Diego Alves Rosa</div>
       <div class="at">@diegoaalvesrosa</div>
-      <div class="cr">Psiquiatria da Infância e Adolescência · São Paulo, SP<br>Acácia · Psicologia &amp; Psiquiatria — Rua Oscar Freire, 2250, cj. 105<br>CRM 230017/SP · RQE 139111</div>
+      <div class="cr">Médico psiquiatra da infância e adolescência · CRM 230017/SP · RQE 1391111<br>Acácia · Psicologia &amp; Psiquiatria · Rua Oscar Freire, 2250, cj. 105 · Pinheiros · São Paulo/SP · 05409-011</div>
     </div>
     <div class="foot-social">
       <a href="https://instagram.com/diegoaalvesrosa" target="_blank" rel="noopener">Instagram</a>

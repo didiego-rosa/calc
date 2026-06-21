@@ -244,3 +244,24 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
 .vizinhas a{display:block;padding:16px 18px;background:var(--bg-elev);border:1px solid var(--border);border-radius:12px;margin-top:10px;font-weight:700;color:var(--text-strong);transition:.15s}
 .vizinhas a:hover{border-color:var(--accent);transform:translateY(-2px)}
 .vizinhas a span{display:block;font-weight:400;font-size:14px;color:var(--text-mute);margin-top:3px}
+
+/* ============ Página /agendar (conversão) ============ */
+.promessa{margin:26px 0 0;padding:0;list-style:none}
+.promessa li{position:relative;padding:0 0 18px 36px;font-size:17px;line-height:1.6;color:var(--text)}
+.promessa li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:800;font-size:19px}
+.passos{margin:22px 0 0;padding:0;list-style:none;counter-reset:p}
+.passos li{position:relative;padding:2px 0 18px 46px;font-size:17px;line-height:1.6;counter-increment:p}
+.passos li::before{content:counter(p);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-on);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.autor{display:flex;gap:18px;align-items:center;margin:28px 0 0;padding:22px;background:var(--bg-elev);border:1px solid var(--border);border-radius:16px}
+.autor img{width:88px;height:88px;border-radius:50%;object-fit:cover;flex:none}
+.autor p{margin:0;font-size:15px;line-height:1.55;color:var(--text-mute)}
+.autor p b{color:var(--text-strong)}
+.botao-wrap{text-align:center;margin:34px 0 0}
+.botao-wrap .micro{font-size:13.5px;color:var(--text-mute);margin-top:12px;max-width:46ch;margin-left:auto;margin-right:auto}
+.reviews-lite{margin:26px 0 0;display:grid;gap:14px}
+.reviews-lite .r{background:var(--bg-elev);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+.reviews-lite .r .stars{color:var(--accent);letter-spacing:3px;font-size:14px}
+.reviews-lite .r p{margin:8px 0 6px;font-size:15px;line-height:1.55;color:var(--text)}
+.reviews-lite .r .who{font-size:12.5px;color:var(--text-mute);font-weight:700}
+.nav-min{display:flex;align-items:center;justify-content:space-between;height:64px}
+@media(max-width:560px){.autor{flex-direction:column;text-align:center}}
