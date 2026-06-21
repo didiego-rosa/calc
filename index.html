@@ -22,7 +22,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'><rect%20width='32'%20height='32'%20rx='7'%20fill='%2315302A'/><text%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='20'%20fill='%23EA7338'%20text-anchor='middle'%20font-weight='700'>D</text></svg>">
 
 <!-- desempenho: prioriza a foto principal -->
-<link rel="preload" as="image" href="assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg" imagesrcset="assets/dr-diego-alves-rosa-psiquiatra-infantil.webp" type="image/webp" fetchpriority="high">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- SEO local: dados estruturados. Opcional: adicionar um bloco "geo" com latitude/longitude EXATAS (pegar no Google Maps, botão direito no ponto) para reforçar o SEO local. -->
@@ -154,6 +154,7 @@ body{background:var(--bg);font-family:'Nunito Sans',system-ui,'Segoe UI',Roboto,
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
+picture{display:contents}
 
 .kicker{font-family:'Nunito Sans';font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--kicker)}
 h1,h2,h3{font-family:'Fraunces';color:var(--text-strong);letter-spacing:-.015em;font-weight:600}
@@ -399,7 +400,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       </div>
     </div>
     <div class="photo hero-portrait">
-      <img src="assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg" alt="Dr. Diego Alves Rosa, psiquiatra da infância e adolescência, em São Paulo" fetchpriority="high" onerror="this.style.display='none'" width="866" height="1300">
+      <picture><source type="image/webp" srcset="assets/dr-diego-alves-rosa-psiquiatra-infantil.webp"><img src="assets/dr-diego-alves-rosa-psiquiatra-infantil.jpg" alt="Dr. Diego Alves Rosa, psiquiatra da infância e adolescência, em São Paulo" fetchpriority="high" onerror="this.style.display='none'" width="866" height="1300"></picture>
     </div>
   </div>
 </header>
@@ -422,7 +423,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
 <section class="block" id="sobre">
   <div class="wrap sobre-grid">
     <div class="photo sobre-photo">
-      <img src="assets/dr-diego-alves-rosa-sobre.jpg" alt="Dr. Diego Alves Rosa, médico psiquiatra, em consultório em São Paulo" loading="lazy" onerror="this.style.display='none'" width="1252" height="1252">
+      <picture><source type="image/webp" srcset="assets/dr-diego-alves-rosa-sobre.webp"><img src="assets/dr-diego-alves-rosa-sobre.jpg" alt="Dr. Diego Alves Rosa, médico psiquiatra, em consultório em São Paulo" loading="lazy" onerror="this.style.display='none'" width="1252" height="1252"></picture>
     </div>
     <div class="sobre-text">
       <span class="kicker">Quem te acompanha</span>
@@ -453,7 +454,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
       </ul>
     </div>
     <div class="photo form-photo">
-      <img src="assets/dr-diego-alves-rosa-ipq-hc-fmusp.jpg" alt="Dr. Diego Alves Rosa no Instituto de Psiquiatria do HC-FMUSP" loading="lazy" onerror="this.style.display='none'" width="867" height="1300">
+      <picture><source type="image/webp" srcset="assets/dr-diego-alves-rosa-ipq-hc-fmusp.webp"><img src="assets/dr-diego-alves-rosa-ipq-hc-fmusp.jpg" alt="Dr. Diego Alves Rosa no Instituto de Psiquiatria do HC-FMUSP" loading="lazy" onerror="this.style.display='none'" width="867" height="1300"></picture>
     </div>
   </div>
 </section>
@@ -465,7 +466,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
     <p class="quote"><span class="mark">"</span>Eu já tentei tudo. Será que o problema sou eu?<span class="mark">"</span></p>
     <div class="maes-grid">
       <div class="photo maes-photo">
-        <img src="assets/psiquiatria-infantil-orientacao-de-pais.jpg" alt="Dr. Diego Alves Rosa, psiquiatra da infância e adolescência" loading="lazy" onerror="this.style.display='none'" width="1300" height="1300">
+        <picture><source type="image/webp" srcset="assets/psiquiatria-infantil-orientacao-de-pais.webp"><img src="assets/psiquiatria-infantil-orientacao-de-pais.jpg" alt="Dr. Diego Alves Rosa, psiquiatra da infância e adolescência" loading="lazy" onerror="this.style.display='none'" width="1300" height="1300"></picture>
       </div>
       <div class="maes-body">
         <p>Se essa frase passou pela sua cabeça hoje, você está no lugar certo. <b>Não, o problema não é você.</b></p>
@@ -493,7 +494,7 @@ nav.scrolled{box-shadow:0 6px 24px rgba(11,28,24,.10)}
     </div>
     <a class="ig-card" href="https://instagram.com/diegoaalvesrosa" target="_blank" rel="noopener">
       <div class="ig-avatar">
-        <img src="assets/dr-diego-alves-rosa-instagram.jpg" alt="Foto de perfil do Dr. Diego Alves Rosa no Instagram" loading="lazy" width="360" height="480">
+        <picture><source type="image/webp" srcset="assets/dr-diego-alves-rosa-instagram.webp"><img src="assets/dr-diego-alves-rosa-instagram.jpg" alt="Foto de perfil do Dr. Diego Alves Rosa no Instagram" loading="lazy" width="360" height="480"></picture>
       </div>
       <span class="ig-plat">Instagram</span>
       <span class="ig-handle">@diegoaalvesrosa</span>
