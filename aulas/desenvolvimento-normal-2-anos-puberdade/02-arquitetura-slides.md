@@ -89,7 +89,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 **S13 · VÍDEO V2** — birra em local público, acervo público, 60-90s. Técnica exibir-congelar-perguntar-reexibir (roteiro de pausas no doc de apoio).
 
 **S14 · Moldura-depois V2**
-- Título: **Toda birra tem gramática (gatilho, escalada, função), e ler essa gramática se chama análise funcional.**
+- Título: **Toda birra tem gramática (gatilho, escalada, função), e ler essa gramática é o primeiro passo da análise funcional.** (um episódio gera hipótese, não análise completa; ver apêndice A)
 - Corpo: os 3 momentos do vídeo congelados lado a lado, rotulados A-B-C (antecedente, comportamento, consequência).
 
 **S15 · Moldura-antes V3 (DNPM, T2)**
@@ -129,7 +129,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 **S23 · VÍDEO V4** — falsa crença (Sally-Anne ou caixa de doces), 60-90s. [EXT: paradigma Baron-Cohen 1985 / Flavell; acervo público]
 
 **S24 · Moldura-depois V4**
-- Título: **Aos 3 a criança erra, aos 4-5 acerta, e o padrão se repete em toda cultura testada.**
+- Título: **Aos 3 a maioria erra, aos 5 a maioria acerta, e o padrão se repete em toda cultura testada.** (transição gradual, sem idade-muro; ver apêndice C)
 - Corpo: barra simples 3a vs 4-5a; nota "inclusive entre os Baka, caçadores-coletores de Camarões". Fontes: B&B p. 185 (caixa de doces, Flavell), p. 186 (Avis & Harris 1991).
 
 **S25 · Conteúdo**
@@ -151,7 +151,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 - Corpo: frase-síntese sobre o frame.
 
 **S30 · Contracena de vigilância 1**
-- Título: **Quando resistir FUNCIONA, a oposição vira estratégia: o TOD nasce como aprendizagem antes de virar rótulo.**
+- Título: **Quando resistir FUNCIONA, a oposição vira comportamento aprendido: é assim que se arma o risco de transtorno opositivo-desafiador (TOD).** (fator de risco e manutenção, não causa suficiente; ver apêndice A)
 - Corpo: ciclo em 4 setas (ordem → oposição → recuo do adulto → oposição reforçada), rodando em loop. Contraste: o desafio aberto normalmente DECLINA dos 2 aos 6. Fontes: B&B p. 214 (regras claras → menos desafio), p. 226 (ceder à birra reforça o padrão que os pais deploram).
 - Narração: gênese funcional; a pergunta clínica é "o que a oposição produz nesta casa?".
 
@@ -191,7 +191,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 
 **S39 · PONTO DRAMÁTICO**
 - Título: **O TDAH não aparece aos 6 anos: ele fica visível quando a curva da demanda cruza a curva do freio.**
-- Corpo: gráfico conceitual de duas curvas (demanda ambiental por autorregulação, com degrau na entrada escolar; maturação das funções executivas, contínua): a área entre as curvas é onde o transtorno vira queixa. Fontes: B&B p. 255-257 (diagnóstico tipicamente na entrada escolar; em muitas tarefas de atenção não diferem dos pares).
+- Corpo: gráfico conceitual (demanda por autorregulação em ESCADA, com degrau menor na pré-escola e o maior na entrada escolar; freio típico em maturação contínua; freio TDAH mais baixo, tracejado: "já era mais baixo antes; a escola só revelou"): a área entre demanda e freio é onde o transtorno vira queixa. Fontes: B&B p. 255-257 (diagnóstico tipicamente na entrada escolar; em muitas tarefas de atenção não diferem dos pares).
 - [APOSTA] Narração: ANTES de mostrar o gráfico, perguntar: "por que a fila do TDAH no ambulatório começa aos 6 anos, e não aos 4?"; colher palpites, então revelar as curvas. Frase para levar: "a demanda subiu antes de o freio ficar pronto".
 
 **S40 · Moldura-antes V7**

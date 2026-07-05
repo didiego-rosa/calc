@@ -129,6 +129,7 @@ function timeline(s, { y = 4.35, diagnosticos = false, sismo = false } = {}) {
     txt(s, atos[i], { x: x - 1.15, y: y + 0.55, w: 2.3, h: 0.75, align: "center", fontSize: 11, color: PP.roxoMedio });
   });
   if (diagnosticos) {
+    txt(s, "posição no mapa = etapa da transferência que costuma falhar, NÃO idade de início", { x: 1.4, y: y + 1.0, w: 10.5, h: 0.35, fontSize: 12, italic: true, color: PP.coralTexto });
     const diags = [
       ["TEA", "a janela do apontar"],
       ["TOD · sinais TDAH", "resistir funciona"],
@@ -343,7 +344,7 @@ molduraAntes(s, "Nesta cena, repare no que acontece imediatamente ANTES e imedia
 s = novo({ dark: true, ato: A1 });
 slideVideo(s, "V2", "Birra real em local público, com antecedente visível.", "exibir → congelar 3x (gatilho · pico · resolução) → perguntar → reexibir inteiro");
 s = novo({ ato: A1 });
-titulo(s, "Toda birra tem gramática (gatilho, escalada, função), e ler essa gramática se chama análise funcional.");
+titulo(s, "Toda birra tem gramática (gatilho, escalada, função), e ler essa gramática é o primeiro passo da análise funcional.");
 filete(s);
 ["A · ANTECEDENTE", "B · COMPORTAMENTO", "C · CONSEQUÊNCIA"].forEach((t, i) => {
   const x = 1.1 + i * 3.85;
@@ -353,7 +354,7 @@ filete(s);
   txt(s, ["o que aconteceu\nimediatamente antes?", "o que o corpo\ndela fez?", "o que ela obteve\n(ou evitou)?"][i], { x: x + 0.2, y: 3.65, w: 2.9, h: 1.2, fontSize: 14 });
 });
 satRef(s, "A");
-s.addNotes("A pergunta 'o que ela obteve?' prepara a gênese do TOD no Ato 2. Plantar sem colher ainda.");
+s.addNotes("A pergunta 'o que ela obteve?' prepara a contracena do Ato 2. Plantar sem colher ainda. Ressalva de fala: UM episódio gera hipótese; análise funcional de verdade exige padrão em várias ocorrências (apêndice A).");
 
 // S15-S17 · V3 DNPM
 s = novo({ ato: A1 });
@@ -380,7 +381,7 @@ card(s, 6.9, 2.7, 5.5, 3.0, { fill: PP.branco, borda: PP.coral, bw: 2 });
 txt(s, "APONTAR PARA MOSTRAR", { x: 7.2, y: 2.95, w: 4.9, h: 0.45, bold: true, fontSize: 16, color: PP.coralTexto });
 txt(s, "“olha aquilo!”\no outro como MENTE com quem se divide\n\nDEFICIENTE no TEA", { x: 7.2, y: 3.5, w: 4.9, h: 1.9, fontSize: 15, lineSpacingMultiple: 1.15 });
 txt(s, "+ não responder ao nome (audição normal) · não seguir o apontar do outro · sem faz de conta · linguagem SEM gesto compensatório", { x: 0.9, y: 5.95, w: 11.6, h: 0.6, fontSize: 13.5, color: PP.roxoProfundo, italic: true });
-fonteRodape(s, "atenção compartilhada / M-CHAT · janela do segundo ano");
+fonteRodape(s, "atenção compartilhada · M-CHAT-R (Modified Checklist for Autism in Toddlers, rastreio 16-30 meses)");
 
 // S19 · Fecho Ato 1
 s = novo({ dark: true, ato: A1 });
@@ -410,18 +411,19 @@ s.addNotes("Reenquadrar: a mentira dos 4 anos é marco de desenvolvimento, não 
 
 // S22-S24 · V4 falsa crença
 s = novo({ ato: A2 });
-molduraAntes(s, "Onde Sally vai procurar a bolinha quando voltar?", "V4 · FALSA CRENÇA", "Votem: com que idade a criança passa a acertar? 2, 3, 4 ou 6?",
+molduraAntes(s, "Onde Sally vai procurar a bolinha quando voltar?", "V4 · FALSA CRENÇA", "Votem: com que idade a MAIORIA das crianças passa a acertar? 2, 3, 4 ou 6?",
   "Colher palpites em voz alta antes do play; quem apostou assiste diferente.");
+satRef(s, "C");
 s = novo({ dark: true, ato: A2 });
 slideVideo(s, "V4", "Sally-Anne (ou caixa de doces): criança de 3 erra, criança de 4-5 acerta.", "pausar antes da resposta da criança de 3: “o que ela vai dizer?”");
 s = novo({ ato: A2 });
-titulo(s, "Aos 3 a criança erra, aos 4-5 acerta, e o padrão se repete em toda cultura testada.");
+titulo(s, "Aos 3 a maioria erra, aos 5 a maioria acerta, e o padrão se repete em toda cultura testada.");
 filete(s);
 s.addShape(ST.rect, { x: 2.6, y: 4.3, w: 1.7, h: 1.1, fill: { color: PP.lavanda } });
-txt(s, "3 anos\nerra", { x: 2.4, y: 5.5, w: 2.1, h: 0.7, align: "center", fontSize: 14, bold: true });
+txt(s, "3 anos:\na maioria erra", { x: 2.2, y: 5.5, w: 2.5, h: 0.7, align: "center", fontSize: 14, bold: true });
 s.addShape(ST.rect, { x: 6.2, y: 2.7, w: 1.7, h: 2.7, fill: { color: PP.coral } });
 s.addShape(ST.line, { x: 2.1, y: 5.4, w: 6.3, h: 0, line: { color: PP.roxoMedio, width: 1.5 } });
-txt(s, "4-5 anos\nacerta", { x: 6.0, y: 5.5, w: 2.1, h: 0.7, align: "center", fontSize: 14, bold: true, color: PP.coralTexto });
+txt(s, "5 anos:\na maioria acerta", { x: 5.8, y: 5.5, w: 2.5, h: 0.7, align: "center", fontSize: 14, bold: true, color: PP.coralTexto });
 card(s, 8.9, 3.2, 3.5, 1.9, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
 txt(s, "Inclusive entre os Baka, caçadores-coletores de Camarões: isso não é escolarização, é maturação.", { x: 9.15, y: 3.45, w: 3.0, h: 1.5, fontSize: 13.5 });
 fonteRodape(s, "Bee & Boyd, cap. 7, p. 185 (Flavell) e p. 186 (Avis & Harris, 1991)");
@@ -475,8 +477,8 @@ s.addNotes("Síntese curta. Não repetir o S25: apontar e seguir.");
 
 // S30 · Contracena TOD
 s = novo({ ato: A2 });
-vigilancia(s, "Quando resistir FUNCIONA, a oposição vira estratégia: o TOD nasce como aprendizagem antes de virar rótulo.",
-  "Gênese funcional: oposição é comportamento operante. Quando resistir desliga a ordem (reforço negativo) ou captura o adulto (reforço positivo), a oposição é selecionada. Pergunta clínica: 'o que a oposição PRODUZ nesta casa?'. Contraste: o desafio aberto normalmente DECLINA dos 2 aos 6.");
+vigilancia(s, "Quando resistir FUNCIONA, a oposição vira comportamento aprendido: é assim que se arma o risco de transtorno opositivo-desafiador (TOD).",
+  "Gênese funcional: oposição é comportamento operante, sem intenção consciente e sem vilão. Quando resistir desliga a ordem (reforço negativo) ou captura o adulto (reforço positivo), a oposição é selecionada. Ressalva obrigatória: fator de risco e de manutenção, NÃO causa suficiente (temperamento e carga familiar entram na equação; apêndice A). Pergunta clínica: 'o que a oposição PRODUZ nesta casa?'. Contraste: o desafio aberto normalmente DECLINA dos 2 aos 6.");
 const ciclo = ["ORDEM", "OPOSIÇÃO", "ADULTO RECUA", "OPOSIÇÃO REFORÇADA"];
 ciclo.forEach((c, i) => {
   const pos = [[2.0, 2.8], [7.6, 2.8], [7.6, 4.6], [2.0, 4.6]][i];
@@ -527,7 +529,7 @@ filete(s);
 const gauges = [
   ["SURTO CEREBRAL 6-8", "novas sinapses,\ncórtex mais espesso", 0.55],
   ["ATENÇÃO SELETIVA", "mielinização formação\nreticular ↔ lobo frontal", 0.7],
-  ["VELOCIDADE", "curva de Kail: mais rápido\nem qualquer cultura", 0.85],
+  ["VELOCIDADE", "tempo de reação cai com a\nidade (Kail), em qualquer cultura", 0.85],
 ];
 gauges.forEach((g, i) => {
   const x = 1.0 + i * 4.0;
@@ -552,10 +554,11 @@ filete(s);
 ["IDENTIDADE\nnada entrou, nada saiu", "COMPENSAÇÃO\nmais alto, porém mais fino", "REVERSIBILIDADE\ndá para despejar de volta"].forEach((t, i) => {
   const x = 0.9 + i * 3.4;
   s.addText(t, {
-    shape: ST.roundRect, rectRadius: 0.07, x, y: 2.75, w: 3.1, h: 1.15,
+    shape: ST.roundRect, rectRadius: 0.07, x, y: 2.7, w: 3.1, h: 1.1,
     fill: { color: PP.lavanda }, color: PP.roxoProfundo, fontFace: SANS, fontSize: 13.5, align: "center", valign: "middle", bold: false,
   });
 });
+txt(s, "descentração = considerar mais de uma dimensão ao mesmo tempo; a compensação é ela em ação", { x: 0.9, y: 3.92, w: 11.5, h: 0.35, fontSize: 12, italic: true, color: PP.roxoMedio });
 card(s, 0.9, 4.35, 11.5, 1.5, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
 txt(s, "E chega em ondas (décalage): massa ~7 · peso ~8 · volume só ~11. No longitudinal de Tomlinson-Keasey, o salto acontece perto dos 7, onde Piaget o colocou.", { x: 1.2, y: 4.7, w: 11, h: 0.95, fontSize: 15 });
 fonteRodape(s, "Bee & Boyd, cap. 7, p. 182-183; cap. 9, p. 240-241");
@@ -581,16 +584,23 @@ filete(s);
 // eixo
 s.addShape(ST.line, { x: 1.6, y: 5.9, w: 9.8, h: 0, line: { color: PP.roxoMedio, width: 1.5 } });
 s.addShape(ST.line, { x: 1.6, y: 2.6, w: 0, h: 3.3, line: { color: PP.roxoMedio, width: 1.5 } });
-// curva maturação (contínua, dourada)
+// curva freio típico (contínua, dourada)
 s.addShape(ST.line, { x: 1.6, y: 5.75, w: 3.4, h: -1.0, line: { color: PP.dourado, width: 4 } });
 s.addShape(ST.line, { x: 5.0, y: 4.75, w: 3.2, h: -0.9, line: { color: PP.dourado, width: 4 } });
 s.addShape(ST.line, { x: 8.2, y: 3.85, w: 3.1, h: -0.65, line: { color: PP.dourado, width: 4 } });
-txt(s, "maturação do freio (contínua)", { x: 8.9, y: 4.35, w: 3.4, h: 0.4, fontSize: 12.5, color: PP.roxoProfundo, bold: true });
-// curva demanda (degrau, coral)
-s.addShape(ST.line, { x: 1.6, y: 5.3, w: 3.9, h: 0, line: { color: PP.coral, width: 4 } });
-s.addShape(ST.line, { x: 5.5, y: 3.3, w: 0, h: 2.0, line: { color: PP.coral, width: 4 } });
+txt(s, "freio típico (maturação contínua)", { x: 8.75, y: 4.4, w: 3.6, h: 0.4, fontSize: 12, color: PP.roxoProfundo, bold: true });
+// curva freio TDAH (mais baixa, tracejada)
+s.addShape(ST.line, { x: 1.6, y: 5.85, w: 4.4, h: -0.75, line: { color: PP.roxoMedio, width: 3.5, dashType: "dash" } });
+s.addShape(ST.line, { x: 6.0, y: 5.1, w: 5.3, h: -0.7, line: { color: PP.roxoMedio, width: 3.5, dashType: "dash" } });
+txt(s, "freio TDAH: já era mais baixo antes;\na escola só revelou", { x: 8.75, y: 5.35, w: 3.6, h: 0.6, fontSize: 11.5, color: PP.roxoMedio, bold: true });
+// demanda (escada: degrau menor na pré-escola, maior na entrada escolar)
+s.addShape(ST.line, { x: 1.6, y: 5.3, w: 1.7, h: 0, line: { color: PP.coral, width: 4 } });
+s.addShape(ST.line, { x: 3.3, y: 5.0, w: 0, h: 0.3, line: { color: PP.coral, width: 4 } });
+s.addShape(ST.line, { x: 3.3, y: 5.0, w: 2.2, h: 0, line: { color: PP.coral, width: 4 } });
+s.addShape(ST.line, { x: 5.5, y: 3.3, w: 0, h: 1.7, line: { color: PP.coral, width: 4 } });
 s.addShape(ST.line, { x: 5.5, y: 3.3, w: 5.8, h: -0.3, line: { color: PP.coral, width: 4 } });
-txt(s, "demanda por autorregulação", { x: 6.0, y: 2.62, w: 3.6, h: 0.4, fontSize: 12.5, color: PP.coralTexto, bold: true });
+txt(s, "demanda por autorregulação (escada)", { x: 5.75, y: 2.62, w: 4.4, h: 0.4, fontSize: 12.5, color: PP.coralTexto, bold: true });
+txt(s, "pré-escola", { x: 3.35, y: 5.08, w: 1.8, h: 0.3, fontSize: 10.5, color: PP.coralTexto });
 txt(s, "ENTRADA NA ESCOLA", { x: 4.55, y: 6.0, w: 2.4, h: 0.35, fontSize: 11.5, bold: true, color: PP.coralTexto, align: "center" });
 s.addShape(ST.rect, { x: 5.5, y: 3.15, w: 3.0, h: 1.35, fill: { color: PP.coral, transparency: 82 } });
 txt(s, "a área entre as curvas\né onde vira queixa", { x: 5.7, y: 3.35, w: 2.7, h: 0.8, fontSize: 12, italic: true, color: PP.roxoProfundo });
@@ -701,7 +711,7 @@ filete(s);
     fontFace: SANS, fontSize: 14, bold: true, align: "center", valign: "middle",
   });
 });
-txt(s, "a moeda da aceitação é exatamente o que os atos anteriores construíram: regular a expressão emocional + ler mentes", { x: 0.9, y: 3.75, w: 11.5, h: 0.5, fontSize: 15, italic: true });
+txt(s, "negligenciada = ignorada PELOS PARES, sem rejeição ativa (não confundir com negligência parental). A moeda da aceitação é o que os atos anteriores construíram: regular a expressão emocional + ler mentes.", { x: 0.9, y: 3.7, w: 11.5, h: 0.65, fontSize: 13.5, italic: true });
 card(s, 0.9, 4.5, 11.5, 1.35, { fill: PP.branco, borda: PP.coral, bw: 2 });
 txt(s, [
   { text: "Neuroimagem: a exclusão social ativa a mesma área cerebral da dor física (Eisenberger, 2003). ", options: { bold: true } },
@@ -801,6 +811,7 @@ s.addTable(rows.map((r, ri) => r.map((c, ci) => {
   x: 0.6, y: 2.35, w: 12.1, fontFace: SANS, fontSize: 12.5, valign: "middle",
   border: { type: "solid", color: PP.roxoMedio, pt: 0.5 }, rowH: 0.72, colW: [1.35, 5.35, 5.4],
 });
+satRef(s, "D");
 s.addNotes("Ler as 4 linhas em 90 segundos. É o handout mental que eles levam.");
 
 // S60 · Referências
@@ -811,8 +822,8 @@ txt(s, "FONTE PRIMÁRIA", { x: 0.7, y: 2.3, w: 5, h: 0.4, bold: true, fontSize: 
 txt(s, "Bee, H. & Boyd, D. Lifespan Development.\nCaps. 7-10 (pp. 173-286): primeira infância e infância intermediária, desenvolvimento físico, cognitivo, social e de personalidade.", { x: 0.7, y: 2.75, w: 11.8, h: 1.1, fontSize: 15, lineSpacingMultiple: 1.15 });
 txt(s, "COMPLEMENTOS PONTUAIS", { x: 0.7, y: 4.05, w: 5, h: 0.4, bold: true, fontSize: 13, charSpacing: 2, color: PP.roxoMedio });
 txt(s, "Watts, Duncan & Quan (2018), Psychological Science · replicação do delay of gratification\nBaron-Cohen, Leslie & Frith (1985) · falsa crença (Sally-Anne)\nAmsterdam (1972) · autorreconhecimento no espelho\nWhite (1965) · o “5-to-7 shift”\nM-CHAT-R/F · atenção compartilhada no rastreio do segundo ano", { x: 0.7, y: 4.5, w: 11.8, h: 1.7, fontSize: 14, lineSpacingMultiple: 1.25 });
-card(s, 0.7, 6.35, 11.9, 0.7, { fill: PP.lavanda });
-txt(s, "Documento de apoio completo (com páginas, scripts e ressalvas) disponível na plataforma.", { x: 1.0, y: 6.5, w: 11.3, h: 0.45, fontSize: 14, bold: true });
+card(s, 0.7, 6.15, 11.9, 0.95, { fill: PP.lavanda });
+txt(s, "Documento de apoio completo (páginas, scripts e ressalvas) na plataforma. Aprofundamento no apêndice: A anatomia da birra · B as duas curvas do TDAH · C falsa crença · D perguntas frequentes.", { x: 1.0, y: 6.3, w: 11.3, h: 0.7, fontSize: 13 });
 satRef(s, "D");
 s.addNotes("Fim. Agradecer e apontar o documento de apoio. Perguntas da plateia: saltar para o apêndice D (respostas prontas) quando houver slide correspondente.");
 

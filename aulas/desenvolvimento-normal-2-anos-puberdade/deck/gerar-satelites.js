@@ -167,7 +167,7 @@ s = novo({ chip: CA });
 titulo(s, "Na cena do mercado, o reforço rodou dos DOIS lados: e é isso que arma a armadilha.");
 filete(s);
 card(s, 0.7, 2.35, 11.9, 0.85, { fill: PP.lavandaClara });
-txt(s, "A cena (do vídeo da aula): criança de ~2 anos pede doce no caixa; mãe diz não; grito e chão; após 90 segundos, a mãe entrega o doce e o grito para.", { x: 1.0, y: 2.5, w: 11.3, h: 0.6, fontSize: 13.5, italic: true });
+txt(s, "A cena-tipo (padrão do vídeo V2 da aula; confirme que o clipe escolhido contém o ciclo completo): criança de ~2 anos pede doce no caixa; mãe diz não; grito e chão; a mãe entrega o doce e o grito para.", { x: 1.0, y: 2.5, w: 11.3, h: 0.6, fontSize: 13, italic: true });
 card(s, 0.7, 3.5, 5.75, 2.6, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
 txt(s, "LINHA DA CRIANÇA", { x: 1.0, y: 3.68, w: 5.2, h: 0.4, bold: true, fontSize: 13.5 });
 txt(s, "A: “não” ao doce\nB: grito + chão\nC: ganhou o doce\n= reforço POSITIVO (ganhou algo)", { x: 1.0, y: 4.12, w: 5.2, h: 1.8, fontSize: 13.5, lineSpacingMultiple: 1.2 });
