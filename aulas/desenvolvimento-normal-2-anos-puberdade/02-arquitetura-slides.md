@@ -202,7 +202,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 
 **S42 · Moldura-depois V7**
 - Título: **Menos do que se sonhou: com controles adequados o efeito encolhe; esperar é termômetro do freio, não oráculo do destino.**
-- Corpo: uma linha sobre a replicação (Watts, Duncan & Quan, 2018: efeito cai ~2/3 com controles de família e cognição). [EXT]
+- Corpo: uma linha sobre a replicação (Watts, Duncan & Quan, 2018: com controles de família e cognição, a maior parte do efeito desaparece; não citar fração fixa). [EXT]
 - Narração: ensinar o residente a citar o experimento SEM o folclore.
 
 **S43 · Moldura-antes V8**
@@ -234,7 +234,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 - Corpo: transição do conceito de amizade (proximidade → confiança recíproca ~10a); dado: 50-75% dos escolares têm melhor amigo estável. Fontes: B&B p. 272-273.
 
 **S50 · Conteúdo**
-- Título: **A moral sai da heteronomia: perto dos 8, a regra deixa de ser sagrada e a intenção passa a contar.**
+- Título: **A moral sai da heteronomia: entre os 7 e os 10, a regra deixa de ser sagrada e a intenção passa a contar.**
 - Corpo: realismo moral (regra imutável, justiça imanente) → relativismo moral (regra combinável; intenção pesa mais que consequência). Fonte: B&B p. 269-270 (Piaget, 1932).
 
 **S51 · Conteúdo**

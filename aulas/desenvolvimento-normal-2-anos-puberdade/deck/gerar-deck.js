@@ -298,7 +298,7 @@ txt(s, "palavras aos 5-6 anos", { x: 7.8, y: 4.2, w: 4.4, h: 0.5, align: "center
 card(s, 1.0, 5.15, 11.3, 0.95, { fill: PP.lavanda });
 txt(s, "E ela chega EXTERNA: serve para pedir e nomear para o outro. Ainda não serve para se instruir. (Guardem isso.)", { x: 1.3, y: 5.4, w: 10.8, h: 0.6, fontSize: 15, bold: true });
 fonteRodape(s, "Bee & Boyd, cap. 7, p. 188-189 (Bates 1994; Anglin 1995; Pinker 1994)");
-s.addNotes("Superregularização ('fazi', 'sabo') é sinal de saúde: a criança extraiu a regra e aplicou demais. Erro que denuncia inteligência do sistema.");
+s.addNotes("Superregularização ('fazi', 'sabo') é sinal de saúde: a criança extraiu a regra e aplicou demais. Erro que denuncia inteligência do sistema. Ressalva de fala: 600 e 15.000 são MÉDIAS com variação individual enorme; não usar como marco de alarme isolado.");
 
 // S8-S10 · V1 espelho
 s = novo({ ato: A1 });
@@ -420,15 +420,17 @@ s = novo({ ato: A2 });
 titulo(s, "Aos 3 a maioria erra, aos 5 a maioria acerta, e o padrão se repete em toda cultura testada.");
 filete(s);
 s.addShape(ST.rect, { x: 2.6, y: 4.3, w: 1.7, h: 1.1, fill: { color: PP.lavanda } });
-txt(s, "3 anos:\na maioria erra", { x: 2.2, y: 5.5, w: 2.5, h: 0.7, align: "center", fontSize: 14, bold: true });
+txt(s, "3 anos:\na maioria erra", { x: 2.45, y: 5.5, w: 2.0, h: 0.7, align: "center", fontSize: 12.5, bold: true });
+s.addShape(ST.rect, { x: 4.4, y: 4.05, w: 1.7, h: 1.35, fill: { color: PP.dourado } });
+txt(s, "4 anos:\nmeio a meio", { x: 4.25, y: 5.5, w: 2.0, h: 0.7, align: "center", fontSize: 12.5, bold: true, color: PP.roxoMedio });
 s.addShape(ST.rect, { x: 6.2, y: 2.7, w: 1.7, h: 2.7, fill: { color: PP.coral } });
 s.addShape(ST.line, { x: 2.1, y: 5.4, w: 6.3, h: 0, line: { color: PP.roxoMedio, width: 1.5 } });
-txt(s, "5 anos:\na maioria acerta", { x: 5.8, y: 5.5, w: 2.5, h: 0.7, align: "center", fontSize: 14, bold: true, color: PP.coralTexto });
+txt(s, "5 anos:\na maioria acerta", { x: 6.05, y: 5.5, w: 2.0, h: 0.7, align: "center", fontSize: 12.5, bold: true, color: PP.coralTexto });
 card(s, 8.9, 3.2, 3.5, 1.9, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
 txt(s, "Inclusive entre os Baka, caçadores-coletores de Camarões: isso não é escolarização, é maturação.", { x: 9.15, y: 3.45, w: 3.0, h: 1.5, fontSize: 13.5 });
 fonteRodape(s, "Bee & Boyd, cap. 7, p. 185 (Flavell) e p. 186 (Avis & Harris, 1991)");
 satRef(s, "C");
-s.addNotes("Preditores: faz de conta compartilhado, memória de trabalho e LINGUAGEM (limiar linguístico para passar em crença falsa). Velocidade de aquisição prediz habilidade social futura. Nuance no apêndice C: a transição é gradual (Wellman), sem idade-muro.");
+s.addNotes("Preditores: faz de conta compartilhado, memória de trabalho e LINGUAGEM (limiar linguístico para passar em crença falsa). Velocidade de aquisição prediz habilidade social futura. Nuance no apêndice C: a transição é gradual (Wellman), sem idade-muro; criança de 4 que erra não está atrasada por isso.");
 
 // S25 · Fala privada
 s = novo({ ato: A2 });
@@ -562,7 +564,7 @@ txt(s, "descentração = considerar mais de uma dimensão ao mesmo tempo; a comp
 card(s, 0.9, 4.35, 11.5, 1.5, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
 txt(s, "E chega em ondas (décalage): massa ~7 · peso ~8 · volume só ~11. No longitudinal de Tomlinson-Keasey, o salto acontece perto dos 7, onde Piaget o colocou.", { x: 1.2, y: 4.7, w: 11, h: 0.95, fontSize: 15 });
 fonteRodape(s, "Bee & Boyd, cap. 7, p. 182-183; cap. 9, p. 240-241");
-s.addNotes("Se perguntarem 'Piaget não foi superado?': os fenômenos replicam; a explicação mudou (Siegler: regras adquiridas por experiência + processamento). Mapa sim, mecanismo não.");
+s.addNotes("Se perguntarem 'Piaget não foi superado?': os fenômenos replicam; a explicação mudou (Siegler: regras adquiridas por experiência + processamento). Mapa sim, mecanismo não. Nota de fonte: massa 7 / peso 8 / volume 11 é a sequência do Bee & Boyd p. 241 (Tomlinson-Keasey); parte da literatura situa peso perto dos 9.");
 
 // S38 · Escola sem co-regulação
 s = novo({ ato: A3 });
@@ -588,7 +590,7 @@ s.addShape(ST.line, { x: 1.6, y: 2.6, w: 0, h: 3.3, line: { color: PP.roxoMedio,
 s.addShape(ST.line, { x: 1.6, y: 5.75, w: 3.4, h: -1.0, line: { color: PP.dourado, width: 4 } });
 s.addShape(ST.line, { x: 5.0, y: 4.75, w: 3.2, h: -0.9, line: { color: PP.dourado, width: 4 } });
 s.addShape(ST.line, { x: 8.2, y: 3.85, w: 3.1, h: -0.65, line: { color: PP.dourado, width: 4 } });
-txt(s, "freio típico (maturação contínua)", { x: 8.75, y: 4.4, w: 3.6, h: 0.4, fontSize: 12, color: PP.roxoProfundo, bold: true });
+txt(s, "freio típico (maturação contínua)", { x: 8.75, y: 3.9, w: 3.6, h: 0.4, fontSize: 12, color: PP.roxoProfundo, bold: true });
 // curva freio TDAH (mais baixa, tracejada)
 s.addShape(ST.line, { x: 1.6, y: 5.85, w: 4.4, h: -0.75, line: { color: PP.roxoMedio, width: 3.5, dashType: "dash" } });
 s.addShape(ST.line, { x: 6.0, y: 5.1, w: 5.3, h: -0.7, line: { color: PP.roxoMedio, width: 3.5, dashType: "dash" } });
@@ -622,7 +624,7 @@ txt(s, "efeito\noriginal", { x: 2.5, y: 5.6, w: 2.5, h: 0.7, align: "center", fo
 s.addShape(ST.rect, { x: 7.3, y: 4.5, w: 2.1, h: 1.0, fill: { color: PP.coral } });
 txt(s, "com controles de família\ne cognição (Watts 2018)", { x: 6.7, y: 5.6, w: 3.3, h: 0.7, align: "center", fontSize: 13.5, bold: true, color: PP.coralTexto });
 fonteRodape(s, "Watts, Duncan & Quan (2018), Psychological Science · replicação com amostra maior e diversa");
-s.addNotes("O que continua valendo: a melhor IMAGEM do freio imaturo em ação (as estratégias de distração SÃO autorregulação nascente). O que morreu: o oráculo. Ensinar o residente a citar sem folclore.");
+s.addNotes("O que continua valendo: a melhor IMAGEM do freio imaturo em ação (as estratégias de distração SÃO autorregulação nascente). O que morreu: o oráculo. Precisão para a fala: com controles completos de família e cognição precoce, a maior parte do efeito desaparece (não significativo em vários modelos de Watts 2018); evitar fração fixa.");
 
 // S43-S45 · V8 autocorreção
 s = novo({ ato: A3 });
@@ -689,7 +691,7 @@ s.addNotes("Pré-requisito veio do Ato 2: reciprocidade 'você sabe que eu sei' 
 
 // S50 · Moral
 s = novo({ ato: A4 });
-titulo(s, "A moral sai da heteronomia: perto dos 8, a regra deixa de ser sagrada e a intenção passa a contar.");
+titulo(s, "A moral sai da heteronomia: entre os 7 e os 10, a regra deixa de ser sagrada e a intenção passa a contar.");
 filete(s);
 card(s, 0.9, 2.7, 5.6, 2.9, { fill: PP.lavandaClara });
 txt(s, "REALISMO MORAL (até ~8)", { x: 1.2, y: 2.95, w: 5, h: 0.4, bold: true, fontSize: 14.5, color: PP.roxoMedio });
@@ -718,7 +720,7 @@ txt(s, [
   { text: "O grupo pune com dor de verdade.", options: { color: PP.coralTexto, bold: true } },
 ], { x: 1.2, y: 4.85, w: 11, h: 0.7, fontSize: 15.5 });
 fonteRodape(s, "Bee & Boyd, cap. 10, p. 274-278 · segregação por gênero como marca universal do período");
-s.addNotes("Status sociométrico: comportamento social pesa mais que aparência (Rodkin 2013).");
+s.addNotes("Status sociométrico: comportamento social pesa mais que aparência (Rodkin 2013). Ressalva de fala sobre Eisenberger: achado clássico e útil como ILUSTRAÇÃO, mas a leitura 'mesma área = mesmo mecanismo' foi questionada por análises multivariadas posteriores; não usar como prova de identidade neural.");
 
 // S52-S54 · V9 recreio
 s = novo({ ato: A4 });

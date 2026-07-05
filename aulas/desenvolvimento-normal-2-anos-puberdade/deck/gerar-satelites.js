@@ -59,7 +59,7 @@ function capaSet(s, letra, nome, ponte, contexto, notas) {
 // CAPA GERAL
 // ============================================================================
 let s = novo({ dark: true });
-s.addText(global.__COMBINED__ ? "Apêndice: módulos de aprofundamento" : "Slides satélites", { x: 0.7, y: 2.1, w: 11.5, h: 1.0, fontFace: SERIF, fontSize: 40, bold: true, color: PP.offWhite });
+s.addText(global.__COMBINED__ ? "Apêndice de aprofundamento" : "Slides satélites", { x: 0.7, y: 2.1, w: 11.5, h: 1.0, fontFace: SERIF, fontSize: 40, bold: true, color: PP.offWhite });
 s.addText("Desenvolvimento normal: dos 2 anos ao início da puberdade", { x: 0.7, y: 3.1, w: 11.5, h: 0.6, fontFace: SERIF, fontSize: 21, color: PP.lavanda });
 s.addShape(ST.rect, { x: 0.72, y: 3.95, w: 1.7, h: 0.05, fill: { color: PP.dourado } });
 s.addText("Módulos de aprofundamento. Não fazem parte da sequência principal: entram se a turma pedir, ou circulam depois como material de estudo.",

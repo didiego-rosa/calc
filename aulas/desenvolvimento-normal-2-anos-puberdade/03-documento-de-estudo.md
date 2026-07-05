@@ -102,7 +102,7 @@ Aos 2 anos, a criança é um sistema emocional potente com freio terceirizado: q
 
 ### 3.5 Marshmallow com a ressalva (V7/S42)
 - Original: Mischel, delay of gratification em pré-escolares, correlações longas com desfechos acadêmicos e sociais. [EXT]
-- Replicação: Watts, Duncan & Quan (2018, Psychological Science): amostra maior e diversa; controlando background familiar e cognição precoce aos 4 anos, o valor preditivo cai para cerca de um terço do original e boa parte do gradiente se explica por contexto socioeconômico. [EXT]
+- Replicação: Watts, Duncan & Quan (2018, Psychological Science): amostra maior e diversa; controlando background familiar e cognição precoce aos 4 anos, a maior parte do efeito desaparece (não significativo em vários modelos), e boa parte do gradiente se explica por contexto socioeconômico. Evitar fração fixa ao citar. [EXT]
 - Mensagem calibrada: o experimento continua sendo a MELHOR imagem do freio imaturo em ação (as estratégias de distração que as crianças inventam SÃO autorregulação nascente); o que morreu foi o oráculo ("15 minutos de espera predizem sua vida"). Esperar é termômetro, não destino.
 
 ### 3.6 Pergunta de tração para o Ato 4
