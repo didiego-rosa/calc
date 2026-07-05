@@ -10,12 +10,12 @@ const PP = {
   lavandaClara: "EDE2F0", offWhite: "F6EFF2", branco: "FFFFFF",
   coral: "E96030", coralTexto: "B84A1F", dourado: "ECB841",
 };
-const pres = new pptxgen();
+const pres = global.__PRES__ || new pptxgen();
 pres.defineLayout({ name: "WIDE", width: 13.33, height: 7.5 });
 pres.layout = "WIDE";
 const ST = pres.ShapeType;
 const W = 13.33, H = 7.5, SERIF = "Georgia", SANS = "Calibri";
-let n = 0;
+let n = global.__SLIDE_OFFSET__ || 0;
 
 function novo({ dark = false, chip = null } = {}) {
   n++;
@@ -59,7 +59,7 @@ function capaSet(s, letra, nome, ponte, contexto, notas) {
 // CAPA GERAL
 // ============================================================================
 let s = novo({ dark: true });
-s.addText("Slides satélites", { x: 0.7, y: 2.1, w: 11.5, h: 1.0, fontFace: SERIF, fontSize: 40, bold: true, color: PP.offWhite });
+s.addText(global.__COMBINED__ ? "Apêndice: módulos de aprofundamento" : "Slides satélites", { x: 0.7, y: 2.1, w: 11.5, h: 1.0, fontFace: SERIF, fontSize: 40, bold: true, color: PP.offWhite });
 s.addText("Desenvolvimento normal: dos 2 anos ao início da puberdade", { x: 0.7, y: 3.1, w: 11.5, h: 0.6, fontFace: SERIF, fontSize: 21, color: PP.lavanda });
 s.addShape(ST.rect, { x: 0.72, y: 3.95, w: 1.7, h: 0.05, fill: { color: PP.dourado } });
 s.addText("Módulos de aprofundamento. Não fazem parte da sequência principal: entram se a turma pedir, ou circulam depois como material de estudo.",
@@ -447,5 +447,8 @@ antiPergunta(s, "“Birra até que idade é normal?”",
   "R1: sem o pico, 'decrescente' não desenha nada; R3: o padrão que muda de QUALIDADE alarma tanto quanto o que não declina.");
 
 // ---------------------------------------------------------------------------
-pres.writeFile({ fileName: __dirname + "/Satelites_Desenvolvimento-normal_PsiquiatriaPratica.pptx" })
-  .then(() => console.log("OK:", n, "slides"));
+global.__SLIDE_OFFSET__ = n;
+if (require.main === module) {
+  pres.writeFile({ fileName: __dirname + "/Satelites_Desenvolvimento-normal_PsiquiatriaPratica.pptx" })
+    .then(() => console.log("OK:", n, "slides"));
+}

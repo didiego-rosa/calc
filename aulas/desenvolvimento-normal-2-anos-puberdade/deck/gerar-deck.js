@@ -11,14 +11,23 @@ const PP = {
   coral: "E96030", coralTexto: "B84A1F", dourado: "ECB841",
 };
 
-const pres = new pptxgen();
+const pres = global.__PRES__ || new pptxgen();
 pres.defineLayout({ name: "WIDE", width: 13.33, height: 7.5 });
 pres.layout = "WIDE";
 const ST = pres.ShapeType;
 const W = 13.33, H = 7.5;
 const SERIF = "Georgia", SANS = "Calibri";
 
-let nSlide = 0;
+let nSlide = global.__SLIDE_OFFSET__ || 0;
+
+// Remissão ao apêndice (só no deck oficial unificado)
+function satRef(s, letra, dark = false) {
+  if (!global.__COMBINED__) return;
+  s.addText(`aprofundamento: apêndice ${letra}`, {
+    x: W - 3.6, y: H - 0.44, w: 2.8, h: 0.32, fontFace: SANS, fontSize: 10,
+    italic: true, color: dark ? PP.lavanda : PP.roxoMedio, align: "right",
+  });
+}
 
 // ---------------------------------------------------------------- helpers ---
 function novo({ dark = false, ato = null } = {}) {
@@ -324,6 +333,7 @@ boxesBirra.forEach((b, i) => {
 card(s, 1.1, 5.0, 11.05, 1.05, { fill: PP.lavandaClara });
 txt(s, "Contrapeso: aos 2 anos, OBEDECER é a regra, não a exceção (Gralinski & Kopp). E a agressão do pico 2-4 é instrumental: quer o objeto, não ferir.", { x: 1.4, y: 5.22, w: 10.4, h: 0.7, fontSize: 14.5 });
 fonteRodape(s, "Bee & Boyd, cap. 8, p. 214 e p. 226");
+satRef(s, "A");
 s.addNotes("A birra é o custo operacional da regulação externa, não um sintoma. Regulação aos 2 prediz agressão aos 4 (Rubin 2003, p. 206).");
 
 // S12-S14 · V2 birra (T3)
@@ -342,6 +352,7 @@ filete(s);
   txt(s, t, { x: x + 0.2, y: 3.1, w: 2.9, h: 0.5, bold: true, fontSize: 15, color: PP.coralTexto });
   txt(s, ["o que aconteceu\nimediatamente antes?", "o que o corpo\ndela fez?", "o que ela obteve\n(ou evitou)?"][i], { x: x + 0.2, y: 3.65, w: 2.9, h: 1.2, fontSize: 14 });
 });
+satRef(s, "A");
 s.addNotes("A pergunta 'o que ela obteve?' prepara a gênese do TOD no Ato 2. Plantar sem colher ainda.");
 
 // S15-S17 · V3 DNPM
@@ -414,7 +425,8 @@ txt(s, "4-5 anos\nacerta", { x: 6.0, y: 5.5, w: 2.1, h: 0.7, align: "center", fo
 card(s, 8.9, 3.2, 3.5, 1.9, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
 txt(s, "Inclusive entre os Baka, caçadores-coletores de Camarões: isso não é escolarização, é maturação.", { x: 9.15, y: 3.45, w: 3.0, h: 1.5, fontSize: 13.5 });
 fonteRodape(s, "Bee & Boyd, cap. 7, p. 185 (Flavell) e p. 186 (Avis & Harris, 1991)");
-s.addNotes("Preditores: faz de conta compartilhado, memória de trabalho e LINGUAGEM (limiar linguístico para passar em crença falsa). Velocidade de aquisição prediz habilidade social futura.");
+satRef(s, "C");
+s.addNotes("Preditores: faz de conta compartilhado, memória de trabalho e LINGUAGEM (limiar linguístico para passar em crença falsa). Velocidade de aquisição prediz habilidade social futura. Nuance no apêndice C: a transição é gradual (Wellman), sem idade-muro.");
 
 // S25 · Fala privada
 s = novo({ ato: A2 });
@@ -477,6 +489,7 @@ s.addShape(ST.line, { x: 5.75, y: 5.15, w: 1.8, h: 0, line: { color: PP.roxoMedi
 s.addShape(ST.line, { x: 3.85, y: 3.95, w: 0, h: 0.6, line: { color: PP.roxoMedio, width: 2, beginArrowType: "triangle" } });
 txt(s, "o ciclo roda em loop, e cada volta o fortalece", { x: 4.3, y: 6.0, w: 5.6, h: 0.4, align: "center", fontSize: 13, italic: true, color: PP.roxoMedio });
 fonteRodape(s, "Bee & Boyd, cap. 8, p. 214 (Patterson 1980) e p. 226 (ceder à birra reforça o padrão)");
+satRef(s, "A");
 
 // S31 · Contracena TDAH pré-escolar
 s = novo({ ato: A2 });
@@ -489,6 +502,7 @@ card(s, 6.9, 2.7, 5.5, 3.1, { fill: PP.branco, borda: PP.coral, bw: 2 });
 txt(s, "SINAL DE ALERTA", { x: 7.2, y: 2.95, w: 4.9, h: 0.45, bold: true, fontSize: 15.5, color: PP.coralTexto });
 txt(s, "a MESMA intensidade em casa, escola, consultório e festa. Birras que não declinam. Co-regulação que nunca é dispensada.", { x: 7.2, y: 3.45, w: 4.9, h: 2.1, fontSize: 14.5, lineSpacingMultiple: 1.15 });
 fonteRodape(s, "Bee & Boyd, cap. 8, p. 206-207");
+satRef(s, "B");
 
 // S32 · Fecho Ato 2
 s = novo({ dark: true, ato: A2 });
@@ -581,7 +595,8 @@ txt(s, "ENTRADA NA ESCOLA", { x: 4.55, y: 6.0, w: 2.4, h: 0.35, fontSize: 11.5, 
 s.addShape(ST.rect, { x: 5.5, y: 3.15, w: 3.0, h: 1.35, fill: { color: PP.coral, transparency: 82 } });
 txt(s, "a área entre as curvas\né onde vira queixa", { x: 5.7, y: 3.35, w: 2.7, h: 0.8, fontSize: 12, italic: true, color: PP.roxoProfundo });
 fonteRodape(s, "Bee & Boyd, cap. 9, p. 255-257 · em muitas tarefas de atenção, não diferem dos pares");
-s.addNotes("[APOSTA] ANTES de mostrar: 'por que a fila do TDAH no ambulatório começa aos 6, e não aos 4?'. Colher palpites, revelar. Frase para levar: a demanda subiu antes de o freio ficar pronto. O freio já era imaturo aos 4; aos 4 ninguém precisava dele.");
+satRef(s, "B");
+s.addNotes("[APOSTA] ANTES de mostrar: 'por que a fila do TDAH no ambulatório começa aos 6, e não aos 4?'. Colher palpites, revelar. Frase para levar: a demanda subiu antes de o freio ficar pronto. O freio já era imaturo aos 4; aos 4 ninguém precisava dele. Duas ressalvas de fala (detalhadas no apêndice B): o vão explica QUANDO chega à consulta, não O QUE o TDAH é; e o mesmo vão produz falsos positivos (efeito de idade relativa).");
 
 // S40-S42 · V7 marshmallow
 s = novo({ ato: A3 });
@@ -798,8 +813,12 @@ txt(s, "COMPLEMENTOS PONTUAIS", { x: 0.7, y: 4.05, w: 5, h: 0.4, bold: true, fon
 txt(s, "Watts, Duncan & Quan (2018), Psychological Science · replicação do delay of gratification\nBaron-Cohen, Leslie & Frith (1985) · falsa crença (Sally-Anne)\nAmsterdam (1972) · autorreconhecimento no espelho\nWhite (1965) · o “5-to-7 shift”\nM-CHAT-R/F · atenção compartilhada no rastreio do segundo ano", { x: 0.7, y: 4.5, w: 11.8, h: 1.7, fontSize: 14, lineSpacingMultiple: 1.25 });
 card(s, 0.7, 6.35, 11.9, 0.7, { fill: PP.lavanda });
 txt(s, "Documento de apoio completo (com páginas, scripts e ressalvas) disponível na plataforma.", { x: 1.0, y: 6.5, w: 11.3, h: 0.45, fontSize: 14, bold: true });
-s.addNotes("Fim. Agradecer e apontar o documento de apoio.");
+satRef(s, "D");
+s.addNotes("Fim. Agradecer e apontar o documento de apoio. Perguntas da plateia: saltar para o apêndice D (respostas prontas) quando houver slide correspondente.");
 
 // ---------------------------------------------------------------------------
-pres.writeFile({ fileName: __dirname + "/Desenvolvimento-normal-2a-puberdade_PsiquiatriaPratica.pptx" })
-  .then(() => console.log("OK: deck gerado com", nSlide, "slides"));
+global.__SLIDE_OFFSET__ = nSlide;
+if (require.main === module) {
+  pres.writeFile({ fileName: __dirname + "/Desenvolvimento-normal-2a-puberdade_PsiquiatriaPratica.pptx" })
+    .then(() => console.log("OK: deck gerado com", nSlide, "slides"));
+}
