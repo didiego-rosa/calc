@@ -143,15 +143,19 @@ Aos 2 anos, a criança é um sistema emocional potente com freio terceirizado: q
 
 ## 5. Cenas da Alice (scripts de narração, 40-60s cada)
 
+**A régua escondida (não anunciar até o S58):** as cinco cenas têm uma segunda camada: a POSIÇÃO DA MÃE. Aos 2 ela responde por Alice; aos 4 pergunta se deve se preocupar; aos 6 é a garagem onde o freio esfria; aos 9 é plateia silenciosa; aos 11 espera do lado de fora. A mãe é o velocímetro da transferência. A revelação acontece na narração do S58, e costuma ser o momento em que a plateia sente a aula fechar.
+
 **Apresentação (S4):** "Eu quero apresentar uma pessoa. Alice tem 2 anos hoje e vai fazer uns 11 até o fim da aula. Ela é rigorosamente normal, e vai continuar normal até o último slide; peço que ninguém diagnostique a Alice. Ela está aqui porque a gente só reconhece o desvio se tiver o normal de cor."
 
-**Cena 1 (S5, 2a2m):** "Alice entra no consultório segurando a calça da mãe. Em dois minutos está no tapete, pega um bloco de madeira, mexe nele dentro de um copinho e leva à boca da boneca: 'sopa'. A mãe pede desculpa pela bagunça. Eu peço que ela repare: a sopa não existe, e a Alice sabe que não existe, e mesmo assim a sopa funciona. Isso tem nome, e é a coisa mais importante que a Alice fez este ano."
+**Cena 1 (S5, 2a2m), a mãe responde POR ela:** "Alice entra no consultório segurando a calça da mãe. Pergunto a idade e quem responde é a mãe; pergunto se dormiu bem e quem responde é a mãe; a própria Alice, quando quer água, puxa a mãe pelo dedo até a garrafa. Em dois minutos está no tapete, pega um bloco de madeira, mexe nele dentro de um copinho e leva à boca da boneca: 'sopa'. A mãe pede desculpa pela bagunça. Eu peço que ela repare: a sopa não existe, a Alice sabe que não existe, e mesmo assim a sopa funciona. Isso tem nome, e é a coisa mais importante que a Alice fez este ano."
 
-**Cena 2 (S20, 4a):** "Alice, 4 anos, rasgou sem querer o desenho da irmã. Quando a mãe pergunta, ela olha para o gato e diz: 'foi ele'. A mãe, no consultório, me pergunta se deve se preocupar com o caráter da filha. Eu digo que, do ponto de vista do neurodesenvolvimento, é quase um motivo de brinde: para mentir, Alice precisou calcular o que a mãe sabe e o que a mãe pode ser levada a acreditar. Ela descobriu que a cabeça dos outros tem conteúdo próprio, e que dá para editar."
+**Cena 2 (S20, 4a), a mãe consulta:** "Alice, 4 anos, rasgou sem querer o desenho da irmã. Quando a mãe pergunta, ela olha para o gato e diz: 'foi ele'. A mãe, no consultório, me pergunta se deve se preocupar com o caráter da filha; reparem, a mãe ainda dirige, mas já dirige perguntando o caminho. Eu digo que, do ponto de vista do neurodesenvolvimento, é quase um motivo de brinde: para mentir, Alice precisou calcular o que a mãe sabe e o que a mãe pode ser levada a acreditar. Ela descobriu que a cabeça dos outros tem conteúdo próprio, e que dá para editar."
 
-**Cena 3 (S33, 6a):** "A professora da Alice diz que ela é um doce: espera a vez, guarda o material, não chora. A mãe estranha, porque no carro, na saída, Alice desmonta: chora do nada, briga com a irmã, 'vira outra'. A mãe pergunta o que a escola tem que ela não tem. Eu respondo: a escola tem plateia e regra; o carro tem a mãe. O freio novo da Alice funciona a tarde inteira, mas esquenta, e ela escolhe desafogar no único lugar onde é seguro falhar. Isso não é problema da escola nem da mãe: é o preço de um freio recém-instalado."
+**Cena 3 (S33, 6a), a mãe vira garagem:** "A professora da Alice diz que ela é um doce: espera a vez, guarda o material, não chora. A mãe estranha, porque no carro, na saída, Alice desmonta: chora do nada, briga com a irmã, 'vira outra'. A mãe pergunta o que a escola tem que ela não tem. Eu respondo: a escola tem plateia e regra; o carro tem a mãe. O freio novo da Alice funciona a tarde inteira, mas esquenta, e ela escolhe desafogar no único lugar onde é seguro falhar. A mãe passou o dia inteiro fora do volante, e continua sendo a peça mais importante do carro: é onde o freio esfria. Isso não é problema da escola nem da mãe: é o preço de um freio recém-instalado."
 
-**Cena 4 (S47, 9a):** "Alice, 9 anos, consulta de rotina. Pergunto como vai a escola e ela responde com um relatório: 'eu sou a tímida da sala. A Júlia é melhor que eu em matemática, mas eu desenho melhor. A Bia era minha melhor amiga, mas contou meu segredo, então agora é só amiga'. Notem o que chegou: traço psicológico, ranking por domínio e um contrato de confiança rompido com cláusula rebaixada. Nenhum adulto ensinou isso."
+**Cena 4 (S47, 9a), a mãe vira plateia:** "Alice, 9 anos, consulta de rotina. A mãe agora senta mais atrás e quase não fala. Pergunto como vai a escola e é Alice quem responde, com um relatório: 'eu sou a tímida da sala. A Júlia é melhor que eu em matemática, mas eu desenho melhor. A Bia era minha melhor amiga, mas contou meu segredo, então agora é só amiga'. Notem o que chegou: traço psicológico, ranking por domínio e um contrato de confiança rompido com cláusula rebaixada. Nenhum adulto ensinou isso. E notem quem NÃO precisou falar nada na consulta."
+
+**Cena 5 (S57, quase 11a), a mãe espera lá fora:** "Última consulta da nossa história. Alice, quase 11, pede que a mãe espere na sala. É a primeira vez. A mãe olha para mim, eu aceno que sim, a porta fecha. Alice então me conta que o corpo começou a mudar e que ela ainda não contou para ninguém da turma. A consulta que começou nove anos atrás com a mãe respondendo até a idade dela termina sem a mãe na sala. O volante está com Alice. E é exatamente agora que a puberdade liga o terremoto. Essa história é a próxima aula."
 
 ## 6. Vídeos: especificação e fontes
 
@@ -197,7 +201,25 @@ Regra absoluta (direção): nunca paciente próprio; só acervo público. Verifi
 | 5-7 | Cansaço regulatório (desabar em casa), erro de conservação aos 5 | Freio visivelmente abaixo da demanda escolar em TODA tarefa chata; queixa uniforme casa+escola |
 | 7-puberdade | Comparação, panelinhas, melhor amigo, moral de combinado | A criança que o grupo devolve (agressiva-rejeitada), a que some em silêncio, a vítima habitual; queda de rendimento + fuga do recreio |
 
-## 10. Referências
+## 10. Plano de tempo (para ensaio)
+
+**Versão completa, 90 min:**
+
+| Bloco | Slides | Tempo | Nota |
+|-------|--------|-------|------|
+| Abertura | S1-S4 | 6 min | Tese + contrato de fronteira + Alice |
+| Ato 1 | S5-S19 | 20 min | 3 vídeos (espelho, birra T3, DNPM); a birra com congelamentos consome mais |
+| Ato 2 | S20-S32 | 17 min | 2 vídeos + aposta na crença falsa |
+| Ato 3 | S33-S46 | 20 min | 3 vídeos + ponto dramático; não correr no S39 |
+| Ato 4 | S47-S57 | 18 min | 1 vídeo + contracena + cena 5 |
+| Fecho | S58-S60 | 6 min | Revelação da mãe + take-home |
+| Reserva | | 3 min | Transições e imprevistos |
+
+**Versão enxuta, 60 min:** cortar V3, V5 e V8 com suas molduras (9 slides a menos) e comprimir: abertura 5, Ato 1 14 (espelho + birra), Ato 2 12, Ato 3 14, Ato 4 12, fecho 3. As apostas ficam: custam segundos e seguram a sala.
+
+Regra de ensaio: cronometrar os atos separadamente. Se algum ato passar 20% do previsto, o corte vem de conteúdo do MEIO do ato, nunca da cena da Alice, da contracena ou da pergunta de tração (são a espinha).
+
+## 11. Referências
 
 - Bee, H. & Boyd, D. Lifespan Development. Caps. 7 (pp. 173-200), 8 (pp. 201-232), 9 (pp. 233-261), 10 (pp. 262-286). Fonte primária; páginas citadas ao longo deste documento.
 - [EXT] Amsterdam, B. (1972). Mirror self-image reactions before age two. Developmental Psychobiology.

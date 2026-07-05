@@ -75,6 +75,13 @@ Corte por **idade**, com domínios entrelaçados dentro de cada ato. Explicitame
    - **Regra absoluta:** nunca vídeo de paciente do professor; só acervo público.
 6. **Fronteira final ancorada no evento puberal, não em idade.** Anunciado na abertura: "esta aula termina quando o corpo da criança decidir, não quando o calendário decidir".
 
+**Refinamentos de direção (revisão criativa, não alteram as decisões fechadas):**
+
+7. **A mãe como régua escondida.** Nas cenas da Alice, a posição da mãe é o estado da transferência: aos 2 ela responde POR Alice; aos 4 consulta ("devo me preocupar?"); aos 6 é a garagem onde o freio esfria; aos 9 é plateia silenciosa; no cliffhanger, espera do lado de fora. Não anunciar; revelar só no fecho ("repararam que a mãe foi saindo de cena?").
+8. **Painel do volante.** Diagrama recorrente (pais → linguagem → freio interno → grupo) que reaparece no fecho de cada ato mostrando o quanto do volante já migrou. Dá marcador visual de progresso à tese; especificação na Camada 2, estética na Camada 3.
+9. **Espelho abertura-fecho.** O mapa "onde cada diagnóstico mora na transferência" (abertura) reaparece idêntico no fecho, agora legível pela plateia. A aula prova a si mesma.
+10. **Apostas da plateia.** Três momentos de palpite explícito antes de revelação (idade do acerto na crença falsa; resposta da criança de 5 na conservação; por que a fila do TDAH começa aos 6). Adulto aprende mais depois de apostar.
+
 ## 5. Fonte e sacrifícios
 
 - **Fonte:** Bee & Boyd, Lifespan Development, caps. 7 a 10 (PDFs de referência). Terminologia e evidências ancoradas no livro; páginas citadas no documento de apoio.

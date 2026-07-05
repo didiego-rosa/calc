@@ -10,6 +10,11 @@ Spec derivada do documento de direção (01-direcao.md). Sem decisão visual: co
 - Todo vídeo tem slide-moldura ANTES (pergunta que orienta o olhar) e DEPOIS (síntese do que foi visto). O slide de vídeo em si não tem texto além de identificação mínima.
 - Fontes: B&B = Bee & Boyd, Lifespan Development, com página do livro. Evidências externas ao livro estão marcadas [EXT].
 
+**Elementos estruturais recorrentes (definidos aqui, estética na Camada 3):**
+- **Painel do volante:** diagrama único (pais → linguagem → freio interno → grupo) que reaparece nos fechos de ato (S19, S32, S46) e na síntese (S58), com o segmento já transferido destacado. É o velocímetro da tese.
+- **Régua escondida das cenas Alice:** a posição da mãe em cada cena marca o estado da transferência (responde por Alice → consulta → garagem → plateia → fora da sala). Não anunciar; revelar na narração do S58.
+- **Apostas da plateia (3):** palpite explícito antes da revelação em S22 (idade do acerto), S35 (resposta da criança de 5) e S39 (por que aos 6). Marcadas [APOSTA].
+
 **Inventário de vídeos (9):**
 | ID | Tipo | Conteúdo | Ato |
 |----|------|----------|-----|
@@ -37,7 +42,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 **S2 · Tese**
 - Título: **Aos 2 anos, quem regula a criança é o mundo em volta; no fim desta história, o volante está quase todo por dentro, e em parte com os amigos.**
 - Corpo: linha do tempo dos 4 atos (2-3, 3-5, 5-7, 7-puberdade) com o volante migrando: pais → linguagem → freio interno → grupo.
-- Narração: apresentar a metáfora do volante; prometer que ela sustenta a aula inteira.
+- Narração: apresentar a metáfora do volante e o teste que a prova: a MESMA birra no chão do mercado é fisiologia aos 2 e sintoma aos 9. O comportamento não mudou; o dono do volante mudou. Prometer que essa régua sustenta a aula inteira.
 
 **S3 · Gancho clínico**
 - Título: **Quase todo diagnóstico da psiquiatria infantil é falha, atraso ou desvio nessa transferência.**
@@ -104,7 +109,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 
 **S19 · Fecho do ato / tração**
 - Título: **Alice agora representa o mundo. Mas ela sabe que existe um mundo dentro da SUA cabeça?**
-- Corpo: Alice de costas olhando o examinador (imagem única).
+- Corpo: Alice de costas olhando o examinador (imagem única) + painel do volante (estado: quase tudo com os pais; a linguagem acabou de pegar na ponta).
 
 ## ATO 2 (3-5 anos) — A MENTE QUE DESCOBRE OUTRAS MENTES (S20-S32)
 
@@ -116,9 +121,10 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 - Título: **Para mentir, Alice precisou descobrir que as pessoas agem pelo que ACREDITAM, não pelo que é verdade.**
 - Corpo: definição de teoria da mente em uma linha + o princípio da crença falsa como marco. Fonte: B&B p. 184-185.
 
-**S22 · Moldura-antes V4**
+**S22 · Moldura-antes V4 [APOSTA]**
 - Título: **Onde Sally vai procurar a bolinha quando voltar?**
-- Corpo: frame do experimento (ou esquema Sally-Anne).
+- Corpo: frame do experimento (ou esquema Sally-Anne) + votação: "com que idade a criança passa a acertar isso? 2, 3, 4 ou 6?"
+- Narração: colher os palpites em voz alta antes de dar o play; a plateia que apostou assiste diferente.
 
 **S23 · VÍDEO V4** — falsa crença (Sally-Anne ou caixa de doces), 60-90s. [EXT: paradigma Baron-Cohen 1985 / Flavell; acervo público]
 
@@ -155,7 +161,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 
 **S32 · Fecho do ato / tração**
 - Título: **Essa mente que descobriu outras mentes vai ser trancada numa sala com 25 iguais e um adulto só. O que acontece?**
-- Corpo: imagem única (porta da escola).
+- Corpo: imagem única (porta da escola) + painel do volante (estado: a linguagem já dirige em voz alta; o freio interno ainda em instalação).
 
 ## ATO 3 (5-7 anos) — A GRANDE VIRADA (S33-S46)
 
@@ -168,9 +174,10 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 - Corpo: 3 medidores subindo: surto de crescimento cerebral 6-8a (áreas sensório-motoras → frontais), mielinização formação reticular-lobo frontal (atenção seletiva), velocidade de processamento (curva de Kail). Fontes: B&B p. 234-235, p. 242.
 - Narração: é o "shift 5-7" descrito por várias tradições com nomes diferentes (nota de honestidade no doc de apoio).
 
-**S35 · Moldura-antes V6**
+**S35 · Moldura-antes V6 [APOSTA]**
 - Título: **A mesma água, a mesma pergunta, duas crianças: o que muda entre os 5 e os 7?**
-- Corpo: frame duplo (criança menor / criança maior).
+- Corpo: frame duplo (criança menor / criança maior) + votação: "o que a de 5 vai responder, e com que grau de convicção?"
+- Narração: a plateia costuma subestimar a CONVICÇÃO do erro pré-operatório; deixar isso virar surpresa.
 
 **S36 · VÍDEO V6** — conservação: ~5a errando, ~7a acertando (antes-e-depois do shift), 60-120s.
 
@@ -185,7 +192,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 **S39 · PONTO DRAMÁTICO**
 - Título: **O TDAH não aparece aos 6 anos: ele fica visível quando a curva da demanda cruza a curva do freio.**
 - Corpo: gráfico conceitual de duas curvas (demanda ambiental por autorregulação, com degrau na entrada escolar; maturação das funções executivas, contínua): a área entre as curvas é onde o transtorno vira queixa. Fontes: B&B p. 255-257 (diagnóstico tipicamente na entrada escolar; em muitas tarefas de atenção não diferem dos pares).
-- Narração: frase para levar: "a demanda subiu antes de o freio ficar pronto".
+- [APOSTA] Narração: ANTES de mostrar o gráfico, perguntar: "por que a fila do TDAH no ambulatório começa aos 6 anos, e não aos 4?"; colher palpites, então revelar as curvas. Frase para levar: "a demanda subiu antes de o freio ficar pronto".
 
 **S40 · Moldura-antes V7**
 - Título: **O que uma criança de 4 anos sozinha com um doce diz sobre o resto da vida dela?**
@@ -210,7 +217,7 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 
 **S46 · Fecho do ato / tração**
 - Título: **Autorregulada na sala, Alice levanta os olhos do caderno e olha para os lados. O que ela vê?**
-- Corpo: imagem única.
+- Corpo: imagem única + painel do volante (estado: freio interno instalado e quente; os pais já dirigem bem menos).
 
 ## ATO 4 (7 anos ao início da puberdade) — O EU COMPARADO (S47-S57)
 
@@ -252,15 +259,16 @@ Total: 60 slides (39 de conteúdo + 9 vídeos + molduras). Estimativa de fala: 7
 - Título: **Antes de a estrada mudar, o carro treme: o pré-púbere sente o corpo começar a mudar, e compara isso também.**
 - Corpo: assincronia como risco: mudar antes ou depois da turma entra na mesma máquina de comparação do S48. Dado-âncora: aos 12, meninas já têm ~94% da altura adulta; meninos, ~84% (Tanner). Fonte: B&B p. 234.
 
-**S57 · CLIFFHANGER**
-- Título: **A puberdade não é o próximo capítulo: é o terremoto que sacode o carro inteiro. E é onde a próxima aula começa.**
-- Corpo: a timeline do S2 com um corte sísmico no fim. Passagem de bastão explícita para a aula de adolescência.
+**S57 · Cena Alice 5 + CLIFFHANGER**
+- Título: **Alice, quase 11, pede que a mãe espere lá fora. E a puberdade, que sacode o carro inteiro, é onde a próxima aula começa.**
+- Corpo: imagem única (porta do consultório fechando) sobre a timeline do S2 com um corte sísmico no fim. Cena narrada (script no doc de apoio): a consulta que começou no colo da mãe termina sem a mãe. Passagem de bastão explícita para a aula de adolescência.
 
 ## FECHO (S58-S60)
 
-**S58 · Síntese**
+**S58 · Síntese (espelho do S3)**
 - Título: **A história em uma tela: ambiente → linguagem → outras mentes → freio interno → grupo. O volante nunca parou de mudar de mão.**
-- Corpo: timeline final com os 4 atos, as 4 perguntas de tração e as 4 vigilâncias embaixo.
+- Corpo: o MESMO mapa do S3 (diagnósticos sobre a linha da transferência), agora reapresentado sem alteração, + painel do volante completo e as 4 vigilâncias embaixo. O slide que abriu como promessa fecha como prova: a plateia agora lê o mapa sozinha.
+- Narração: revelar a régua escondida: "repararam no que a mãe da Alice fez ao longo da aula? Ela respondeu por Alice, depois perguntou, depois virou garagem, depois plateia, e hoje ficou na sala de espera. Vocês assistiram à transferência do volante em cinco consultas."
 
 **S59 · Take-home clínico**
 - Título: **Diante de qualquer criança, a primeira pergunta é: de quem é o volante nessa idade, e como vai a transferência?**
