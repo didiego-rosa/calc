@@ -52,6 +52,10 @@ Crivos executados sobre `01-direcao.md` e `02-arquitetura-slides.md` (versão pr
 
 Números do apêndice C conferidos na íntegra contra F1 (Maijer, Kelleher, transitoriedade, conversão, Pearson, Taylor); escada do brincar; faixa de ecolalia no TEA citada como faixa; janela do apontar sem idade rígida; as quatro armadilhas; definições de disforia, tenacidade/vigilância e pseudoalucinação; nenhum slide ensina critério diagnóstico ou tratamento.
 
+## Adendo (após integração das fontes F4 a F8)
+
+A pedido do professor, a aula foi reancorada em três frentes, com nova renumeração (65 slides): (1) foco declarado em DESCRIÇÃO do exame, com Apêndice D reformulado de roteiro de entrevista para apêndice de registro; (2) a ponte "você já sabe" passou a apontar para as aulas de adulto do próprio curso (F6 linguagem, F7 afetividade, F8 pensamento; fio guia Cheniaux), o que rebaixa a conferência pendente contra o Dalgalarrondo de bloqueante para desejável; (3) dois domínios que faltavam entraram: consciência do EU (S24 e S46, fonte F4) e as quatro dimensões de registro do afeto com exemplos de documentação (S47, fonte F5). Números de slides citados nas tabelas acima referem-se à versão de 63 slides; o conteúdo dos achados permanece válido.
+
 ## Pendências que sobrevivem ao crivo (para o professor)
 
 1. [PROPOSTA] Padronizar a capa para "0 a 5 e 6 a 12" (hoje o título oficial diz "5 a 12").
