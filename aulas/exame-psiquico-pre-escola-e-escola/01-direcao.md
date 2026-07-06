@@ -11,10 +11,11 @@
 - **F4** = "Avaliação da Consciência do EU no Exame Psíquico em Crianças de 3 a 12 Anos" (autoconceito concreto → psicológico → abstrato, identidade, autoestima, técnicas e achados anormais por faixa)
 - **F5** = "Avaliação de Afeto e Humor no Exame Psíquico em Crianças de 3 a 12 Anos" (humor vs afeto, dimensões do afeto: qualidade, amplitude, mobilidade, congruência; técnicas por faixa; exemplos de documentação prontos)
 
-**Referência curricular (a "versão adulto" da casa):** transcrições das aulas de exame psíquico do próprio curso Psiquiatria Prática, que o residente JÁ ASSISTIU. São a âncora da ponte "você já sabe" (no lugar de citar o Dalgalarrondo genericamente; o fio guia do curso adulto é o Cheniaux, complementado):
-- **F6** = aula "Linguagem: onde o pensamento se revela" (forma/prosódia e conteúdo; afasias; logorreia vs taquilalia; latência de resposta; ecolalia/palilalia/logoclonia; neologismo; mutismo, inclusive seletivo; pararrespostas e respostas aproximadas)
-- **F7** = aula "Afetividade: o que o psiquiatra precisa enxergar" (afetividade como modo de relação com o mundo; exaltação/embotamento; labilidade, incontinência, rigidez; paratimia, ambitimia, neotimia; ressonância; "o examinador é um dado do exame"; registro objetivo + subjetivo)
-- **F8** = aula "Pensamento: forma, curso e conteúdo" (extrato de terminologia em `fontes/F8-extrato-pensamento.md`)
+**Referência curricular (a "versão adulto" da casa):** o vocabulário do curso Psiquiatria Prática, que o residente JÁ ASSISTIU, é a âncora da ponte "você já sabe" (fio guia do curso adulto: Cheniaux, complementado). A camada curricular tem três níveis, do mais ao menos autoritativo:
+- **G (glossário unificado de arbitragem)** = `fontes/fundacao/00-GLOSSARIO-UNIFICADO-ARBITRAGEM.md`. Arbitra colisões entre os extratos, fixa regras transversais e define o destino de cada termo no deck infantil (NÚCLEO / RODAPÉ / FORA). **Tem precedência sobre os extratos e sobre qualquer transcrição.** Decisões A1 a A20 aprovadas pelo professor.
+- **FND (extratos de fundação, 16)** = `fontes/fundacao/`. Extratos fiéis das aulas de adulto do curso, cobrindo: estrutura do exame, aparência, atitude, atenção, memória, orientação, pensamento, juízo/delírio, linguagem, afetividade, sensopercepção, psicomotricidade, consciência do EU, imaginação, inteligência, prospecção/insight. Fonte primária do vocabulário.
+- **F6, F7, F8** = transcrições brutas das aulas de linguagem, afetividade e pensamento (matéria-prima dos extratos correspondentes; consultar só quando o extrato não bastar). `F8-extrato-pensamento.md` fica como histórico, subordinado ao FND de pensamento e ao G.
+Domínios ainda SEM extrato de fundação: consciência (nível/vígil) e conação/pragmatismo; termos desses domínios permanecem provisórios (G, cabeçalho).
 
 **Nota de ancoragem:** as fontes são arquivos .md sem paginação. A ancoragem é feita por fonte + seção (ex.: F3 §3.4) ou por fonte + tópico nas transcrições (ex.: F7, rigidez afetiva). Tudo que não estiver em F1 a F8 está marcado **[EXT]**. Pedido de fonte registrado na seção 8.
 
@@ -77,7 +78,7 @@ As armadilhas têm um nome só (patologizar o normativo) e uma vacina (descrever
 ## 4. Dispositivos didáticos [PROPOSTA]
 
 1. **Personagem único: Bento, examinado duas vezes.** A mesma criança aos 3 anos e meio (Ato 1) e aos 9 anos (Ato 2), em cenas de consultório narradas pelo professor. Bento é normal do início ao fim: ele é a régua contra a qual as contracenas de vigilância fazem contraste, nunca o caso clínico. (Eco proposital de Alice, da aula de desenvolvimento; Bento é o "paciente" que Alice nunca precisou ser, mas igualmente saudável.)
-2. **Dois prontuários escritos ao vivo.** Cada ato termina com a redação por extenso do exame psíquico de Bento naquela idade, lida em voz alta, no formato narrativo-fenomenológico que as fontes exigem (F1 recomendação 2; F3 §4). O produto final da aula é uma habilidade de escrita, então a aula mostra a escrita.
+2. **Dois prontuários escritos ao vivo, e os DOIS FORMATOS de registro (decisão A20 do glossário).** Cada ato termina com a redação por extenso do exame psíquico de Bento naquela idade, lida em voz alta, no formato NARRATIVO (prosa, primeira pessoa, o "como"; F1 recomendação 2; F3 §4; G §A20). O segundo formato, a SÚMULA (lista, terceira pessoa, o "quê", leitura rápida), é ensinado como a outra saída da mesma observação e vira o Apêndice B, ordenado pelos blocos da aula de estrutura do curso (dois As; COMA; bloco das psicoses; CPP; bloco do teste) como checagem de completude (G §5). O produto final da aula é uma habilidade de escrita, então a aula mostra a escrita nas duas saídas.
 3. **Antes/depois de prontuário (a armadilha do residente).** Dispositivo recorrente: uma frase real de prontuário ruim ("criança hiperativa e opositiva") ao lado da redação descritiva correta da mesma cena. Quatro armadilhas encenadas, identificadas só pelo nome, sem numeração (a ordem de aparição na aula difere da ordem de F3 §5.1): falso TDAH, falso delírio, falso TOD, falso concretismo (F3 §5.1; F2 exame cognitivo).
 4. **Tradução simultânea.** Sempre que um domínio abre, o slide ancora no termo que o residente já domina DAS AULAS DE ADULTO DO PRÓPRIO CURSO (F6, F7, F8) e mostra o equivalente infantil (ex.: "curso e forma do pensamento" vira "estrutura do brincar"; a "ressonância" e o "examinador como dado" de F7 viram a sintonia diádica). O fio curricular é o curso Psiquiatria Prática; Cheniaux e Dalgalarrondo ficam atrás dele, como os livros ficam atrás de qualquer aula.
 5. **Pergunta de tração entre blocos.** Cada bloco fecha com a pergunta que o próximo responde.
@@ -90,7 +91,7 @@ As armadilhas têm um nome só (patologizar o normativo) e uma vacina (descrever
 - Toda afirmação de conteúdo nos materiais cita F1, F2 ou F3 com seção.
 - Números sensíveis ficam com a fonte original citada dentro do F correspondente (ex.: Maijer 2018 e Kelleher 2012 via F1 domínio 9; Pearson 2001 e Taylor 2004 via F1; faixa de ecolalia no TEA 25 a 91% via F1 domínio 5).
 - **[EXT]** marca o que vier de fora das três fontes. [EXT] previstos: a especificação dos três vídeos de acervo público (paradigmas conhecidos, sem conteúdo doutrinário novo), a ponte nominal com o sumário do Dalgalarrondo que o residente já estudou (os termos em si estão em F2/F3) e a notificação compulsória de suspeita de maus-tratos (ECA), citada na narração do registro de risco por ser obrigação legal do médico brasileiro que as fontes não cobrem.
-- **Conferência das definições de afeto e pensamento:** F2 e F3 marcavam essas seções com "verificar contra fonte brasileira". Com a chegada de F6, F7 e F8 (as aulas de adulto do próprio curso), a conferência primária passa a ser CONTRA O PRÓPRIO CURSO: as definições usadas nos slides de afetividade, pensamento e linguagem devem bater com o vocabulário de F6 a F8 (ex.: ressonância, rigidez, labilidade e incontinência conforme F7; logorreia vs taquilalia e latência conforme F6). O PDF do Dalgalarrondo (§8) fica rebaixado a desejável, não bloqueante.
+- **Conferência das definições:** F2 e F3 marcavam as seções de afeto e pensamento com "verificar contra fonte brasileira". A conferência primária agora é CONTRA O PRÓPRIO CURSO, na ordem de precedência G > FND > transcrições: toda definição usada num slide deve bater com o glossário de arbitragem e, onde ele silencia, com o extrato de fundação do domínio. Regras transversais de G §2 valem em todos os materiais: labilidade e rigidez nunca sem qualificador (afetiva vs atencional); latência de resposta como entrada única com três contextos; nada é patognomônico; o examinador é instrumento do exame. O PDF do Dalgalarrondo (§8) fica rebaixado a desejável, não bloqueante.
 - Regra de precisão herdada de F1: não citar "75% de ecolalia no TEA" como valor único; citar a faixa. Não citar prevalência de alucinação sem dizer que a maioria é transitória e o valor preditivo é baixo.
 
 ## 6. Sacrifícios (fica de fora de propósito) [PROPOSTA]
@@ -111,10 +112,10 @@ As armadilhas têm um nome só (patologizar o normativo) e uma vacina (descrever
 
 ## 8. Pedido de fontes adicionais (para o professor decidir)
 
-O conteúdo fecha com F1 a F8. Adições que melhorariam a ancoragem fina, se o professor quiser fornecer:
+O conteúdo fecha com F1 a F5 + G + FND. Adições que melhorariam a ancoragem fina, se o professor quiser fornecer:
 1. **IACAPAP, capítulo A.5 em português** (já citado dentro de F1/F2): permitiria ancorar com página as frases-modelo de redação usadas nos dois prontuários de Bento.
-2. **Dalgalarrondo e/ou Cheniaux, capítulos de funções psíquicas (PDF):** desejável, não bloqueante; a conferência primária das definições agora é contra F6 a F8 (aulas do próprio curso).
-3. **Transcrições das demais aulas de adulto do curso** (sensopercepção, consciência/atenção, psicomotricidade, juízo), se existirem: fechariam a ponte "você já sabe" para os domínios que hoje se apoiam só em F1 a F3.
+2. **Dalgalarrondo e/ou Cheniaux, capítulos de funções psíquicas (PDF):** desejável, não bloqueante; a conferência primária das definições é contra G + FND (o vocabulário do próprio curso).
+3. **Extratos de fundação dos dois domínios que faltam** (consciência nível/vígil e conação/pragmatismo, G cabeçalho e §4): fechariam os termos hoje provisórios (vígil, hipervigilância como alerta, pragmatismo) e completariam os blocos COMA e CPP na checagem de completude do Apêndice B.
 Sem esses PDFs a aula segue viável; a ancoragem fica por fonte+seção dos três relatórios.
 
 ## 9. Duração e pipeline

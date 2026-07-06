@@ -11,12 +11,13 @@ Nota de faixa: o título oficial recebido dizia "0 a 5 e 5 a 12"; esta spec padr
 - Foco em DESCRIÇÃO: nenhum slide termina em "o que perguntar" sem terminar em "o que escrever". Sempre que couber, o corpo fecha com a linha de prontuário correspondente.
 - Detalhe fino (números com IC, autores, ressalvas longas) vai para as notas de apresentador e para o roteiro de estudo, nunca para o slide. No máximo UM número em destaque por slide.
 - Todo vídeo tem slide-moldura ANTES (pergunta que orienta o olhar) e DEPOIS (síntese). O slide de vídeo só tem identificação mínima.
-- Ancoragem: F1 a F5 por fonte + seção; F6 a F8 (transcrições das aulas de adulto do curso) por fonte + tópico. Conteúdo de fora das fontes marcado [EXT].
+- Ancoragem: F1 a F5 por fonte + seção; vocabulário do curso pela ordem de precedência **G (glossário de arbitragem, `fontes/fundacao/00-GLOSSARIO-UNIFICADO-ARBITRAGEM.md`) > FND (16 extratos de fundação em `fontes/fundacao/`) > F6 a F8 (transcrições brutas)**. Conteúdo de fora das fontes marcado [EXT].
+- Escopo terminológico do G §0: só entra no corpo o que tem destino NÚCLEO; RODAPÉ vira nota de uma linha; FORA não é renderizado (fica no glossário). Termos provisórios (vígil, conação/pragmatismo) aguardam os dois extratos que faltam.
 - Jargão só entra com tradução de uma palavra no primeiro uso ("checking back, o olhar de checagem"; "toddler, a criança de 1 a 3 anos").
 - Sem travessão em nenhum texto.
 
 **Elementos estruturais recorrentes:**
-- **Selo "VOCÊS JÁ VIRAM":** sempre que um domínio abre, um selo liga o slide à aula de adulto correspondente do próprio curso (F6 linguagem, F7 afetividade, F8 pensamento) e ao termo que o residente já domina. Onde não há transcrição de aula de adulto (sensopercepção, consciência, psicomotricidade), o selo aponta o termo clássico via F1/F2/F3. Estética na Camada 3.
+- **Selo "VOCÊS JÁ VIRAM":** sempre que um domínio abre, um selo liga o slide ao extrato de fundação da aula de adulto correspondente (FND cobre 16 domínios: estrutura, aparência, atitude, atenção, memória, orientação, pensamento, juízo/delírio, linguagem, afetividade, sensopercepção, psicomotricidade, consciência do EU, imaginação, inteligência, insight). Só consciência (nível) e conação/pragmatismo ficam sem selo (sem extrato ainda). Estética na Camada 3.
 - **Par "prontuário ruim / prontuário certo":** quatro aparições, identificadas só pelo nome: falso TDAH (S16), falso delírio (S31), falso TOD (S32), falso concretismo (S42).
 - **Cenas de Bento:** narradas pelo professor, script nas notas. Bento nunca vira caso: é a régua do normal.
 - **Contracena de vigilância:** moldura própria, sempre "o que tira o sono", nunca critério.
@@ -44,7 +45,7 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S2 · Ponte com o adulto**
 - Título: **Vocês já aprenderam o exame psíquico do adulto neste curso; o da criança não muda de mapa, muda de língua.**
-- Corpo: o mapa de funções das aulas que o residente já viu (consciência, atenção, linguagem, afetividade, pensamento, sensopercepção, psicomotricidade, consciência do EU, juízo), com as capas/nomes das aulas de adulto do curso. Selo "VOCÊS JÁ VIRAM" apresentado aqui. Fontes: F6, F7, F8 (o vocabulário que será traduzido); F2 introdução.
+- Corpo: o mapa de funções das aulas que o residente já viu (consciência, atenção, linguagem, afetividade, pensamento, sensopercepção, psicomotricidade, consciência do EU, juízo), com as capas/nomes das aulas de adulto do curso. Selo "VOCÊS JÁ VIRAM" apresentado aqui. Fontes: FND (os 16 extratos de fundação); G; F2 introdução.
 - Narração: "nada disso vai deixar de ser examinado hoje; e o que vocês aprenderam lá, inclusive o examinador como instrumento, vale dobrado aqui".
 
 **S3 · Tese**
@@ -81,7 +82,7 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S10 · Díade**
 - Título: **Não existe bebê sozinho: quem entra em exame é a díade, e o cuidador é parte do campo, não ruído.**
-- Corpo: selo VOCÊS JÁ VIRAM (F7: a afetividade é um modo de relação; aqui, a relação examinada é a díade). Três observáveis com linha de registro: base segura com checking back (o olhar de checagem), corregulação diádica, apego indiscriminado como alerta. Fontes: F3 §3.7.2; F1 domínio 2.
+- Corpo: selo VOCÊS JÁ VIRAM (FND afetividade: a afetividade é um modo de relação; aqui, a relação examinada é a díade). Três observáveis com linha de registro: base segura com checking back (o olhar de checagem), corregulação diádica, apego indiscriminado como alerta. Fontes: F3 §3.7.2; F1 domínio 2.
 
 **S11 · Regulação e sensorial**
 - Título: **O primeiro domínio da primeira infância é a regulação: como a criança transita entre estados e o que o corpo dela faz com o mundo sensorial.**
@@ -104,12 +105,12 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S16 · Psicomotricidade + falso TDAH**
 - Título: **O toddler, a criança de 1 a 3 anos, que não para quieto está obedecendo à idade, não a um diagnóstico.**
-- Corpo: par prontuário ruim ("criança hiperativa, não para na cadeira") vs prontuário certo ("atividade exploratória vigorosa, deambulação ampla, curiosidade preservada, normativa para a idade"). Fonte: F3 §5.1; F1 domínio 3.
-- Narração: o que diferencia: atividade COM objetivo exploratório vs agitação desorganizada sem função.
+- Corpo: par prontuário ruim ("criança hiperativa, não para na cadeira") vs prontuário certo ("atividade exploratória vigorosa, deambulação ampla, curiosidade preservada, normativa para a idade"). E o que se descreve além do nível de atividade: estereotipias motoras (flapping, balanceio), achado de peso próprio no pré-escolar. Fontes: F3 §5.1 e §3.3; F1 domínio 3; G §A14.
+- Narração: o que diferencia: atividade COM objetivo exploratório vs agitação desorganizada sem função. A leitura protomovimento do curso (a estereotipia como resíduo de sentido ou sentido em construção, FND psicomotricidade, uso próprio do professor) entra aqui como ponte com o desenvolvimento.
 
 **S17 · Brincar = pensamento (forma)**
 - Título: **Na criança pequena o brincar é o discurso: a forma do brincar é a forma do pensamento.**
-- Corpo: selo VOCÊS JÁ VIRAM (F8: curso, forma e conteúdo; "quem estabelece a forma é o examinador", e aqui o examinador a estabelece olhando o brincar). Escada do brincar: sensório-motor (0 a 12m) → funcional (12 a 18m) → simbólico inicial (18m+) → simbólico complexo (30m+). Fontes: F3 §3.4 e §3.4.1; F1 domínio 13; F8 (forma).
+- Corpo: selo VOCÊS JÁ VIRAM (FND pensamento: curso, forma e conteúdo; "quem estabelece a forma é o examinador", e aqui o examinador a estabelece olhando o brincar). Escada do brincar: sensório-motor (0 a 12m) → funcional (12 a 18m) → simbólico inicial (18m+) → simbólico complexo (30m+). Fontes: F3 §3.4 e §3.4.1; F1 domínio 13; FND pensamento.
 
 **S18 · Moldura-antes V2**
 - Título: **Repare no que o objeto vira nas mãos da criança.**
@@ -123,15 +124,15 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S21 · Brincar (conteúdo)**
 - Título: **O brincar também tem conteúdo: os temas que se repetem são as preocupações da criança postas na mesa.**
-- Corpo: selo VOCÊS JÁ VIRAM (F8: conteúdo = o preenchimento). Três conteúdos que pedem registro: temas agressivos sem resolução, reencenação pós-traumática, pobreza de fantasia. Fontes: F3 §3.4.2; F1 domínio 13.
+- Corpo: selo VOCÊS JÁ VIRAM (FND pensamento: conteúdo = o preenchimento). Três conteúdos que pedem registro: temas agressivos sem resolução, reencenação pós-traumática, pobreza de fantasia. Fontes: F3 §3.4.2; F1 domínio 13.
 
 **S22 · Brincar estagnado (alerta)**
 - Título: **O brincar que só repete é a perseveração da infância; o brincar que pula sem construir é a desagregação.**
-- Corpo: selo VOCÊS JÁ VIRAM (F8: perseveração como "disco arranhado", desagregação como "pera aí, não entendi"; aqui os mesmos fenômenos aparecem no brincar). Dois padrões com linha de registro: brincar estagnado/circular; desagregação lúdica. Fontes: F3 §3.4.1; F8 (perseveração, desagregação).
+- Corpo: selo VOCÊS JÁ VIRAM (FND pensamento: perseveração como "disco arranhado", desagregação como "pera aí, não entendi"; aqui os mesmos fenômenos aparecem no brincar). Dois padrões com linha de registro: brincar estagnado/circular; desagregação lúdica. Fontes: F3 §3.4.1; FND pensamento; G §A7.
 
 **S23 · Linguagem**
 - Título: **Ecolalia aos 2 anos é ensaio de fala; aos 4, com a melodia copiada da fala original e sem função, é dado de exame.**
-- Corpo: selo VOCÊS JÁ VIRAM (F6: ecolalia/palilalia; prosódia; intenção comunicativa). Marcos: ecolalia normativa até por volta dos 3; reversão pronominal; intenção comunicativa pré-verbal como o que importa quando não há fala. Fontes: F1 domínio 5; F3 §3.8; F6 (ecolalia, prosódia).
+- Corpo: selo VOCÊS JÁ VIRAM (FND linguagem: ecolalia/palilalia; prosódia; intenção comunicativa). Marcos: ecolalia normativa até por volta dos 3; reversão pronominal; intenção comunicativa pré-verbal como o que importa quando não há fala. Fontes: F1 domínio 5; F3 §3.8; FND linguagem.
 - Nota: ecolalia no TEA citada como faixa (25 a 91%), nunca valor único (F1 domínio 5).
 
 **S24 · Consciência do EU (pré-escolar)**
@@ -156,7 +157,8 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S29 · Afeto na primeira infância**
 - Título: **Vocês já sabem que o examinador é um dado do exame da afetividade; na criança pequena, ele é o principal instrumento.**
-- Corpo: selo VOCÊS JÁ VIRAM (F7: ressonância, "o examinador é um dado", diagnóstico atmosférico). Três observáveis com linha de registro: sintonia (espelha o clima), ressonância (a criança saudável te contagia; o vazio contratransferencial é achado positivo), labilidade normativa do toddler (só vira nota se desproporcional, disruptiva e sem retorno à linha de base). Fontes: F7 (ressonância, examinador como dado); F3 §3.6.
+- Corpo: selo VOCÊS JÁ VIRAM (FND afetividade: ressonância, "o examinador é um dado", diagnóstico atmosférico). Três observáveis com linha de registro: sintonia (espelha o clima), ressonância (a criança saudável te contagia; o vazio contratransferencial é achado positivo), labilidade AFETIVA normativa do toddler (sempre com qualificador, G §2; só vira nota se desproporcional, disruptiva e sem retorno à linha de base). Fontes: FND afetividade; F3 §3.6; G §2 e §3.9.
+- Narração: a ressonância é MÉTODO, não só conceito: estímulo emocional deliberado + observação da reciprocidade, com o brincar no lugar da "piadinha de entrevista" do adulto (G §3.9).
 
 **S30 · Sensopercepção e fantasia**
 - Título: **Monstro no escuro e amigo imaginário são arquitetura normal da idade; alucinação verdadeira aqui é raridade que pede investigação orgânica.**
@@ -178,8 +180,8 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S34 · Prontuário 1**
 - Título: **Assim se escreve o exame de Bento aos 3: uma narrativa do que foi visto, com a idade como régua explícita.**
-- Corpo: o exame psíquico de Bento aos 3 anos e 7 meses, por extenso (8 a 12 linhas), narrativo, com atribuição de fonte, sem rótulo, fechando com a ressalva de representatividade da sessão. Texto integral nas notas e no roteiro. Modelos: F1 redações-modelo; F3 §4; F1 achado 1.
-- Narração: ler em voz alta, apontando cada tradução usada.
+- Corpo: o exame psíquico de Bento aos 3 anos e 7 meses, por extenso (8 a 12 linhas), no formato NARRATIVO da aula de estrutura do curso (prosa, primeira pessoa, o "como"; G §A20), com atribuição de fonte, sem rótulo, fechando com a ressalva de representatividade da sessão. Texto integral nas notas e no roteiro. Modelos: F1 redações-modelo; F3 §4; FND estrutura; G §A20.
+- Narração: ler em voz alta, apontando cada tradução usada. Anunciar que a mesma observação tem uma segunda saída, a súmula (lista, terceira pessoa, o "quê"), ensinada no apêndice B.
 
 **S35 · Tração**
 - Título: **Bento cresceu, entrou na escola e agora responde por si. Quando o paciente começa a falar, o que muda no exame?**
@@ -201,7 +203,8 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S39 · Aparência e atitude**
 - Título: **Atitude se descreve com cena, não com adjetivo: o "opositivo" precisa da situação que o provou.**
-- Corpo: selo VOCÊS JÁ VIRAM (atitude do exame adulto). Vocabulário em uma linha (cooperativo, apático, opositivo, pueril, desconfiado) + regra: registrar sempre a situação que embasou. Fontes: F2 apresentação geral; F1 domínio 2.
+- Corpo: selo VOCÊS JÁ VIRAM (FND atitude e FND aparência, os "dois As" da primeira impressão na aula de estrutura). Vocabulário em uma linha (cooperativo, apático, opositivo, pueril, desconfiado) + regra: registrar sempre a situação que embasou. Fontes: FND atitude e aparência; F2 apresentação geral; F1 domínio 2; G §5.
+- Narração: alerta de registro da aparência infantil (já problematizado no próprio FND de aparência): higiene e vestuário da criança medem o sistema de cuidado, não a criança; descrever sem juízo de valor (F2 apresentação geral).
 
 **S40 · Consciência**
 - Título: **Criança sonolenta ou confusa não é caso psiquiátrico até prova em contrário: rebaixamento de consciência aqui é emergência médica.**
@@ -214,11 +217,12 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 **S42 · Cognição + falso concretismo**
 - Título: **O provérbio interpretado ao pé da letra aos 8 anos é Piaget, não esquizofrenia: o concreto é o normal da idade.**
 - Corpo: par prontuário ruim ("concretismo, empobrecimento do pensamento") vs prontuário certo ("pensamento operatório concreto, normativo para a fase escolar"). Provérbios e abstração são inúteis antes da adolescência. Fontes: F2 exame cognitivo; F1 armadilhas; F8 (concretismo como normal do desenvolvimento).
-- Narração: remeter ao vídeo das moedas que a turma viu na aula de pensamento do adulto (F8): o curso já ensinou que a criança do experimento não está doente; hoje fechamos o circuito.
+- Narração: remeter ao vídeo das moedas que a turma viu na aula de pensamento do adulto (FND pensamento): o curso já ensinou que a criança do experimento não está doente; hoje fechamos o circuito. E a moldura desenvolvimental do FND de inteligência (janelas/período crítico, catch-up, o impacto da privação de estímulo, as "crianças da pandemia"; G §3.1) entra nas notas e no roteiro de estudo como o pano de fundo de por que a régua é a idade.
 
 **S43 · Atenção**
-- Título: **Atenção se descreve em dois eixos, fixar e desviar: os 15 minutos de quebra-cabeça valem mais que qualquer pergunta.**
-- Corpo: selo VOCÊS JÁ VIRAM (prosexia do adulto → tenacidade e vigilância). Três padrões com linha de registro: normoprosexia, hipotenacidade com distratibilidade, hipertenacidade com hipovigilância. Fonte: F2 exame cognitivo.
+- Título: **Atenção se descreve em dois eixos, fixar e mover: os 15 minutos de quebra-cabeça valem mais que qualquer pergunta.**
+- Corpo: selo VOCÊS JÁ VIRAM (FND atenção). Eixos conforme a arbitragem A2/A15: tenacidade (fixar) e MOBILIDADE (mover o foco; descrever como hipermobilidade/hipomobilidade, nunca como "hiper/hipovigilância"). Três padrões com linha de registro: atenção preservada (normoprosexia), hipotenacidade com hipermobilidade (a distratibilidade), hipertenacidade com hipomobilidade (o foco que "fica surdo"). Fontes: FND atenção; F2 exame cognitivo; G §A2 e §A15.
+- Narração: "vigilância" sozinha só na acepção de função passiva da atenção; a hipervigilância de AMEAÇA (radar de perigo do TEPT infantil, F3 §3.9) leva sempre o qualificador, porque é outra acepção (G §A2).
 
 **S44 · Cena Bento 2b**
 - Título: **A sós, Bento desenha a família enquanto conversa: o exame continua, sem parecer exame.**
@@ -235,8 +239,8 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S47 · Humor vs afeto**
 - Título: **Humor é o pano de fundo relatado, afeto é a reação observada: registre um em cada canal, e o afeto em quatro dimensões.**
-- Corpo: selo VOCÊS JÁ VIRAM (F7: registro objetivo + subjetivo; humor como clima, afeto como evento). Humor: relato, com citação textual da criança. Afeto: observação em QUALIDADE (tonalidade), AMPLITUDE (normal, restrito, embotado), MOBILIDADE (normal, lábil, fixo) e CONGRUÊNCIA (com o conteúdo). Exemplo de documentação completo nas notas (modelo de F5). Fontes: F5 (dimensões e exemplos de documentação); F7 (humor/afeto, tonalidade); F1 domínio 6.
-- Narração: a dissociação vale nota dupla: criança que relata "tudo bem" com afeto embotado, e criança que sorri ao falar de morte (paratimia, F7).
+- Corpo: selo VOCÊS JÁ VIRAM (FND afetividade: registro objetivo + subjetivo; humor como clima, afeto como evento). Humor: relato, com citação textual da criança; polaridade registrada como hipertimia/hipotimia no uso consagrado, NUNCA "distimia" como descritor (colide com a entidade nosológica; G §A6). Afeto: observação em QUALIDADE (tonalidade), AMPLITUDE (normal, restrito, embotado), MOBILIDADE (normal, lábil, fixo) e CONGRUÊNCIA (com o conteúdo). Exemplo de documentação completo nas notas (modelo de F5). Fontes: F5; FND afetividade; F1 domínio 6; G §A6.
+- Narração: a dissociação ideoafetiva é o conceito-mãe (a expressão diz uma coisa, o relato diz outra: a criança que sorri ao relatar apanhar; G §A19): vale nota dupla no registro. Paratimia como o nome clássico da incongruência (FND afetividade).
 
 **S48 · Disforia**
 - Título: **A depressão da idade escolar muitas vezes não chora: irritabilidade crônica e hostil deve levantar a hipótese de humor.**
@@ -244,12 +248,13 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S49 · Pensamento (curso e forma)**
 - Título: **Curso e forma do pensamento se examinam aqui com o vocabulário da aula que vocês já viram, passado pela régua da idade.**
-- Corpo: selo VOCÊS JÁ VIRAM (F8, na íntegra). Curso: aceleração, alentecimento, interrupção. Forma: fuga de ideias, desagregação, prolixidade (circunstancialidade/tangencialidade), minuciosidade, perseveração, avaliadas na conversa E na narrativa do brincar/desenho. Ressalva de calibração: no pré-escolar essas categorias quase nunca se aplicam; no escolar, sim, com a idade como régua. Fontes: F8; F2 pensamento; F1 domínio 8.
-- Narração: o critério operacional continua o de F8: o quanto VOCÊ entende a criança classifica a forma; suas sensações (tédio, exaustão, "não entendi") são dado. Sinônimos clássicos (taquipsiquismo, bradipsiquismo) nas notas.
+- Corpo: selo VOCÊS JÁ VIRAM (FND pensamento). Curso: aceleração, alentecimento, interrupção/bloqueio (entrada única, G §A5). Forma: fuga de ideias, desagregação, prolixidade (circunstancialidade/tangencialidade), minuciosidade, perseveração (conceito ancorado no pensamento, G §A7/A16), avaliadas na conversa E na narrativa do brincar/desenho. Ressalva de calibração: no pré-escolar essas categorias quase nunca se aplicam; no escolar, sim, com a idade como régua. Fontes: FND pensamento; F2 pensamento; F1 domínio 8; G §A5, §A7, §A13.
+- Narração: o critério operacional continua o do curso: o quanto VOCÊ entende a criança classifica a forma; suas sensações (tédio, exaustão, "não entendi") são dado. Rodapé de uma linha: a leitura delirante da interrupção ("roubaram meu pensamento") pertence à consciência do EU, não ao curso do pensamento (G §A5). Sinônimos clássicos (taquipsiquismo, bradipsiquismo) nas notas.
 
 **S50 · Pensamento (conteúdo)**
-- Título: **A obsessão tende a chegar como intrusa combatida; o delírio é habitado com convicção: a fronteira é o teste de realidade.**
-- Corpo: escada de conteúdo com linha de registro: ideia prevalente/sobrevalorada (preocupação desproporcional, questionável), obsessão (intrusiva, egodistônica, "eu sei que é bobeira"), delírio (convicção incorrigível, fora da cultura e da fase mágica). Fontes: F2 pensamento; F8 (obsessões como perseverações especiais; "obsessão não é exclusiva de TOC" e ocorre em pessoas normais, inclusive na infância).
+- Título: **A obsessão tende a chegar como intrusa combatida; o delírio é habitado com convicção: a fronteira é o juízo de realidade.**
+- Corpo: escada de conteúdo com linha de registro, descrita em linguagem comportamental (G §0, A1 NÚCLEO): ideia prevalente/sobrevalorada (preocupação desproporcional, questionável), obsessão (repetitiva, intrusiva, incomoda, sentida como pensamento próprio), delírio (convicção incorrigível, fora da cultura e da fase mágica). Linha única sobre delírio infantil (G §0): raro e rudimentar na criança, não sistematizado; quando presente, investigar organicidade. Fontes: F2 pensamento; FND pensamento e juízo/delírio; G §A1 e §A3.
+- Rodapé (uma linha, G §A1): tecnicamente a obsessão registra-se como egodistônica E de autoria preservada (o que a distingue da inserção de pensamento); vocabulário pesado, fica na nota. Juízo de realidade = a operação lógica do pensamento sobre o verdadeiro/falso da vivência (G §A3), não um construto separado.
 - Nota: em criança o reconhecimento do absurdo é frequentemente parcial ou ausente; o insight não é exigível como no adulto [EXT: ressalva clínica além das fontes].
 
 **S51 · Sensopercepção (epidemiologia)**
@@ -268,11 +273,11 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S54 · Linguagem**
 - Título: **A fala do escolar se descreve nos eixos que vocês já usam no adulto: quantidade, velocidade, prosódia, latência, e o silêncio que só existe na escola.**
-- Corpo: selo VOCÊS JÁ VIRAM (F6, na íntegra). Eixos com linha de registro: quantidade (logorreia vs oligolalia/laconismo), velocidade (taquilalia/bradilalia, que não é a mesma coisa que quantidade), prosódia (hipo/hiperprosodia), latência de resposta, volume (hipo/hiperfonia). Destaque: mutismo seletivo (fala em casa, emudece na escola: a topografia do silêncio é o dado) vs mutismo total; ecolalia na idade escolar já sem leitura normativa. Fontes: F6 (todos os eixos; F6 cita o mutismo seletivo como fenômeno da infância); F2 linguagem e fala.
+- Corpo: selo VOCÊS JÁ VIRAM (FND linguagem). Eixos com linha de registro: quantidade (logorreia vs oligolalia/laconismo), velocidade (taquilalia/bradilalia, que não é a mesma coisa que quantidade), prosódia (hipo/hiperprosodia), latência de resposta (entrada única, três contextos, G §2), volume (hipo/hiperfonia). Mais dois observáveis do escolar: pararresposta (resposta que não toca o perguntado) e resposta aproximada (toca sem acertar; a literalidade do TEA entra aqui, G §A4). Destaque: mutismo seletivo (fala em casa, emudece na escola: a topografia do silêncio é o dado) vs mutismo total; ecolalia na idade escolar já sem leitura normativa; neologismo no sentido canônico da linguagem (uso idiossincrático, G §A8). Fontes: FND linguagem (cita o mutismo seletivo como fenômeno da infância); F2 linguagem e fala; G §A4, §A8, §2.
 
 **S55 · Psicomotricidade e vontade**
 - Título: **Tique, estereotipia e maneirismo se separam pela função e pelo ritmo, e todos se descrevem antes de se nomear.**
-- Corpo: trinca com definição de uma linha (tique: súbito, rápido, não rítmico; estereotipia: frequentemente rítmica, uniforme, sem função; maneirismo: gesto cotidiano tornado bizarro, com resto de intencionalidade) + vontade e pragmatismo (a criança que quer, começa e não conclui). Fontes: F2 psicomotricidade e vontade; F3 §3.3; F1 domínio 3.
+- Corpo: selo VOCÊS JÁ VIRAM (FND psicomotricidade, dona da definição-mãe de estereotipia, G §A14). Trinca com definição de uma linha (tique: súbito, rápido, não rítmico; estereotipia: ação sem sentido nem finalidade, uniforme, de grande frequência, iniciada pelo próprio paciente, com subtipos incluindo o verbal; maneirismo: gesto cotidiano tornado bizarro, com resto de intencionalidade) + a distinção da perseveração motora (repetição de ação que começou certa; conceito ancorado no pensamento, descreve-se o comportamento, G §A16) + vontade e pragmatismo (a criança que quer, começa e não conclui; termo provisório até o extrato de conação, G §4). Fontes: FND psicomotricidade; F2; F3 §3.3; F1 domínio 3; G §A14 e §A16.
 
 **S56 · Risco (a pergunta)**
 - Título: **Perguntar de suicídio não planta a ideia: destrava a fonte que muitas vezes é a única que sabe, a própria criança.**
@@ -297,7 +302,7 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 
 **S61 · Prontuário 2**
 - Título: **Assim se escreve o exame de Bento aos 9: descrição com cena, fonte atribuída e contraste, nenhum rótulo solto.**
-- Corpo: o exame psíquico de Bento aos 9, por extenso (10 a 14 linhas), incluindo humor/afeto nas quatro dimensões, o EU, o momento a sós, o registro negativo de risco por extenso e a ressalva de representatividade. Texto integral nas notas e no roteiro. Modelos: F1; F2; F5 (exemplos de documentação); F1 achado 1.
+- Corpo: o exame psíquico de Bento aos 9, por extenso (10 a 14 linhas), formato narrativo em primeira pessoa (G §A20), incluindo humor/afeto nas quatro dimensões, o EU, o momento a sós, o registro negativo de risco por extenso e a ressalva de representatividade; anatomia da aula de estrutura (introdução → corpo → impressão final bidirecional, o análogo adulto do parágrafo de fechamento; G §5). Ao lado, em miniatura, a MESMA consulta como súmula (o "quê" em lista): o residente vê as duas saídas da mesma observação. Texto integral nas notas e no roteiro. Modelos: F1; F2; F5; FND estrutura; F1 achado 1; G §A20 e §5.
 
 ## FECHO (S62 a S65)
 
@@ -322,7 +327,7 @@ Nota: a aula de adulto de pensamento (F8) já usa o vídeo piagetiano de conserv
 ## APÊNDICE (satélites, numeração contínua a partir de S66; construção na Camada 3)
 
 - **Apêndice A · ITMSE de Benham (0 a 36 meses) por extenso:** os 10 domínios, um slide cada, com vocabulário observacional. Fonte: F1 seção ITMSE; F3 §3. (~11 slides)
-- **Apêndice B · Esqueleto do registro + banco de frases-modelo:** a ordem dos campos do exame psíquico infantil (pré-escolar e escolar) e frases de prontuário prontas, normativas e alteradas, por domínio e faixa, extraídas das tabelas de F2, F3 e dos exemplos de documentação de F5. (~7 slides)
+- **Apêndice B · A súmula psiquiátrica infantil (esqueleto do registro + banco de frases-modelo):** o segundo formato de registro (lista, terceira pessoa, o "quê"; G §A20), com a ordem dos campos ancorada nos blocos da aula de estrutura do curso, reordenados por relevância desenvolvimental (dois As da primeira impressão → díade e regulação → brincar/pensamento → bloco das psicoses → bloco orgânico COMA, cuja alteração isolada sugere organicidade também na criança → CPP → bloco do teste recuado; G §5) como checagem de completude, e frases de prontuário prontas, normativas e alteradas, por domínio e faixa, extraídas das tabelas de F2, F3 e dos exemplos de documentação de F5. (~8 slides)
 - **Apêndice C · Sensopercepção em números:** Maijer 2018 (9,6%, IC95% 6,7 a 13,6; 12,7% aos 5 a 12), Kelleher 2012 (mediana 17% aos 9 a 12; 7,5% aos 13 a 18), transitoriedade 75 a 90%, conversão ~7%; amigos imaginários (Pearson 2001: 46,2%; Taylor 2004: até 65% antes dos 7). Fonte: F1 domínio 9. (~3 slides)
 - **Apêndice D · O REGISTRO do risco e do momento a sós:** foco em documentação, não em roteiro de entrevista. Conteúdo: o que do momento a sós pertence ao exame psíquico (observado + relato da criança com fonte) e o que vai para a anamnese; registro-modelo de risco POSITIVO e NEGATIVO por extenso; registro da autolesão não suicida vs tentativa; como documentar a quebra de sigilo ético-protetiva e a notificação compulsória quando ocorrerem [EXT: ECA], incluindo o valor médico-legal do registro minucioso. As perguntas por idade aparecem apenas como origem do dado registrado. Fontes: F1 domínio 12; F2 risco. (~4 slides)
 - **Apêndice E · Anti-pergunta:** respostas prontas para perguntas prováveis (lista fechada na Camada 3; ex.: "e o M-CHAT?", "e quando a escola discorda dos pais?", "amigo imaginário até que idade?", "criança mente no exame?", "posso usar provérbio aos 11?", "e se a criança não brincar nem falar na consulta inteira?", "registro o que a criança me contou a sós se os pais pedirem para ler o prontuário?"). (~5 slides)
