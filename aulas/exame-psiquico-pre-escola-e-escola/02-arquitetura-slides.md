@@ -17,7 +17,7 @@ Nota de faixa: o título oficial recebido dizia "0 a 5 e 5 a 12"; esta spec padr
 - Sem travessão em nenhum texto.
 
 **Elementos estruturais recorrentes:**
-- **Selo "VOCÊS JÁ VIRAM":** sempre que um domínio abre, um selo liga o slide ao extrato de fundação da aula de adulto correspondente (FND cobre 16 domínios: estrutura, aparência, atitude, atenção, memória, orientação, pensamento, juízo/delírio, linguagem, afetividade, sensopercepção, psicomotricidade, consciência do EU, imaginação, inteligência, insight). Só consciência (nível) e conação/pragmatismo ficam sem selo (sem extrato ainda). Estética na Camada 3.
+- **Ancoragem "VOCÊS JÁ VIRAM" (interna, SEM selo renderizado):** decisão do professor no checkpoint: NENHUM selo de remissão aparece no deck. As marcações "selo VOCÊS JÁ VIRAM (...)" nos slides abaixo são ancoragem INTERNA desta spec: dizem ao construtor e ao apresentador qual extrato de fundação sustenta o domínio (FND cobre 16 domínios; só consciência-nível e conação/pragmatismo ficam sem extrato) e alimentam a narração ("como vocês viram na aula de..."), mas não viram elemento visual. A ponte com o adulto vive na fala e nas notas, não na tela.
 - **Par "prontuário ruim / prontuário certo":** quatro aparições, identificadas só pelo nome: falso TDAH (S16), falso delírio (S31), falso TOD (S32), falso concretismo (S42).
 - **Cenas de Bento:** narradas pelo professor, script nas notas. Bento nunca vira caso: é a régua do normal.
 - **Contracena de vigilância:** moldura própria, sempre "o que tira o sono", nunca critério.
