@@ -6,7 +6,9 @@ Branch: `claude/psych-exam-wave-1-checkpoint-d3ex86` (continua, por fast-forward
 
 ## 1. Estado atual do deck
 
-**O deck .pptx NÃO existe ainda.** A Camada 3 (build por código) não foi iniciada; foi exatamente por isso que o checkpoint foi fechado aqui. O que existe, pronto e crivado:
+**ATUALIZAÇÃO 07/07/2026 (após a entrega do livro): o deck EXISTE, construído do zero a partir do livro.** Por decisão do professor ("pode criar do zero os slides com base no livro", capa "0 a 5 e 6 a 12" aprovada), a arquitetura foi refeita (v5, `02-arquitetura-slides.md`, estrutura espelhando o livro: moldura, 4 blocos de domínios com as duas camadas etárias, síntese, os dois Bentos, registro, apêndices 1 a 4 do livro). A v4 (derivada de F1-F8) está arquivada em `historico/02-arquitetura-slides-v4-pre-livro.md`. O deck oficial está em `deck/AULA-OFICIAL_Exame-psiquico-crianca-0a5-6a12_PsiquiatriaPratica.pptx` (81 slides: 72 principais + 9 de apêndice, numeração contínua), gerado por `deck/gerar-deck.js` (pptxgenjs, tokens Psiquiatria Prática), com notas de apresentador em todos os slides, sem travessão, sem selo de remissão, verificado por render (LibreOffice + poppler). Bento conforme o livro: caso A típico com variação a observar; caso B com achados e ideação passiva (o livro substituiu a regra antiga "Bento sempre normal"). Os textos integrais dos dois exames narrativos estão nas notas de S62 e S66.
+
+O material anterior ao livro, ainda válido como histórico e fontes:
 
 - `01-direcao.md` (Camada 1): transformação do público, tese ("o mesmo mapa, em outra língua", as três traduções: canal/paciente/régua), estrutura (portal + 2 atos por idade + fecho), dispositivos, sacrifícios, foco fechado em DESCRIÇÃO do exame (não entrevista). Tese/estrutura/dispositivos nasceram como [PROPOSTA] e foram sendo consolidados nas iterações com o professor; nenhum veto recebido.
 - `02-arquitetura-slides.md` (Camada 2, v4): spec slide a slide de **65 slides** (portal S1-S6; Ato 1 = 0 a 5 anos, S7-S35; Ato 2 = 6 a 12, S36-S61; fecho S62-S65), com título assertion-evidence, corpo, fontes e narração por slide; 3 vídeos com molduras (V1 birra/corregulação, V2 brincar simbólico, V3 apontar/atenção compartilhada); ordem de corte para 60 min; apêndices A a E especificados (não construídos).
@@ -35,18 +37,16 @@ Branch: `claude/psych-exam-wave-1-checkpoint-d3ex86` (continua, por fast-forward
 
 Modelo pronto no repositório, da aula anterior: `aulas/desenvolvimento-normal-2-anos-puberdade/deck/` (pptxgenjs; `gerar-deck.js` + `gerar-satelites.js` + `gerar-aula-oficial.js` para o deck único com numeração contínua). Reusar o esqueleto e os tokens; verificação visual por render antes de entregar.
 
-## 4. O que falta (ordem sugerida de execução na nova sessão)
+## 4. O que falta (ordem sugerida; itens do build principal já FEITOS em 07/07/2026)
 
-1. Aprovação formal pendente: capa "0 a 5 e 6 a 12" [PROPOSTA] (decisão do professor).
-2. (Se desejado) produzir o **mapa de reconciliação** F1-F5 × G/FND como artefato próprio, antes do build, para blindar as notas.
-3. Redigir por extenso: os dois prontuários de Bento (narrativa + súmula espelho no S61), scripts das cenas, notas de apresentador de todos os 65 slides.
-4. Construir o deck oficial .pptx por código (65 slides + apêndices A a E em numeração contínua a partir de S66, remissões APENAS faladas/nas notas, sem selo), com render de verificação.
-5. Satélites: apêndices A a E + anti-pergunta (lista fechada na arquitetura, ampliar se preciso).
-6. Roteiro de estudo COMPLETO por extenso (prosa, para quem parte do zero, com autoteste e respostas).
-7. Tudo também em .docx pronto para Google Docs.
-8. DUPLO CRIVO da entrega final (aluno iniciante + expert cético) e RETROPROPAGAÇÃO a todos os materiais.
-9. Localizar/aprovar os 3 clipes de acervo público conforme spec do inventário.
-10. Insumos que o professor pode fornecer quando existirem: extratos de fundação de consciência (nível/vígil) e conação/pragmatismo (fecham termos provisórios e os blocos COMA/CPP); IACAPAP A.5 pt; capítulos do livro de referência.
+~~Capa "0 a 5 e 6 a 12"~~ APROVADA. ~~Prontuários de Bento, notas de apresentador, deck oficial .pptx com apêndices, render de verificação~~ FEITOS (ver seção 1). O mapa de reconciliação F1-F5 × G/FND perdeu urgência: o livro passou a ser a fonte única do deck.
+
+1. DUPLO CRIVO da entrega (aluno iniciante + expert cético) e retropropagação ao deck e à arquitetura v5.
+2. Roteiro de estudo COMPLETO por extenso (prosa, para quem parte do zero, com autoteste e respostas), agora derivado do livro.
+3. Apêndice anti-pergunta (respostas prontas), se o professor ainda o quiser além dos 4 apêndices do livro que já estão no deck.
+4. Tudo também em .docx pronto para Google Docs.
+5. Localizar/aprovar os 3 clipes de acervo público (V1 birra/corregulação, V2 brincar simbólico, V3 apontar) conforme inventário da v5.
+6. Insumos que o professor pode fornecer quando existirem: capítulos do Cheniaux (fio guia, para desempates finos); IACAPAP A.5 pt.
 
 ## 5. Como retomar na sessão nova
 
