@@ -1,6 +1,6 @@
 # CHECKPOINT · Aula: Exame psíquico na pré-escola e na escola
 **Fechado em 07/07/2026, para migração de sessão antes do build pesado (Camada 3).**
-Branch: `claude/psych-exam-childhood-course-y6zqja` · último commit desta onda: ver `git log` (checkpoint é o commit que adiciona este arquivo).
+Branch: `claude/psych-exam-wave-1-checkpoint-d3ex86` (continua, por fast-forward, a antiga `claude/psych-exam-childhood-course-y6zqja`) · último commit desta onda: ver `git log`.
 
 ---
 
@@ -25,7 +25,7 @@ Branch: `claude/psych-exam-childhood-course-y6zqja` · último commit desta onda
 
 1. **Glossário com precedência.** Hierarquia terminológica: `fontes/fundacao/00-GLOSSARIO-UNIFICADO-ARBITRAGEM.md` (G) arbitra tudo; abaixo dele os 16 extratos FND; abaixo, as transcrições brutas F6 a F8. Decisões A1 a A20 aprovadas; camada de escopo NÚCLEO/RODAPÉ/FORA define o que entra no deck.
 2. **Nenhum selo de remissão.** O deck não renderiza selo/carimbo de remissão ("vocês já viram", números de apêndice em selo etc.). As marcações de remissão na arquitetura são ancoragem interna (para o construtor e para as notas do apresentador); a ponte com o adulto acontece na fala. Já aplicado no cabeçalho de `02-arquitetura-slides.md`; ao construir a Camada 3, não criar elemento visual de selo.
-3. **Livro como fonte máxima.** Acima do glossário, a autoridade doutrinária final é o livro (o fio guia declarado do curso é o Cheniaux, Manual de Psicopatologia). Em conflito entre livro e qualquer extrato/transcrição, o livro decide. Nota da sessão que fecha este checkpoint: a obra/edição exata não está anexada ao repositório; ao usar esta regra para desempatar algo, confirmar com o professor a edição de referência.
+3. **Livro como fonte máxima.** Acima do glossário, a autoridade doutrinária final é o livro do professor, agora versionado nesta pasta: `livro-do-professor-COMPLETO.md` (versão final revisada, com os quatro apêndices; entregue pelo professor em 07/07/2026). Em conflito entre o livro e qualquer fonte (G, extratos FND, F1 a F8), o livro decide. Ele substitui como fonte qualquer arquivo parcial de partes ou blocos do livro que venha a circular. O fio guia declarado do curso segue sendo o Cheniaux (Manual de Psicopatologia), que não está anexado ao repositório; para desempates que dependam dele, confirmar a edição com o professor.
 4. **Foco em descrição, não entrevista.** A aula ensina a descrever e registrar; perguntas só aparecem como meio de eliciar o dado. Apêndice D é de REGISTRO do risco/momento a sós.
 5. **Dois formatos de registro (A20).** Exame psíquico narrativo (prosa, primeira pessoa, o "como") nos prontuários de Bento; súmula (lista, terceira pessoa, o "quê") no Apêndice B, ordenada pelos blocos da aula de estrutura como checagem de completude.
 6. **Faixas: 0 a 5 e 6 a 12** internamente (criança de 5 anos pertence ao Ato 1). A capa como "0 a 5 e 6 a 12" segue [PROPOSTA] aguardando aprovação formal (título recebido dizia "5 a 12").
