@@ -36,11 +36,7 @@ function novo({ dark = false, bloco = null } = {}) {
       fontSize: 10.5, bold: true, align: "center", valign: "middle",
     });
   }
-  s.addText(String(nSlide), {
-    x: W - 0.7, y: H - 0.42, w: 0.45, h: 0.3, fontFace: SANS, fontSize: 10,
-    color: dark ? PP.lavanda : PP.roxoMedio, align: "right",
-  });
-  return s;
+  return s; // sem numeração de página (decisão do professor, crivo 07/2026)
 }
 
 function titulo(s, txt2, { dark = false, size = null, y = 0.42, w = 8.9 } = {}) {
@@ -416,7 +412,7 @@ filete(s, { y: 2.1 });
   txt(s, t, { x: x + 0.2, y: 2.72, w: 3.55, h: 1.2, fontSize: 13.5, lineSpacingMultiple: 1.12 });
 });
 card(s, 0.6, 4.5, 12.1, 1.15, { fill: PP.lavanda });
-txt(s, "A curva de retorno é o dado; o choro em si não é. É aqui que a conação e a regulação se encontram e ficam legíveis ao mesmo tempo.", { x: 0.95, y: 4.78, w: 11.5, h: 0.7, fontSize: 15, bold: true });
+txt(s, "A curva de retorno é o dado; o choro em si não é. É aqui que o arco da ação (a conação: querer, iniciar, sustentar) e a regulação se encontram e ficam legíveis ao mesmo tempo.", { x: 0.95, y: 4.78, w: 11.5, h: 0.7, fontSize: 15, bold: true });
 fonteRodape(s, LIVRO + "Parte I (a frustração como instrumento) e Domínios 4 e 5");
 s.addNotes("Fechar o bloco: a linha de prontuário que o clipe gera. Ponte de tração para o Bloco 2: a mesma curva, olhada agora pelo ângulo do afeto e do consolo.");
 
@@ -463,7 +459,7 @@ dims.forEach((p, i) => {
 card(s, 0.6, 5.45, 12.1, 1.05, { fill: PP.lavandaClara });
 txt(s, "Dentro da rigidez, a distinção fina: a criança fixada na tristeza cuja dor ainda tem cor e alcança quem olha (textura do luto), e a fixada num estado sem cor, opaca, diante da qual nada vibra. A cor do afeto distingue a enlutada da deprimida.", { x: 0.95, y: 5.63, w: 11.5, h: 0.8, fontSize: 13 });
 fonteRodape(s, LIVRO + "Parte II, Domínio 5");
-s.addNotes("Dissociação ideoafetiva: quando a incongruência se dá entre a expressão não verbal e o relato; colhe-se sem nenhuma palavra da criança, examinável desde muito cedo. Tropeço da amostragem: “afeto preservado” sustentado por um sorriso. O afeto é curva, não foto; e o momento da consulta em que foi colhido faz parte do achado (a criança de aquecimento lento, a que entra expansiva e se esgota).");
+s.addNotes("Hipertímico, hipotímico, eutímico: os mesmos descritores da aula de afetividade do adulto; lembrar a turma da ancoragem. Dissociação ideoafetiva: quando a incongruência se dá entre a expressão não verbal e o relato; colhe-se sem nenhuma palavra da criança, examinável desde muito cedo. Não confundir com a dissociação entre linhas de desenvolvimento da moldura: lá, linhas que se descolam; aqui, expressão e relato que se contradizem. Tropeço da amostragem: “afeto preservado” sustentado por um sorriso. O afeto é curva, não foto; e o momento da consulta em que foi colhido faz parte do achado (a criança de aquecimento lento, a que entra expansiva e se esgota).");
 
 // S23 · D5: consolabilidade
 s = novo({ bloco: B2 });
@@ -744,7 +740,7 @@ bullets(s, [
 parRegistro(s, "Concretismo.",
   "Semelhanças respondidas pelo uso, compatível com a idade; instrução de três passos executada até o segundo; resolução de problemas por tentativa e erro com mudança de estratégia.", { y: 5.4, h: 1.5 });
 fonteRodape(s, LIVRO + "Parte II, Domínio 9");
-s.addNotes("Encenar o erro em cadeia: provérbio na criança de nove anos, interpretação literal, “concretismo” no exame, e as associações que a palavra puxa no adulto. Está errado desde o instrumento. E o pensamento mágico decai ao longo da idade escolar sem data marcada: o amigo imaginário no começo da faixa continua sendo desenvolvimento.");
+s.addNotes("Encenar o erro em cadeia: provérbio na criança de nove anos, interpretação literal, “concretismo” no exame, e as associações que a palavra puxa no adulto. Está errado desde o instrumento. A frase que corrige: concretismo aos nove anos não é sinal, é a idade; sinal seria o contrário. E o pensamento mágico decai ao longo da idade escolar sem data marcada: o amigo imaginário no começo da faixa continua sendo desenvolvimento.");
 
 // ============================================================================
 // BLOCO 4 · Teste, juízo e o que se apura por último · S46 a S54
@@ -879,7 +875,7 @@ compl.forEach((p, i) => {
   txt(s, p[1], { x: 4.25, y: y + 0.09, w: 8.3, h: 0.58, fontSize: 11.5, lineSpacingMultiple: 1.03 });
 });
 parRegistro(s, "Orientado.",
-  "Orientado quanto a escola, série, professora e turno; errou o dia do mês, sem valor na idade.", { y: 6.1, h: 0.9 });
+  "Orientado quanto a escola, série, professora e turno; errou o dia do mês, sem valor na idade.", { y: 6.05, h: 1.0 });
 fonteRodape(s, LIVRO + "Parte II, Domínio 13");
 s.addNotes("Fecho da Parte II: dos treze domínios, quantos dependeram de perguntar algo à criança? No pré-escolar, quase nenhum. E os que dependem da pergunta no escolar dependem todos da mesma disciplina: pergunta calibrada pela idade, relato cruzado com o observado, fonte registrada. A moldura da inteligência: janelas de desenvolvimento e privação que a estimulação tardia recupera às vezes por inteiro, às vezes em parte; ler o desempenho baixo perguntando primeiro pela história.");
 
@@ -999,7 +995,7 @@ s = novo({ bloco: BEN });
 titulo(s, "A súmula e a anotação: a sustentação curta virou organizadora porque três domínios independentes convergiram nela.");
 filete(s, { y: 2.1 });
 const sumA = [
-  ["Atenção", "sustentada por 3 a 4 min, inclusive no interesse; consolabilidade plena"],
+  ["Regulação e atenção", "sustentada por 3 a 4 min, inclusive no interesse; consolabilidade plena"],
   ["Brincar", "simbólico com papéis e turnos, flexível; cenas curtas desfeitas por migração"],
   ["Linguagem", "compreensão sem pistas até dois passos; perdeu o terceiro de três"],
   ["Díade", "contingência, corregulação eficaz, reparação espontânea"],
@@ -1008,8 +1004,8 @@ const sumA = [
 sumA.forEach((p, i) => {
   const y = 2.45 + i * 0.7;
   card(s, 0.6, y, 12.1, 0.6, { fill: i === 4 ? PP.lavanda : PP.branco, borda: PP.roxoMedio, bw: 0.75 });
-  txt(s, p[0], { x: 0.85, y: y + 0.1, w: 1.9, h: 0.42, bold: true, fontSize: 11.5, color: PP.coralTexto });
-  txt(s, p[1], { x: 2.85, y: y + 0.1, w: 9.7, h: 0.44, fontSize: 11.5, lineSpacingMultiple: 1.0 });
+  txt(s, p[0], { x: 0.85, y: y + 0.1, w: 2.35, h: 0.42, bold: true, fontSize: 11, color: PP.coralTexto });
+  txt(s, p[1], { x: 3.3, y: y + 0.1, w: 9.25, h: 0.44, fontSize: 11.5, lineSpacingMultiple: 1.0 });
 });
 card(s, 0.6, 6.1, 12.1, 0.75, { fill: PP.lavandaClara });
 txt(s, "A anotação: o ruído normativo saiu (atividade dirigida, birra com retorno eficaz); a convergência entre atenção, brincar e memória de trabalho elegeu o organizador; o compromisso ficou no mínimo honesto; nenhuma sigla.", { x: 0.95, y: 6.22, w: 11.5, h: 0.6, fontSize: 11.5 });
@@ -1305,6 +1301,75 @@ s.addTable(mapa2.map((r, ri) => r.map((c, ci) => {
 })), { x: 0.6, y: 2.35, w: 12.1, fontFace: SANS, fontSize: 10.5, valign: "middle", border: { type: "solid", color: PP.roxoMedio, pt: 0.5 }, rowH: 0.58, colW: [2.2, 5.4, 4.5] });
 fonteRodape(s, LIVRO + "Apêndice 4 · fim do deck");
 s.addNotes("Fim. O checklist de autoavaliação (S70) e este mapa são os dois materiais de mão do residente.");
+
+
+// ============================================================================
+// APÊNDICE 5 · OS CONCEITOS DIFÍCEIS, DITOS SIMPLES (satélites ELI5) · S82 a S85
+// Uso: quando a plateia travar num conceito, saltar para o slide correspondente.
+// A analogia não substitui a definição do livro; é a ponte até ela.
+// ============================================================================
+const AP5 = "APÊNDICE 5 · DITO SIMPLES";
+
+function ditoSimples(s, itens) {
+  itens.forEach((p, i) => {
+    const y = 2.4 + i * 1.06;
+    card(s, 0.6, y, 12.1, 0.94, { fill: PP.branco, borda: PP.roxoMedio, bw: 0.75 });
+    txt(s, p[0], { x: 0.85, y: y + 0.12, w: 2.9, h: 0.72, bold: true, fontSize: 12, color: PP.coralTexto, lineSpacingMultiple: 1.0 });
+    txt(s, "“" + p[1] + "”", { x: 3.9, y: y + 0.12, w: 8.6, h: 0.74, fontSize: 12.5, italic: true, lineSpacingMultiple: 1.05 });
+  });
+}
+
+// S82 · moldura dito simples
+s = novo({ bloco: AP5 });
+titulo(s, "Quando a turma travar na moldura, diga simples: a garrafa e o conteúdo, a perna que não acompanha, o laboratório de situações.");
+filete(s, { y: 2.1 });
+ditoSimples(s, [
+  ["forma vs conteúdo do brincar", "COMO ela brinca é a garrafa; DO QUE ela brinca é o que está dentro. Examine os dois, um de cada vez."],
+  ["dissociação · regressão · inflexibilidade", "uma perna cresce e a outra não; andar para trás depois de já ter andado para frente; o botão emperrado que só tem uma posição."],
+  ["propor e observar", "a consulta é um laboratório de situações pequenas (um brinquedo, uma separação, uma frustração), não um questionário."],
+  ["descrever antes de interpretar", "primeiro a fotografia, depois a legenda. Legenda sem fotografia é chute com vocabulário técnico."],
+]);
+fonteRodape(s, LIVRO + "Parte I (analogias de apoio; a definição é a do livro)");
+s.addNotes("Satélite de apoio: usar quando um conceito da moldura travar. A analogia abre a porta; voltar sempre à definição e ao exemplo clínico do slide principal.");
+
+// S83 · vínculo dito simples
+s = novo({ bloco: AP5 });
+titulo(s, "O vínculo em analogias de uma linha: a carta respondida, o freio emprestado, a queda notada, o posto de gasolina.");
+filete(s, { y: 2.1 });
+ditoSimples(s, [
+  ["responsividade contingente", "responder à carta que ELA mandou, na hora, sobre o assunto dela. Resposta genérica jogada no ar não conta."],
+  ["corregulação", "a criança ainda não tem freio próprio; o adulto empresta o dele (o colo, o tom de voz) até o estado dela se reorganizar."],
+  ["reparação", "nenhuma dupla acerta sempre. O que separa as díades não é nunca cair; é notar que caiu e levantar junto."],
+  ["pêndulo explorar e retornar", "a base segura é o posto de gasolina: sai, roda o quarteirão, volta para abastecer, sai de novo. O carro parado em qualquer ponta é o achado."],
+]);
+fonteRodape(s, LIVRO + "Parte I, Tradução 2, e Domínio 6");
+s.addNotes("Se só uma analogia couber na fala, que seja a da reparação, pelo mesmo motivo do slide principal: é o plano mais discriminante.");
+
+// S84 · afeto e comunicação dito simples
+s = novo({ bloco: AP5 });
+titulo(s, "O afeto e a comunicação em analogias de uma linha: a boca e o rosto, o tombo e o levantar, os tijolos e a casa.");
+filete(s, { y: 2.1 });
+ditoSimples(s, [
+  ["dissociação ideoafetiva", "a boca diz uma coisa, o rosto diz outra. Não escolha em qual acreditar: registre as duas, porque a contradição É o dado."],
+  ["consolabilidade", "não é o tombo que informa, é como (e com quem) ela levanta: no colo, sozinha, ou nem no colo."],
+  ["ressonância", "você oferece graça dentro do brincar e escuta o eco. Quando não volta eco nenhum, o vazio que VOCÊ sente é instrumento de medida."],
+  ["pragmática vs estrutura", "saber muitas palavras é ter tijolos; conversar é construir a casa com alguém. Há criança com caminhão de tijolos e nenhuma casa."],
+]);
+fonteRodape(s, LIVRO + "Domínios 5 e 8");
+s.addNotes("A da pragmática é a que mais rende em aula: desmonta na hora o “fala super bem” do inventário de vocabulário. Ecolalia entra na mesma chave: frase emprestada PARA alguém é comunicação; frase rodando para ninguém é outra coisa.");
+
+// S85 · síntese dito simples
+s = novo({ bloco: AP5 });
+titulo(s, "A síntese em analogias de uma linha: o corpo que diz que viu, o fio do colar, o volume da certeza, a foto e o palpite.");
+filete(s, { y: 2.1 });
+ditoSimples(s, [
+  ["atitude alucinatória", "o corpo dela diz que viu (para, olha o canto vazio, responde ao nada). Registre o corpo, com hora e contexto; não conclua a visão."],
+  ["achado organizador", "o fio do colar: sem ele, as contas rolam soltas pela mesa. A síntese é escolher o fio e enfiar as contas nele."],
+  ["gradiente de compromisso", "o botão de volume da certeza: nem sussurrar diante do padrão robusto, nem gritar diante de um observável só."],
+  ["síntese vs hipótese", "a síntese é a foto revelada; a hipótese é o palpite sobre a foto. A foto tem que continuar boa mesmo se o palpite mudar amanhã."],
+]);
+fonteRodape(s, LIVRO + "Domínio 10 e Parte III · fim do deck");
+s.addNotes("Fim do apêndice 5. Estes quatro slides existem para socorro em sala; no roteiro de estudo, cada analogia aparece colada à definição completa correspondente.");
 
 // ---------------------------------------------------------------------------
 pres.writeFile({ fileName: __dirname + "/AULA-OFICIAL_Exame-psiquico-crianca-0a5-6a12_PsiquiatriaPratica.pptx" })

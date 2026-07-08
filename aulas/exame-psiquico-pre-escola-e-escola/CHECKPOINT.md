@@ -41,12 +41,11 @@ Modelo pronto no repositório, da aula anterior: `aulas/desenvolvimento-normal-2
 
 ~~Capa "0 a 5 e 6 a 12"~~ APROVADA. ~~Prontuários de Bento, notas de apresentador, deck oficial .pptx com apêndices, render de verificação~~ FEITOS (ver seção 1). O mapa de reconciliação F1-F5 × G/FND perdeu urgência: o livro passou a ser a fonte única do deck.
 
-1. DUPLO CRIVO da entrega (aluno iniciante + expert cético) e retropropagação ao deck e à arquitetura v5.
-2. Roteiro de estudo COMPLETO por extenso (prosa, para quem parte do zero, com autoteste e respostas), agora derivado do livro.
-3. Apêndice anti-pergunta (respostas prontas), se o professor ainda o quiser além dos 4 apêndices do livro que já estão no deck.
-4. Tudo também em .docx pronto para Google Docs.
-5. Localizar/aprovar os 3 clipes de acervo público (V1 birra/corregulação, V2 brincar simbólico, V3 apontar) conforme inventário da v5.
-6. Insumos que o professor pode fornecer quando existirem: capítulos do Cheniaux (fio guia, para desempates finos); IACAPAP A.5 pt.
+~~Duplo crivo da entrega~~ FEITO (07/07/2026, registro em `registro-crivos.md`, seção "Entrega da Camada 3"; 14 achados, aplicados com retropropagação). ~~Roteiro de estudo~~ FEITO (`05-roteiro-de-estudo-completo.md`, prosa + autoteste de 20 questões com gabarito). ~~Anti-pergunta~~ FEITO (`04-anti-pergunta.md`, 12 respostas prontas). ~~.docx~~ FEITO (`docx/`, roteiro e anti-pergunta prontos para Google Docs). Também feitos por ordem do professor: numeração de páginas removida do deck; Apêndice 5 "dito simples" (S82 a S85, satélites ELI5 para 16 conceitos difíceis). Deck agora com 85 slides.
+
+1. Localizar/aprovar os 3 clipes de acervo público (V1 birra/corregulação, V2 brincar simbólico, V3 apontar) conforme inventário da v5.
+2. Insumos que o professor pode fornecer quando existirem: capítulos do Cheniaux (fio guia, para desempates finos); IACAPAP A.5 pt.
+3. (Opcional) versão .docx dos dois exames de Bento por extenso, se o professor quiser entregá-los como handout separado.
 
 ## 5. Como retomar na sessão nova
 

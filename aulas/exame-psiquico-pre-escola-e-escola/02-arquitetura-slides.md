@@ -23,7 +23,8 @@
 | V2 | Brincar simbólico espontâneo, 2 a 4 anos, 20 a 40s, objeto usado como outro | Domínio 7 (S34 a S36) |
 | V3 | Atenção compartilhada 12 a 24 meses: apontar protodeclarativo com checagem do rosto; contraste com apontar para pedir se possível | Domínio 6 (S28 a S30) |
 
-**Total: 72 slides principais + 9 de apêndice (numeração contínua, S73 a S81). Estimativa de fala: 80 a 90 min.**
+**Total: 72 slides principais + 13 de apêndice (numeração contínua, S73 a S85). Estimativa de fala: 80 a 90 min.**
+**Sem numeração de página renderizada (decisão do professor, crivo de 07/07/2026); a numeração S1..S85 é interna, desta spec e do gerador.**
 
 **Ordem de corte para 60 min:** (1º) bloco V1 inteiro, S17 a S19 (a técnica sobrevive na narração de S16); (2º) fundir S11+S12 (atitude numa passada); (3º) fundir S40+S41 (linguagem: as duas perguntas + compreensão); (4º) absorver S56 na narração de S55 (as duas falhas viram fala do divisor); (5º) absorver S69 na narração de S68 (as cinco regras já aparecem nos Bentos). Nunca cortar: V2, V3, o risco (S52 e S53), a síntese do normal (S59), os oito slides de Bento, o checklist (S70).
 
@@ -120,5 +121,6 @@
 - **S75 a S77 · Apêndice 2 (coreografia):** a ordem de propostas da consulta, da observação livre à despedida; a coreografia organiza o que se propõe, não o que se observa.
 - **S78 a S79 · Apêndice 3 (episódio agressivo):** os cinco tempos observáveis e o mapa dos contextos; par de registro.
 - **S80 a S81 · Apêndice 4 (mapa rápido):** uma linha por domínio, 1 a 7 e 8 a 13.
+- **S82 a S85 · Apêndice 5 (dito simples, satélites ELI5, criados no crivo da entrega):** 16 conceitos difíceis em analogias de uma linha (moldura; vínculo; afeto e comunicação; síntese). Regra de uso: socorro quando a plateia travar; a analogia é ponte para a definição do livro, nunca substituta; nenhuma doutrina nova.
 
 **Teste de aceitação da espinha:** ler S1 a S72 só pelos títulos e verificar que o livro se reconta sem som.

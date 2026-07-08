@@ -61,3 +61,37 @@ A pedido do professor, a aula foi reancorada em três frentes, com nova renumera
 1. [PROPOSTA] Padronizar a capa para "0 a 5 e 6 a 12" (hoje o título oficial diz "5 a 12").
 2. PDF do Dalgalarrondo (afetividade e pensamento) para fechar as conferências que F2/F3 deixam pendentes (S28, S45 a S48).
 3. PDF do IACAPAP A.5 em português para ancorar com página as frases dos dois prontuários (opcional).
+
+---
+
+# Registro do duplo crivo · Entrega da Camada 3 (deck v5, construído do livro)
+
+Executado em 07/07/2026 sobre `02-arquitetura-slides.md` (v5) e `deck/gerar-deck.js` (81 slides), a pedido do professor, junto com duas ordens diretas: remover a numeração de páginas e verificar a necessidade de satélites "dito simples" (ELI5) para conceitos difíceis. Numeração de slides abaixo refere-se à versão corrigida (85 slides).
+
+## Crivo A: aluno iniciante
+
+| # | Achado | Disposição |
+|---|--------|------------|
+| A1 | "Conação" aparece no S19 sem tradução de uma palavra (regra de primeiro uso) | ACEITO. S19: "o arco da ação (a conação: querer, iniciar, sustentar)" |
+| A2 | Dois sentidos de "dissociação" (entre linhas, S5; ideoafetiva, S22) sem desambiguação explícita, confusão certa no caderno | ACEITO. Nota do S22 ganha a distinção do livro: lá, linhas que se descolam; aqui, expressão e relato que se contradizem |
+| A3 | Hipertímico/hipotímico/eutímico (S22) presumem a aula de adulto fresca na memória | ACEITO. Nota do S22 manda relembrar a ancoragem na aula de afetividade do adulto |
+| A4 | Conceitos abstratos (contingência, reparação, pragmática, achado organizador, gradiente) travam iniciante sem analogia concreta | ACEITO. Criado o Apêndice 5 · "dito simples" (S82 a S85): 16 conceitos em analogias de uma linha, com regra de uso (socorro em sala; a analogia é ponte, não substituta da definição). Ecoado no roteiro de estudo (§9) |
+| A5 | Par de registro do S54 com texto encostando na borda inferior | ACEITO. Altura e posição ajustadas |
+| A6 | Aluno que parte do zero não tinha material de estudo nem autoteste | ACEITO. Criado `05-roteiro-de-estudo-completo.md` (prosa por bloco + autoteste de 20 perguntas com gabarito comentado) e as versões .docx em `docx/` |
+
+## Crivo E: expert cético
+
+| # | Achado | Disposição |
+|---|--------|------------|
+| E1 | S45 sem o corolário do livro ("sinal seria o contrário"), que fecha o argumento do falso concretismo | ACEITO. Adicionado à nota do S45 |
+| E2 | Conferência preditor estável (tentativas prévias) vs agudo (preparativos) no S53 contra o livro | SEM MUDANÇA: fiel ao Domínio 12 |
+| E3 | Súmula A (S63): "consolabilidade plena" listada sob rótulo "Atenção"; no livro o campo é "Autorregulação e atenção" | ACEITO. Rótulo da linha corrigido para "Regulação e atenção" |
+| E4 | Conferência dos pares de registro dos 13 domínios + episódio agressivo contra o livro | SEM MUDANÇA: textuais (pontuação adaptada pela regra sem travessão) |
+| E5 | Idades de Bento consistentes entre S7, S61 e S65 (4a2m; 9a7m) | SEM MUDANÇA: conferido |
+| E6 | Numeração de páginas | ACEITO (ordem do professor). Removida do template `novo()`; remissões seguem apenas faladas/nas notas |
+| E7 | Risco de o Apêndice 5 reensinar a aula em versão rasa | MITIGADO. Só analogia + regra de retorno à definição; nenhuma doutrina nova; rodapés apontam a parte do livro correspondente |
+| E8 | Varredura global de travessão nos materiais novos | SEM OCORRÊNCIAS (deck, arquitetura, anti-pergunta, roteiro) |
+
+## Retropropagação
+
+Arquitetura v5 atualizada (Apêndice 5 na espinha, total 85 slides, nota da numeração removida); CHECKPOINT.md seção 4 atualizada; roteiro de estudo e anti-pergunta já nascem pós-crivo.
