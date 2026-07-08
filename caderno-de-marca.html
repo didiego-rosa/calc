@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Caderno de Marca · Verde Brasa · Dr. Diego Alves Rosa</title>
-<meta name="description" content="Documento interno: regras e orientações do design system Verde Brasa do site drdiegorosa.com.br.">
+<title>Caderno de Marca · Nanquim Brasa · Dr. Diego Alves Rosa</title>
+<meta name="description" content="Documento interno: regras e orientações do design system Nanquim Brasa do site drdiegorosa.com.br.">
 <meta name="robots" content="noindex, nofollow">
 
-<!-- favicon (verde base + "D" brasa), o mesmo do site -->
-<link rel="icon" href="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'><rect%20width='32'%20height='32'%20rx='7'%20fill='%2315302A'/><text%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='20'%20fill='%23EA7338'%20text-anchor='middle'%20font-weight='700'>D</text></svg>">
+<!-- favicon (nanquim base + "D" brasa) -->
+<link rel="icon" href="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'><rect%20width='32'%20height='32'%20rx='7'%20fill='%231B1A1F'/><text%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='20'%20fill='%23EA7338'%20text-anchor='middle'%20font-weight='700'>D</text></svg>">
 
 <!-- aplica o tema antes da renderização, igual ao site: padrão claro -->
 <script>try{var t=localStorage.getItem('tema');var p=new URLSearchParams(location.search).get('tema');if(p)t=p;if(t!=='escuro')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
@@ -18,26 +18,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-/* ============ Identidade Verde Brasa · tokens por modo (copiados do index.html) ============ */
+/* ============ Identidade Nanquim Brasa · tokens por modo ============ */
+/* Nanquim (tinta quase preta) na base + acento Brasa. O verde-petróleo foi aposentado. */
 :root{
-  --bg:#15302A; --bg-elev:#1E3D34; --bg-deep:#0F2420;
-  --text:#EFE7D6; --text-strong:#FAF5EB; --text-mute:#BFC6B5; --text-faint:#5E7A6E;
-  --accent:#EA7338; --accent-hover:#EC9059; --accent-on:#0B1C18;
-  --kicker:#CDA04E; --border:#2C4A40; --chip:#15302A; --tag:#1E3D34;
-  --nav-bg:rgba(15,36,32,.82); --footer-bg:#0B1C18;
-  --photo-grad:radial-gradient(58% 48% at 34% 28%, rgba(255,226,190,.34), rgba(255,226,190,0) 60%),linear-gradient(155deg,#3F5E52,#1E3D34 72%,#0F2420);
-  --contato-grad:linear-gradient(160deg,#15302A,#0F2420);
+  --bg:#1B1A1F; --bg-elev:#26252B; --bg-deep:#121115;
+  --text:#E6E1D6; --text-strong:#F5F1E8; --text-mute:#A6A199; --text-faint:#6B655D;
+  --accent:#EA7338; --accent-hover:#EC9059; --accent-on:#141318;
+  --kicker:#CDA04E; --border:#343139; --chip:#1B1A1F; --tag:#26252B;
+  --nav-bg:rgba(18,17,21,.82); --footer-bg:#0E0D11;
+  --photo-grad:radial-gradient(58% 48% at 34% 28%, rgba(234,115,56,.22), rgba(234,115,56,0) 60%),linear-gradient(155deg,#3A3740,#26252B 72%,#121115);
+  --contato-grad:linear-gradient(160deg,#1B1A1F,#121115);
   --wash:rgba(234,115,56,.16);
   --maxw:1320px;
 }
 html[data-theme="light"]{
-  --bg:#FAF5EB; --bg-elev:#FFFCF4; --bg-deep:#EFE7D6;
-  --text:#33271E; --text-strong:#15302A; --text-mute:#6A5C4D; --text-faint:#9A8B72;
-  --accent:#D75F28; --accent-hover:#B84E20; --accent-on:#FAF5EB;
-  --kicker:#9A7430; --border:#E4D8C2; --chip:#FFFCF4; --tag:#FFFCF4;
-  --nav-bg:rgba(250,245,235,.86); --footer-bg:#EFE7D6;
-  --photo-grad:radial-gradient(58% 48% at 34% 28%, rgba(255,226,190,.5), rgba(255,226,190,0) 60%),linear-gradient(155deg,#A7BBA8,#7C9885 72%,#5E7A6E);
-  --contato-grad:linear-gradient(160deg,#FAF5EB,#EFE7D6);
+  --bg:#F4F1EA; --bg-elev:#FBF9F3; --bg-deep:#E7E2D7;
+  --text:#2B2925; --text-strong:#1B1A1F; --text-mute:#655F57; --text-faint:#98918A;
+  --accent:#D75F28; --accent-hover:#B84E20; --accent-on:#FBF9F3;
+  --kicker:#9A7430; --border:#DFD8C9; --chip:#FBF9F3; --tag:#FBF9F3;
+  --nav-bg:rgba(244,241,234,.86); --footer-bg:#E7E2D7;
+  --photo-grad:radial-gradient(58% 48% at 34% 28%, rgba(215,95,40,.16), rgba(215,95,40,0) 60%),linear-gradient(155deg,#CDC6B8,#B4AC9E 72%,#98918E);
+  --contato-grad:linear-gradient(160deg,#F4F1EA,#E7E2D7);
   --wash:rgba(215,95,40,.14);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -70,6 +71,8 @@ nav{position:sticky;top:0;z-index:50;background:var(--nav-bg);backdrop-filter:bl
 .capa h1{font-size:clamp(2.1rem,6vw,3.25rem);line-height:1.06;margin-top:16px;position:relative}
 .capa .lead{color:var(--text-mute);font-size:18px;max-width:58ch;margin-top:20px;position:relative}
 .capa .lead b{color:var(--text-strong)}
+.selo{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:8px 14px;border:1px solid var(--border);border-radius:24px;background:var(--bg-elev);font-size:12.5px;font-weight:700;color:var(--text-mute);position:relative}
+.selo .p{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
 
 section.bloco{padding:clamp(3rem,7vw,4.5rem) 0;border-top:1px solid var(--border)}
 section.bloco.fundo{background:var(--bg-deep)}
@@ -177,13 +180,13 @@ td b, td code{color:var(--text-strong)}
 .passos li{position:relative;padding:2px 0 18px 46px;font-size:16px;line-height:1.6;counter-increment:p;color:var(--text-mute)}
 .passos li::before{content:counter(p);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-on);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
 
-/* banda escura demonstrativa (a regra do #maes) */
+/* banda escura demonstrativa (a regra do #maes, agora em nanquim) */
 .banda-escura{
-  background:#15302A;border-radius:18px;padding:32px 30px;margin-top:22px;border:1px solid #2C4A40;
-  --bg-elev:#15302A; --bg-deep:#0F2420;
-  --text:#EFE7D6; --text-strong:#FAF5EB; --text-mute:#BFC6B5; --text-faint:#5E7A6E;
-  --accent:#EA7338; --accent-hover:#EC9059; --accent-on:#0B1C18;
-  --kicker:#CDA04E; --border:#2C4A40; --chip:#1E3D34; --tag:#1E3D34;
+  background:#1B1A1F;border-radius:18px;padding:32px 30px;margin-top:22px;border:1px solid #343139;
+  --bg-elev:#26252B; --bg-deep:#121115;
+  --text:#E6E1D6; --text-strong:#F5F1E8; --text-mute:#A6A199; --text-faint:#6B655D;
+  --accent:#EA7338; --accent-hover:#EC9059; --accent-on:#141318;
+  --kicker:#CDA04E; --border:#343139; --chip:#26252B; --tag:#26252B;
 }
 .banda-escura .sp-quote{margin-top:8px}
 .banda-escura p{color:var(--text-mute);font-size:15px;margin-top:14px;max-width:60ch}
@@ -212,7 +215,7 @@ footer .cr b{color:var(--text-strong)}
   <div class="wrap nav-in">
     <a href="#topo" class="brand">
       <span class="nm">Caderno de Marca</span>
-      <span class="at">Verde Brasa · drdiegorosa.com.br</span>
+      <span class="at">Nanquim Brasa · drdiegorosa.com.br</span>
     </a>
     <button class="theme-btn" onclick="flipTema()">Modo claro</button>
   </div>
@@ -222,8 +225,9 @@ footer .cr b{color:var(--text-strong)}
 <header class="capa" id="topo">
   <div class="wrap">
     <span class="kicker">Documento interno · Design system</span>
-    <h1>Verde Brasa<span style="color:var(--accent)">.</span><br>O caderno de marca do Dr. Diego.</h1>
-    <p class="lead">Tudo que define a identidade do site do <b>Dr. Diego Alves Rosa</b> em um lugar só: cores, tipografia, componentes, fotografia, comportamento de tema e a voz dos textos. O princípio que rege todas as decisões é <b>"alívio antes de impressionar"</b>: acolher uma mãe exausta e desconfiada, não exibir um site chamativo.</p>
+    <h1>Nanquim Brasa<span style="color:var(--accent)">.</span><br>O caderno de marca do Dr. Diego.</h1>
+    <p class="lead">Tudo que define a identidade do site do <b>Dr. Diego Alves Rosa</b> em um lugar só: cores, tipografia, componentes, fotografia, comportamento de tema e a voz dos textos. O nome diz a fórmula: <b>nanquim</b> (a tinta quase preta do desenho) na base, <b>brasa</b> (o laranja da ação) no acento, tudo sobre <b>papel</b> no modo claro. O princípio que rege todas as decisões é <b>"alívio antes de impressionar"</b>: acolher uma mãe exausta e desconfiada, não exibir um site chamativo.</p>
+    <span class="selo"><span class="p"></span>Nanquim Brasa substitui o antigo Verde Brasa · o verde-petróleo foi aposentado</span>
     <div class="toc">
       <a href="#principios">Princípios</a>
       <a href="#marca">Marca e assinatura</a>
@@ -250,7 +254,8 @@ footer .cr b{color:var(--text-strong)}
     <p>Quem chega no site costuma ser uma mãe que já ouviu que "é falta de limite", já passou por vários profissionais e está cansada. O design existe para baixar a guarda dela, não para competir por atenção.</p>
     <ul class="regras">
       <li><b>Alívio antes de impressionar.</b> Nenhum elemento pode parecer "site de marketing agressivo". Nada pisca, nada grita, nada apressa.</li>
-      <li><b>Calor sem infantilizar.</b> É um consultório médico sério, mas humano. Tons de creme, verde profundo e brasa; nunca cores primárias de brinquedo.</li>
+      <li><b>Calor sem infantilizar.</b> É um consultório médico sério, mas humano. Papel, nanquim (quase preto) e brasa; nunca cores primárias de brinquedo.</li>
+      <li><b>Tinta e papel.</b> A metáfora que organiza a marca é a do desenho a nanquim: fundo de papel, traço de tinta escura, e um único ponto de brasa onde a mão quis chamar atenção.</li>
       <li><b>Uma ação principal por tela.</b> O funil inteiro leva a um único destino: a conversa no WhatsApp. Todo CTA laranja é esse convite; o resto é apoio.</li>
       <li><b>Comportamento como mensagem.</b> A tese clínica (entender a função antes de rotular) aparece também no visual: primeiro acolhe e explica, depois convida.</li>
       <li><b>Simplicidade técnica é decisão de marca.</b> Um arquivo, sem build, sem framework. Qualquer pessoa consegue editar. Isso não é limitação, é o padrão do projeto.</li>
@@ -277,16 +282,16 @@ footer .cr b{color:var(--text-strong)}
     <div class="demo">
       <div class="meta">Favicon / ícone de app</div>
       <div class="demo-row">
-        <svg width="56" height="56" viewBox="0 0 32 32" role="img" aria-label="Favicon: D brasa sobre verde"><rect width="32" height="32" rx="7" fill="#15302A"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#EA7338" text-anchor="middle" font-weight="700">D</text></svg>
-        <svg width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Favicon em 32px"><rect width="32" height="32" rx="7" fill="#15302A"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#EA7338" text-anchor="middle" font-weight="700">D</text></svg>
+        <svg width="56" height="56" viewBox="0 0 32 32" role="img" aria-label="Favicon: D brasa sobre nanquim"><rect width="32" height="32" rx="7" fill="#1B1A1F"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#EA7338" text-anchor="middle" font-weight="700">D</text></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Favicon em 32px"><rect width="32" height="32" rx="7" fill="#1B1A1F"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#EA7338" text-anchor="middle" font-weight="700">D</text></svg>
       </div>
-      <p class="uso">Quadrado verde base <code>#15302A</code> com cantos de raio 7/32, letra "D" serifada na cor brasa <code>#EA7338</code>. É a única "marca gráfica" do projeto. Não criar variações; em contexto claro ou escuro, o ícone é o mesmo.</p>
+      <p class="uso">Quadrado nanquim <code>#1B1A1F</code> com cantos de raio 7/32, letra "D" serifada na cor brasa <code>#EA7338</code>. É a única "marca gráfica" do projeto. Não criar variações; em contexto claro ou escuro, o ícone é o mesmo.</p>
     </div>
 
     <div class="demo">
       <div class="meta">Detalhe de marca: o sublinhado orgânico</div>
       <div class="sp-h2">Entende seu filho <span class="stroke">antes de rotular<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M4,9 C44,3 86,12 116,7 C150,2 176,11 196,6" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>.</div>
-      <p class="uso">Um traço SVG desenhado à mão, na cor de acento, sublinha a expressão mais importante do título. <b>Usar no máximo uma vez por página</b>, sempre sobre a ideia central (não sobre qualquer palavra). É o gesto "humano" da marca.</p>
+      <p class="uso">Um traço SVG desenhado à mão, na cor de acento, sublinha a expressão mais importante do título. É o gesto de nanquim da marca: parece feito com pincel. <b>Usar no máximo uma vez por página</b>, sempre sobre a ideia central (não sobre qualquer palavra).</p>
     </div>
   </div>
 </section>
@@ -295,42 +300,44 @@ footer .cr b{color:var(--text-strong)}
 <section class="bloco" id="cores">
   <div class="wrap">
     <span class="kicker">03 · Cores</span>
-    <h2>A paleta Verde Brasa.</h2>
-    <p>A paleta vive em <b>tokens CSS</b> (custom properties) definidos no topo do <code>&lt;style&gt;</code> do <code>index.html</code> e replicados em <code>assets/paginas-tema.css</code>. Nunca usar hex solto no meio do código: <b>toda cor entra por token</b>. Os únicos hex fixos permitidos fora dos tokens são os da banda "Para famílias" (sempre escura) e do favicon.</p>
+    <h2>A paleta Nanquim Brasa.</h2>
+    <p>A paleta vive em <b>tokens CSS</b> (custom properties) definidos no topo do <code>&lt;style&gt;</code> do <code>index.html</code> e replicados em <code>assets/paginas-tema.css</code>. Nunca usar hex solto no meio do código: <b>toda cor entra por token</b>. Os únicos hex fixos permitidos fora dos tokens são os da banda "Para famílias" (sempre nanquim) e do favicon.</p>
 
-    <h3>Modo claro (padrão)</h3>
+    <h3>Modo claro (padrão) · nanquim sobre papel</h3>
     <div class="paleta">
-      <div class="cor"><div class="sw" style="background:#FAF5EB"><span style="background:#15302A;color:#FAF5EB">--bg</span></div><div class="info"><b>Creme · fundo</b><span class="hex">#FAF5EB</span><small>Fundo geral das páginas.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#FFFCF4"><span style="background:#15302A;color:#FAF5EB">--bg-elev</span></div><div class="info"><b>Creme claro · cards</b><span class="hex">#FFFCF4</span><small>Superfícies elevadas: cards, FAQ, caixas.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#EFE7D6"><span style="background:#15302A;color:#FAF5EB">--bg-deep</span></div><div class="info"><b>Creme fundo · faixas</b><span class="hex">#EFE7D6</span><small>Seções alternadas e rodapé, para dar ritmo.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#15302A"><span style="background:#FAF5EB;color:#15302A">--text-strong</span></div><div class="info"><b>Verde petróleo · títulos</b><span class="hex">#15302A</span><small>Títulos e negritos. É também a cor "mãe" da marca.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#33271E"><span style="background:#FAF5EB;color:#33271E">--text</span></div><div class="info"><b>Marrom escuro · corpo</b><span class="hex">#33271E</span><small>Texto corrido.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#6A5C4D"><span style="background:#FAF5EB;color:#6A5C4D">--text-mute</span></div><div class="info"><b>Marrom mutado</b><span class="hex">#6A5C4D</span><small>Parágrafos de apoio, legendas, links de menu.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#D75F28"><span style="background:#FAF5EB;color:#D75F28">--accent</span></div><div class="info"><b>Brasa · ação</b><span class="hex">#D75F28</span><small>CTAs, links, bullets, detalhes. Hover: #B84E20.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#9A7430"><span style="background:#FAF5EB;color:#9A7430">--kicker</span></div><div class="info"><b>Dourado · rótulos</b><span class="hex">#9A7430</span><small>Kickers (rótulos de seção em caixa alta).</small></div></div>
-      <div class="cor"><div class="sw" style="background:#E4D8C2"><span style="background:#15302A;color:#FAF5EB">--border</span></div><div class="info"><b>Areia · bordas</b><span class="hex">#E4D8C2</span><small>Bordas de 1px em tudo que é card ou pílula.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#F4F1EA"><span style="background:#1B1A1F;color:#F4F1EA">--bg</span></div><div class="info"><b>Papel · fundo</b><span class="hex">#F4F1EA</span><small>Fundo geral das páginas.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#FBF9F3"><span style="background:#1B1A1F;color:#F4F1EA">--bg-elev</span></div><div class="info"><b>Papel claro · cards</b><span class="hex">#FBF9F3</span><small>Superfícies elevadas: cards, FAQ, caixas.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#E7E2D7"><span style="background:#1B1A1F;color:#F4F1EA">--bg-deep</span></div><div class="info"><b>Papel fundo · faixas</b><span class="hex">#E7E2D7</span><small>Seções alternadas e rodapé, para dar ritmo.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#1B1A1F"><span style="background:#F4F1EA;color:#1B1A1F">--text-strong</span></div><div class="info"><b>Nanquim · títulos</b><span class="hex">#1B1A1F</span><small>Títulos e negritos. É a cor-mãe da marca.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#2B2925"><span style="background:#F4F1EA;color:#2B2925">--text</span></div><div class="info"><b>Tinta quente · corpo</b><span class="hex">#2B2925</span><small>Texto corrido.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#655F57"><span style="background:#F4F1EA;color:#655F57">--text-mute</span></div><div class="info"><b>Grafite mutado</b><span class="hex">#655F57</span><small>Parágrafos de apoio, legendas, links de menu.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#D75F28"><span style="background:#F4F1EA;color:#D75F28">--accent</span></div><div class="info"><b>Brasa · ação</b><span class="hex">#D75F28</span><small>CTAs, links, bullets, detalhes. Hover: #B84E20.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#9A7430"><span style="background:#F4F1EA;color:#9A7430">--kicker</span></div><div class="info"><b>Dourado · rótulos</b><span class="hex">#9A7430</span><small>Kickers (rótulos de seção em caixa alta).</small></div></div>
+      <div class="cor"><div class="sw" style="background:#DFD8C9"><span style="background:#1B1A1F;color:#F4F1EA">--border</span></div><div class="info"><b>Areia · bordas</b><span class="hex">#DFD8C9</span><small>Bordas de 1px em tudo que é card ou pílula.</small></div></div>
     </div>
 
-    <h3>Modo escuro</h3>
+    <h3>Modo escuro · nanquim cheio</h3>
     <div class="paleta">
-      <div class="cor"><div class="sw" style="background:#15302A"><span style="background:#FAF5EB;color:#15302A">--bg</span></div><div class="info"><b>Verde petróleo · fundo</b><span class="hex">#15302A</span><small>Fundo geral no escuro.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#1E3D34"><span style="background:#FAF5EB;color:#1E3D34">--bg-elev</span></div><div class="info"><b>Verde elevado · cards</b><span class="hex">#1E3D34</span><small>Cards e superfícies.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#0F2420"><span style="background:#FAF5EB;color:#0F2420">--bg-deep</span></div><div class="info"><b>Verde profundo · faixas</b><span class="hex">#0F2420</span><small>Faixas alternadas; #0B1C18 no rodapé.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#FAF5EB"><span style="background:#15302A;color:#FAF5EB">--text-strong</span></div><div class="info"><b>Creme · títulos</b><span class="hex">#FAF5EB</span><small>Títulos no escuro; corpo usa #EFE7D6.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#BFC6B5"><span style="background:#15302A;color:#BFC6B5">--text-mute</span></div><div class="info"><b>Verde acinzentado</b><span class="hex">#BFC6B5</span><small>Texto de apoio no escuro.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#EA7338"><span style="background:#0B1C18;color:#EA7338">--accent</span></div><div class="info"><b>Brasa clara · ação</b><span class="hex">#EA7338</span><small>CTAs no escuro. Hover: #EC9059 (clareia, não escurece).</small></div></div>
-      <div class="cor"><div class="sw" style="background:#CDA04E"><span style="background:#15302A;color:#CDA04E">--kicker</span></div><div class="info"><b>Dourado claro · rótulos</b><span class="hex">#CDA04E</span><small>Kickers no escuro.</small></div></div>
-      <div class="cor"><div class="sw" style="background:#2C4A40"><span style="background:#FAF5EB;color:#15302A">--border</span></div><div class="info"><b>Verde borda</b><span class="hex">#2C4A40</span><small>Bordas no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#1B1A1F"><span style="background:#F4F1EA;color:#1B1A1F">--bg</span></div><div class="info"><b>Nanquim · fundo</b><span class="hex">#1B1A1F</span><small>Fundo geral no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#26252B"><span style="background:#F4F1EA;color:#26252B">--bg-elev</span></div><div class="info"><b>Grafite · cards</b><span class="hex">#26252B</span><small>Cards e superfícies.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#121115"><span style="background:#F4F1EA;color:#121115">--bg-deep</span></div><div class="info"><b>Nanquim profundo · faixas</b><span class="hex">#121115</span><small>Faixas alternadas; #0E0D11 no rodapé.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#F5F1E8"><span style="background:#1B1A1F;color:#F5F1E8">--text-strong</span></div><div class="info"><b>Papel · títulos</b><span class="hex">#F5F1E8</span><small>Títulos no escuro; corpo usa #E6E1D6.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#A6A199"><span style="background:#1B1A1F;color:#A6A199">--text-mute</span></div><div class="info"><b>Cinza quente</b><span class="hex">#A6A199</span><small>Texto de apoio no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#EA7338"><span style="background:#141318;color:#EA7338">--accent</span></div><div class="info"><b>Brasa clara · ação</b><span class="hex">#EA7338</span><small>CTAs no escuro. Hover: #EC9059 (clareia, não escurece).</small></div></div>
+      <div class="cor"><div class="sw" style="background:#CDA04E"><span style="background:#1B1A1F;color:#CDA04E">--kicker</span></div><div class="info"><b>Dourado claro · rótulos</b><span class="hex">#CDA04E</span><small>Kickers no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#343139"><span style="background:#F4F1EA;color:#1B1A1F">--border</span></div><div class="info"><b>Grafite borda</b><span class="hex">#343139</span><small>Bordas no escuro.</small></div></div>
     </div>
 
     <h3>Regras de uso da cor</h3>
     <ul class="regras">
+      <li><b>Nanquim é a base e a estrutura.</b> O quase-preto <code>#1B1A1F</code> é a cor-mãe: fundo no escuro, títulos e traço no claro. É a "tinta" da marca; tudo o mais se apoia nela.</li>
       <li><b>Brasa é ação, e só ação.</b> O laranja marca o que convida a fazer algo: botões, links, bullets, o "+" do FAQ, estrelas, o sublinhado do hero. Nunca usar como fundo de seção nem como cor de texto corrido.</li>
       <li><b>Dourado é rótulo.</b> O kicker dourado nomeia seções em caixa alta. Não misturar: rótulo não é laranja, ação não é dourada. Exceção pontual: o marcador "·" das pílulas de tema usa o dourado.</li>
-      <li><b>Sobre o laranja, texto escuro.</b> Texto sobre o acento usa <code>--accent-on</code> (#0B1C18 no escuro, #FAF5EB no claro), nunca branco puro nem preto puro.</li>
-      <li><b>Decisão fechada de marca:</b> a paleta oficial é a brasa <code>#EA7338</code> (escuro) / <code>#D75F28</code> (claro) com kickers dourados. O <code>#B84E20</code> do briefing original <b>não</b> é o acento; sobrevive apenas como cor de hover no modo claro. Não reabrir essa discussão.</li>
-      <li><b>Hierarquia por três tons de fundo.</b> O ritmo vertical do site vem da alternância <code>--bg</code> → <code>--bg-deep</code> → <code>--bg</code>, sempre separada por borda de 1px. Não inventar um quarto fundo.</li>
+      <li><b>Sobre o laranja, texto escuro.</b> Texto sobre o acento usa <code>--accent-on</code> (#141318 no escuro, #FBF9F3 no claro), nunca branco puro nem preto puro.</li>
+      <li><b>Decisão fechada de marca:</b> a paleta oficial é o nanquim <code>#1B1A1F</code> com a brasa <code>#EA7338</code> (escuro) / <code>#D75F28</code> (claro) e kickers dourados. <b>O verde-petróleo #15302A foi aposentado</b> e não deve reaparecer em fundo, texto, foto nem ícone. O <code>#B84E20</code> sobrevive só como hover da brasa no modo claro.</li>
+      <li><b>Hierarquia por três tons de fundo.</b> O ritmo vertical vem da alternância <code>--bg</code> → <code>--bg-deep</code> → <code>--bg</code>, sempre separada por borda de 1px. Não inventar um quarto fundo.</li>
       <li><b>O brilho "wash".</b> As manchas radiais decorativas (hero e contato) usam <code>--wash</code>, o laranja com 14 a 16% de opacidade. É o único uso de laranja em área grande, e sempre atrás do conteúdo.</li>
+      <li><b>Neutros sem cor.</b> Nanquim e cinzas não puxam para verde nem para azul: são neutros de leve calor, para conversarem com a brasa e o dourado sem virar "frios".</li>
     </ul>
   </div>
 </section>
@@ -373,7 +380,7 @@ footer .cr b{color:var(--text-strong)}
       <li><b>Nunito Sans nos pesos 400, 600, 700 e 800.</b> Botões e rótulos usam 800; links de menu e chips usam 700.</li>
       <li><b>Títulos escalam com <code>clamp()</code></b>, nunca com media query de tamanho de fonte. Os valores acima são os oficiais; novos títulos devem reaproveitá-los.</li>
       <li><b>Largura de leitura limitada em "ch".</b> Lead até 46ch, corpo até 60 a 64ch, cabeças de seção até 60ch. Linha longa cansa; o público já chega cansado.</li>
-      <li><b>O negrito é o grifo da marca.</b> Dentro do texto mutado, o <code>&lt;b&gt;</code> muda para a cor forte. É assim que se destaca uma frase; não usar itálico nem sublinhado para ênfase.</li>
+      <li><b>O negrito é o grifo da marca.</b> Dentro do texto mutado, o <code>&lt;b&gt;</code> muda para a cor forte (nanquim no claro, papel no escuro). É assim que se destaca uma frase; não usar itálico nem sublinhado para ênfase.</li>
       <li><b>Itálico é reservado</b> para a palavra emotiva do h1 (classe <code>.it</code>) e para as citações. Fora disso, não.</li>
     </ul>
   </div>
@@ -405,13 +412,13 @@ footer .cr b{color:var(--text-strong)}
       <tr><th>Elemento</th><th>Raio</th><th>Sombra</th></tr>
       <tr><td>Botões, chips, pílulas</td><td><b>30px</b> (24px nas tags)</td><td>Nenhuma</td></tr>
       <tr><td>Fotos e cards grandes</td><td><b>18px</b> (ig-card: 22px)</td><td>Cards de passo: <code>0 8px 24px -16px rgba(0,0,0,.3)</code></td></tr>
-      <tr><td>FAQ, caixas, aviso de cookies</td><td><b>12 a 14px</b></td><td>Cookies: <code>0 12px 40px rgba(11,28,24,.22)</code></td></tr>
-      <tr><td>Nav ao rolar</td><td>·</td><td><code>0 6px 24px rgba(11,28,24,.10)</code></td></tr>
+      <tr><td>FAQ, caixas, aviso de cookies</td><td><b>12 a 14px</b></td><td>Cookies: <code>0 12px 40px rgba(14,13,17,.28)</code></td></tr>
+      <tr><td>Nav ao rolar</td><td>·</td><td><code>0 6px 24px rgba(14,13,17,.14)</code></td></tr>
       <tr><td>Botão flutuante</td><td><b>50px</b></td><td><code>0 10px 28px -8px rgba(0,0,0,.4)</code></td></tr>
     </table>
     </div>
     <ul class="regras">
-      <li><b>Sombras são raras e sempre suaves</b>, com tom esverdeado (rgba(11,28,24,…)) no claro. Nada de sombra dura ou colorida.</li>
+      <li><b>Sombras são raras e sempre suaves</b>, com tom de nanquim (rgba(14,13,17,…)) no lugar do antigo tom esverdeado. Nada de sombra dura ou colorida.</li>
       <li><b>Borda de 1px em tudo.</b> Cards, pílulas e faixas se separam por <code>--border</code>, não por sombra. A sombra é reforço, não estrutura.</li>
       <li><b>Aspect ratios das fotos:</b> retrato 4/5 (hero, formação), quadrado 1/1 (sobre, famílias), círculo (avatares).</li>
     </ul>
@@ -520,7 +527,7 @@ footer .cr b{color:var(--text-strong)}
     <h2>Fotos reais, nunca banco de imagem.</h2>
     <ul class="regras">
       <li><b>Só fotos do próprio Diego</b> (consultório, IPq, retrato). Nada de banco de imagem, nada de criança-modelo sorrindo, nada de imagem gerada por IA.</li>
-      <li><b>Container .photo:</b> toda foto vive num contêiner com borda de 1px, raio 18px e um gradiente verde de fallback atrás (<code>--photo-grad</code>). Se a imagem falhar, o gradiente segura o layout.</li>
+      <li><b>Container .photo:</b> toda foto vive num contêiner com borda de 1px, raio 18px e um gradiente de nanquim/carvão de fallback atrás (<code>--photo-grad</code>), com um leve brilho de brasa. Se a imagem falhar, o gradiente segura o layout, e não há mais verde nesse fundo.</li>
       <li><b>Formatos:</b> sempre o par <code>&lt;picture&gt;</code> com <code>.webp</code> + fallback <code>.jpg</code>, máximo 1300px no lado maior, com <code>width</code>/<code>height</code> declarados.</li>
       <li><b>Nomes são SEO e são fixos:</b> <code>dr-diego-alves-rosa-psiquiatra-infantil</code> (hero), <code>dr-diego-alves-rosa-sobre</code>, <code>dr-diego-alves-rosa-ipq-hc-fmusp</code>, <code>psiquiatria-infantil-orientacao-de-pais</code>, <code>dr-diego-alves-rosa-instagram</code>. Ao trocar uma foto, <b>mantenha o nome do arquivo</b>.</li>
       <li><b>Alt descritivo sempre</b>, citando nome e contexto ("Dr. Diego Alves Rosa, psiquiatra da infância e adolescência, em São Paulo").</li>
@@ -534,18 +541,18 @@ footer .cr b{color:var(--text-strong)}
 <section class="bloco fundo" id="tema">
   <div class="wrap">
     <span class="kicker">08 · Tema claro e escuro</span>
-    <h2>Claro por padrão, escuro por escolha.</h2>
+    <h2>Papel por padrão, nanquim por escolha.</h2>
     <ul class="regras">
-      <li><b>Padrão é o modo CLARO para todo mundo.</b> O site não segue <code>prefers-color-scheme</code>; a decisão foi tomada e está fechada.</li>
-      <li><b>O botão no topo alterna</b> para o escuro e a escolha fica salva em <code>localStorage</code> (chave <code>tema</code>). A URL aceita <code>?tema=claro</code> / <code>?tema=escuro</code> para testes e links.</li>
+      <li><b>Padrão é o modo CLARO para todo mundo</b> (nanquim sobre papel). O site não segue <code>prefers-color-scheme</code>; a decisão foi tomada e está fechada.</li>
+      <li><b>O botão no topo alterna</b> para o escuro (nanquim cheio) e a escolha fica salva em <code>localStorage</code> (chave <code>tema</code>). A URL aceita <code>?tema=claro</code> / <code>?tema=escuro</code> para testes e links.</li>
       <li><b>Sem flash de tema:</b> um script inline no <code>&lt;head&gt;</code> aplica <code>data-theme="light"</code> antes da renderização. Toda página nova precisa desse script.</li>
       <li><b>Trocar de tema é trocar tokens, nunca classes.</b> Os dois modos compartilham o mesmo HTML; se um componente precisa de CSS diferente por tema, ele está desenhado errado.</li>
-      <li><b>Exceção intencional:</b> a seção <b>"Para famílias" (#maes) é sempre escura</b>, mesmo no modo claro. É a banda emocional no meio do site, e faz isso redefinindo os tokens localmente. Não "corrigir" isso.</li>
+      <li><b>Exceção intencional:</b> a seção <b>"Para famílias" (#maes) é sempre escura</b>, mesmo no modo claro. É a banda emocional no meio do site, e faz isso redefinindo os tokens localmente. Agora ela é <b>nanquim #1B1A1F</b> (antes era o verde #15302A). Não "corrigir" isso.</li>
     </ul>
     <div class="banda-escura">
       <span class="kicker">Se isso é a sua noite</span>
       <p class="sp-quote"><span class="mark">"</span>Eu já tentei tudo. Será que o problema sou eu?<span class="mark">"</span></p>
-      <p>Assim fica a banda escura dentro do modo claro: verde <b>#15302A</b> fixo, com os tokens do modo escuro reaplicados só nesse trecho.</p>
+      <p>Assim fica a banda escura dentro do modo claro: nanquim <b>#1B1A1F</b> fixo, com os tokens do modo escuro reaplicados só nesse trecho.</p>
     </div>
   </div>
 </section>
@@ -632,6 +639,7 @@ footer .cr b{color:var(--text-strong)}
     <h2>Como o sistema é construído.</h2>
     <ul class="regras">
       <li><b><code>index.html</code> é a fonte de verdade:</b> HTML + CSS + JS num arquivo só, sem build, sem framework, sem npm. <b>Leia o arquivo inteiro antes de editar.</b></li>
+      <li><b>Migração de paleta:</b> este caderno define <b>Nanquim Brasa</b> como o sistema atual. A troca dos tokens verde → nanquim precisa ser aplicada nos dois lugares que carregam a paleta (<code>index.html</code> e <code>assets/paginas-tema.css</code>), além do <code>&lt;meta name="theme-color"&gt;</code> e do favicon. Enquanto a migração não é feita, o código ainda pode conter o verde antigo; o alvo é este caderno.</li>
       <li><b>Páginas de tema não duplicam CSS:</b> elas usam <code>assets/paginas-tema.css</code> e <code>assets/paginas-tema.js</code>. Só a home carrega o CSS embutido.</li>
       <li><b>Tokens primeiro:</b> qualquer cor, largura ou gradiente novo entra como custom property no bloco de tokens, nos dois modos, nos dois arquivos.</li>
       <li><b>JavaScript vanilla e progressivo:</b> o site funciona inteiro sem JS (FAQ é <code>details</code> nativo, menu degrada). JS só adiciona: tema, revelação, botão flutuante, analytics, cookies.</li>
@@ -669,7 +677,7 @@ footer .cr b{color:var(--text-strong)}
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
-    <p class="cr"><b>Caderno de Marca · Verde Brasa</b> · documento interno do site drdiegorosa.com.br<br>
+    <p class="cr"><b>Caderno de Marca · Nanquim Brasa</b> · documento interno do site drdiegorosa.com.br · substitui o antigo Verde Brasa<br>
     Fontes deste caderno: <code>index.html</code> (fonte de verdade), <code>assets/paginas-tema.css</code>, <code>PROJETO.md</code> e <code>CLAUDE.md</code>. Em caso de conflito, o código vale mais que este documento; atualize o caderno em seguida.</p>
   </div>
 </footer>
