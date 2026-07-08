@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caderno de Marca · Nanquim Brasa · Dr. Diego Alves Rosa</title>
+<meta name="description" content="Documento interno: regras e orientações do design system Nanquim Brasa do site drdiegorosa.com.br.">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- favicon (nanquim base + "D" brasa) -->
+<link rel="icon" href="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'><rect%20width='32'%20height='32'%20rx='7'%20fill='%231B1A1F'/><text%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='20'%20fill='%23EA7338'%20text-anchor='middle'%20font-weight='700'>D</text></svg>">
+
+<!-- aplica o tema antes da renderização, igual ao site: padrão claro -->
+<script>try{var t=localStorage.getItem('tema');var p=new URLSearchParams(location.search).get('tema');if(p)t=p;if(t!=='escuro')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============ Identidade Nanquim Brasa · tokens por modo ============ */
+/* Nanquim (tinta quase preta) na base + acento Brasa. O verde-petróleo foi aposentado. */
+:root{
+  --bg:#1B1A1F; --bg-elev:#26252B; --bg-deep:#121115;
+  --text:#E6E1D6; --text-strong:#F5F1E8; --text-mute:#A6A199; --text-faint:#6B655D;
+  --accent:#EA7338; --accent-hover:#EC9059; --accent-on:#141318;
+  --kicker:#CDA04E; --border:#343139; --chip:#1B1A1F; --tag:#26252B;
+  --nav-bg:rgba(18,17,21,.82); --footer-bg:#0E0D11;
+  --photo-grad:radial-gradient(58% 48% at 34% 28%, rgba(234,115,56,.22), rgba(234,115,56,0) 60%),linear-gradient(155deg,#3A3740,#26252B 72%,#121115);
+  --contato-grad:linear-gradient(160deg,#1B1A1F,#121115);
+  --wash:rgba(234,115,56,.16);
+  --maxw:1320px;
+}
+html[data-theme="light"]{
+  --bg:#F4F1EA; --bg-elev:#FBF9F3; --bg-deep:#E7E2D7;
+  --text:#2B2925; --text-strong:#1B1A1F; --text-mute:#655F57; --text-faint:#98918A;
+  --accent:#D75F28; --accent-hover:#B84E20; --accent-on:#FBF9F3;
+  --kicker:#9A7430; --border:#DFD8C9; --chip:#FBF9F3; --tag:#FBF9F3;
+  --nav-bg:rgba(244,241,234,.86); --footer-bg:#E7E2D7;
+  --photo-grad:radial-gradient(58% 48% at 34% 28%, rgba(215,95,40,.16), rgba(215,95,40,0) 60%),linear-gradient(155deg,#CDC6B8,#B4AC9E 72%,#98918E);
+  --contato-grad:linear-gradient(160deg,#F4F1EA,#E7E2D7);
+  --wash:rgba(215,95,40,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{background:var(--bg);font-family:'Nunito Sans',system-ui,'Segoe UI',Roboto,sans-serif;color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .3s,color .3s}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+.kicker{font-family:'Nunito Sans';font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--kicker)}
+h1,h2,h3,h4{font-family:'Fraunces';color:var(--text-strong);letter-spacing:-.015em;font-weight:600}
+
+/* ---------- Nav do caderno ---------- */
+nav{position:sticky;top:0;z-index:50;background:var(--nav-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;flex-direction:column;line-height:1.05}
+.brand .nm{font-family:'Fraunces';font-weight:600;font-size:18px;color:var(--text-strong)}
+.brand .at{font-size:11px;font-weight:700;color:var(--text-mute);letter-spacing:.02em}
+.theme-btn{font-weight:700;font-size:13px;color:var(--text-mute);background:none;border:1px solid var(--border);border-radius:30px;padding:8px 14px;cursor:pointer;font-family:inherit;transition:.15s;white-space:nowrap}
+.theme-btn:hover{border-color:var(--accent);color:var(--text-strong)}
+
+/* ---------- Sumário ---------- */
+.toc{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.toc a{font-weight:700;font-size:13px;color:var(--text);background:var(--chip);border:1px solid var(--border);padding:8px 14px;border-radius:24px;transition:.15s}
+.toc a:hover{border-color:var(--accent);transform:translateY(-2px)}
+
+/* ---------- Estrutura do documento ---------- */
+.capa{padding:clamp(3.5rem,8vw,5.5rem) 0 clamp(2.5rem,6vw,4rem);position:relative;overflow:hidden}
+.capa::before{content:"";position:absolute;top:-180px;right:-160px;width:560px;height:560px;background:radial-gradient(circle, var(--wash), transparent 62%);pointer-events:none}
+.capa h1{font-size:clamp(2.1rem,6vw,3.25rem);line-height:1.06;margin-top:16px;position:relative}
+.capa .lead{color:var(--text-mute);font-size:18px;max-width:58ch;margin-top:20px;position:relative}
+.capa .lead b{color:var(--text-strong)}
+.selo{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:8px 14px;border:1px solid var(--border);border-radius:24px;background:var(--bg-elev);font-size:12.5px;font-weight:700;color:var(--text-mute);position:relative}
+.selo .p{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+
+section.bloco{padding:clamp(3rem,7vw,4.5rem) 0;border-top:1px solid var(--border)}
+section.bloco.fundo{background:var(--bg-deep)}
+.bloco h2{font-size:clamp(1.6rem,3.6vw,2.125rem);line-height:1.12;margin-top:10px}
+.bloco h3{font-size:20px;margin:36px 0 6px}
+.bloco > .wrap > p, .nota-p{color:var(--text-mute);font-size:16px;margin-top:14px;max-width:66ch}
+.bloco p b{color:var(--text-strong)}
+
+/* regras em lista, com o mesmo bullet brasa do site */
+.regras{list-style:none;padding:0;margin-top:18px}
+.regras li{position:relative;padding:0 0 14px 28px;color:var(--text-mute);font-size:16px;line-height:1.55;max-width:70ch}
+.regras li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.regras li b{color:var(--text-strong)}
+.regras li code{color:var(--text-strong)}
+
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;background:var(--bg-elev);border:1px solid var(--border);border-radius:6px;padding:2px 7px;color:var(--text)}
+pre{margin-top:16px;background:var(--bg-elev);border:1px solid var(--border);border-radius:12px;padding:18px 20px;overflow-x:auto}
+pre code{background:none;border:none;padding:0;font-size:13.5px;line-height:1.6}
+
+/* ---------- Amostras de cor ---------- */
+.paleta{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:22px}
+.cor{background:var(--bg-elev);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.cor .sw{height:74px;display:flex;align-items:flex-end;padding:10px}
+.cor .sw span{font-size:11px;font-weight:800;letter-spacing:.04em;padding:3px 8px;border-radius:6px}
+.cor .info{padding:12px 14px}
+.cor .info b{display:block;font-size:13.5px;color:var(--text-strong)}
+.cor .info small{display:block;font-size:12px;color:var(--text-mute);margin-top:3px;line-height:1.5}
+.cor .hex{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--text-mute)}
+
+/* tabela de tokens */
+table{width:100%;border-collapse:collapse;margin-top:20px;font-size:14px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--kicker)}
+td{color:var(--text-mute)}
+td b, td code{color:var(--text-strong)}
+.tbl-scroll{overflow-x:auto}
+.dot{display:inline-block;width:13px;height:13px;border-radius:4px;border:1px solid var(--border);vertical-align:-2px;margin-right:7px}
+
+/* ---------- Especmes de tipografia ---------- */
+.tipo{margin-top:22px;background:var(--bg-elev);border:1px solid var(--border);border-radius:18px;padding:28px}
+.tipo + .tipo{margin-top:14px}
+.tipo .meta{font-size:12px;font-weight:700;color:var(--text-faint);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.sp-h1{font-family:'Fraunces';font-weight:600;letter-spacing:-.015em;color:var(--text-strong);font-size:clamp(2.25rem,7vw,3.5rem);line-height:1.05}
+.sp-h1 .it{font-style:italic;font-weight:500}
+.sp-h2{font-family:'Fraunces';font-weight:600;letter-spacing:-.015em;color:var(--text-strong);font-size:clamp(1.75rem,4vw,2.375rem);line-height:1.1}
+.sp-quote{font-family:'Fraunces';font-style:italic;font-weight:500;font-size:clamp(1.4rem,3.2vw,1.875rem);line-height:1.3;color:var(--text-strong)}
+.sp-quote .mark{color:var(--accent);font-style:normal}
+.sp-lead{color:var(--text-mute);font-size:18px;line-height:1.5;max-width:46ch}
+.sp-body{font-size:16px;color:var(--text-mute);max-width:60ch}
+.sp-body b{color:var(--text-strong)}
+
+/* sublinhado orgânico do hero */
+.stroke{position:relative;display:inline-block;white-space:nowrap}
+.stroke svg{position:absolute;left:-3%;bottom:-10px;width:106%;height:14px}
+.stroke svg path{stroke:var(--accent)}
+
+/* ---------- Vitrines de componentes ---------- */
+.demo{margin-top:22px;background:var(--bg-elev);border:1px solid var(--border);border-radius:18px;padding:28px}
+.demo + .demo{margin-top:14px}
+.demo .meta{font-size:12px;font-weight:700;color:var(--text-faint);letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.demo-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.uso{font-size:13.5px;color:var(--text-mute);margin-top:16px;line-height:1.6;max-width:70ch}
+.uso b{color:var(--text-strong)}
+
+/* componentes reais, copiados do site */
+.btn{display:inline-block;font-family:'Nunito Sans';font-weight:800;font-size:14px;background:var(--accent);color:var(--accent-on);padding:11px 22px;border-radius:30px;transition:transform .15s,background .15s;border:none;cursor:pointer}
+.btn:hover{transform:translateY(-2px);background:var(--accent-hover)}
+.btn.lg{font-size:15px;padding:15px 30px}
+.btn-ghost{display:inline-block;font-weight:700;font-size:14px;color:var(--text-strong);padding:11px 22px;border:1px solid var(--border);border-radius:30px;transition:.15s;background:none;cursor:pointer;font-family:inherit}
+.btn-ghost:hover{border-color:var(--accent)}
+.chip{font-weight:700;font-size:14px;color:var(--text);background:var(--chip);border:1px solid var(--border);padding:11px 18px;border-radius:30px}
+.chip .d{color:var(--accent);margin-right:8px;font-weight:800}
+.tag{font-size:13px;font-weight:700;color:var(--text);background:var(--tag);border:1px solid var(--border);padding:8px 14px;border-radius:24px}
+.theme{display:inline-block;font-weight:700;font-size:14px;color:var(--text);background:var(--chip);border:1px solid var(--border);padding:11px 16px;border-radius:30px;transition:.15s}
+.theme:hover{border-color:var(--accent);transform:translateY(-2px)}
+.theme .d{color:var(--kicker);margin-right:7px;font-weight:800}
+.step{background:var(--bg);border:1px solid var(--border);border-radius:18px;padding:32px 28px;box-shadow:0 8px 24px -16px rgba(0,0,0,.3);max-width:340px}
+.step .n{font-family:'Fraunces';font-weight:600;font-size:30px;line-height:1;color:var(--accent)}
+.step h4{font-size:20px;line-height:1.2;margin:14px 0 8px;font-weight:600}
+.step p{color:var(--text-mute);font-size:15px;line-height:1.6}
+.faq-item{background:var(--bg);border:1px solid var(--border);border-radius:14px;max-width:620px}
+.faq-item summary{list-style:none;cursor:pointer;padding:20px 22px;font-weight:800;font-size:16px;color:var(--text-strong);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--accent);font-size:24px;font-weight:700;line-height:1;flex:none;transition:transform .2s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .a{padding:0 22px 20px;color:var(--text-mute);font-size:15px;line-height:1.65}
+.form-list{list-style:none;padding:0;margin-top:6px;max-width:56ch}
+.form-list li{position:relative;padding:0 0 16px 30px;color:var(--text-mute);font-size:16px;line-height:1.5}
+.form-list li b{color:var(--text-strong)}
+.form-list li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.review{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:24px;max-width:360px}
+.review .stars{color:var(--accent);font-size:15px;letter-spacing:3px}
+.review p{color:var(--text);font-size:15px;line-height:1.6;margin:12px 0 14px}
+.review .who{font-weight:700;font-size:13px;color:var(--text-mute)}
+.cena{margin-top:6px;padding:20px 24px;background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:12px;max-width:620px}
+.cena p{font-size:16px;color:var(--text)}
+.alerta{margin-top:14px;padding:22px 26px;background:var(--wash);border:1px solid var(--border);border-radius:14px;max-width:620px}
+.alerta .kicker{color:var(--accent)}
+.alerta h4{margin-top:8px;font-size:19px}
+.alerta p{color:var(--text-mute);font-size:15px;margin-top:8px}
+.promessa{margin-top:6px;padding:0;list-style:none;max-width:56ch}
+.promessa li{position:relative;padding:0 0 16px 36px;font-size:16px;line-height:1.6;color:var(--text)}
+.promessa li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:800;font-size:19px}
+.passos{margin-top:6px;padding:0;list-style:none;counter-reset:p;max-width:56ch}
+.passos li{position:relative;padding:2px 0 18px 46px;font-size:16px;line-height:1.6;counter-increment:p;color:var(--text-mute)}
+.passos li::before{content:counter(p);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-on);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+
+/* banda escura demonstrativa (a regra do #maes, agora em nanquim) */
+.banda-escura{
+  background:#1B1A1F;border-radius:18px;padding:32px 30px;margin-top:22px;border:1px solid #343139;
+  --bg-elev:#26252B; --bg-deep:#121115;
+  --text:#E6E1D6; --text-strong:#F5F1E8; --text-mute:#A6A199; --text-faint:#6B655D;
+  --accent:#EA7338; --accent-hover:#EC9059; --accent-on:#141318;
+  --kicker:#CDA04E; --border:#343139; --chip:#26252B; --tag:#26252B;
+}
+.banda-escura .sp-quote{margin-top:8px}
+.banda-escura p{color:var(--text-mute);font-size:15px;margin-top:14px;max-width:60ch}
+
+/* voz: certo x errado */
+.voz-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.voz{border:1px solid var(--border);border-radius:14px;padding:20px 22px;background:var(--bg-elev)}
+.voz .rotulo{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.voz.sim .rotulo{color:var(--accent)}
+.voz.nao .rotulo{color:var(--text-faint)}
+.voz.nao{opacity:.85}
+.voz p{font-size:15px;line-height:1.6;color:var(--text);margin-top:10px}
+.voz small{display:block;font-size:12.5px;color:var(--text-mute);margin-top:10px;line-height:1.5}
+@media(max-width:700px){.voz-grid{grid-template-columns:1fr}}
+
+/* footer do caderno */
+footer{background:var(--footer-bg);border-top:1px solid var(--border);padding:40px 0;margin-top:0}
+footer .cr{font-size:13px;color:var(--text-mute);line-height:1.7}
+footer .cr b{color:var(--text-strong)}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap nav-in">
+    <a href="#topo" class="brand">
+      <span class="nm">Caderno de Marca</span>
+      <span class="at">Nanquim Brasa · drdiegorosa.com.br</span>
+    </a>
+    <button class="theme-btn" onclick="flipTema()">Modo claro</button>
+  </div>
+</nav>
+
+<!-- ============ CAPA ============ -->
+<header class="capa" id="topo">
+  <div class="wrap">
+    <span class="kicker">Documento interno · Design system</span>
+    <h1>Nanquim Brasa<span style="color:var(--accent)">.</span><br>O caderno de marca do Dr. Diego.</h1>
+    <p class="lead">Tudo que define a identidade do site do <b>Dr. Diego Alves Rosa</b> em um lugar só: cores, tipografia, componentes, fotografia, comportamento de tema e a voz dos textos. O nome diz a fórmula: <b>nanquim</b> (a tinta quase preta do desenho) na base, <b>brasa</b> (o laranja da ação) no acento, tudo sobre <b>papel</b> no modo claro. O princípio que rege todas as decisões é <b>"alívio antes de impressionar"</b>: acolher uma mãe exausta e desconfiada, não exibir um site chamativo.</p>
+    <span class="selo"><span class="p"></span>Nanquim Brasa substitui o antigo Verde Brasa · o verde-petróleo foi aposentado</span>
+    <div class="toc">
+      <a href="#principios">Princípios</a>
+      <a href="#marca">Marca e assinatura</a>
+      <a href="#cores">Cores</a>
+      <a href="#tipografia">Tipografia</a>
+      <a href="#layout">Layout e espaçamento</a>
+      <a href="#componentes">Componentes</a>
+      <a href="#fotografia">Fotografia</a>
+      <a href="#tema">Tema claro/escuro</a>
+      <a href="#movimento">Movimento</a>
+      <a href="#voz">Voz e textos</a>
+      <a href="#etica">Ética e limites</a>
+      <a href="#tecnica">Regras técnicas</a>
+      <a href="#dados">Dados fixos</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PRINCÍPIOS ============ -->
+<section class="bloco" id="principios">
+  <div class="wrap">
+    <span class="kicker">01 · Princípios</span>
+    <h2>O que a marca precisa transmitir.</h2>
+    <p>Quem chega no site costuma ser uma mãe que já ouviu que "é falta de limite", já passou por vários profissionais e está cansada. O design existe para baixar a guarda dela, não para competir por atenção.</p>
+    <ul class="regras">
+      <li><b>Alívio antes de impressionar.</b> Nenhum elemento pode parecer "site de marketing agressivo". Nada pisca, nada grita, nada apressa.</li>
+      <li><b>Calor sem infantilizar.</b> É um consultório médico sério, mas humano. Papel, nanquim (quase preto) e brasa; nunca cores primárias de brinquedo.</li>
+      <li><b>Tinta e papel.</b> A metáfora que organiza a marca é a do desenho a nanquim: fundo de papel, traço de tinta escura, e um único ponto de brasa onde a mão quis chamar atenção.</li>
+      <li><b>Uma ação principal por tela.</b> O funil inteiro leva a um único destino: a conversa no WhatsApp. Todo CTA laranja é esse convite; o resto é apoio.</li>
+      <li><b>Comportamento como mensagem.</b> A tese clínica (entender a função antes de rotular) aparece também no visual: primeiro acolhe e explica, depois convida.</li>
+      <li><b>Simplicidade técnica é decisão de marca.</b> Um arquivo, sem build, sem framework. Qualquer pessoa consegue editar. Isso não é limitação, é o padrão do projeto.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MARCA ============ -->
+<section class="bloco fundo" id="marca">
+  <div class="wrap">
+    <span class="kicker">02 · Marca e assinatura</span>
+    <h2>Como o nome aparece.</h2>
+    <p>Não existe logotipo desenhado. A marca é tipográfica: o nome em Fraunces, acompanhado do @ do Instagram como assinatura secundária.</p>
+
+    <div class="demo">
+      <div class="meta">Assinatura principal (nav e rodapé)</div>
+      <div class="brand" style="pointer-events:none">
+        <span class="nm" style="font-family:'Fraunces';font-weight:600;font-size:20px;color:var(--text-strong)">Dr. Diego Alves Rosa</span>
+        <span class="at" style="font-size:12px;font-weight:700;color:var(--text-mute)">@diegoaalvesrosa</span>
+      </div>
+      <p class="uso"><b>Regras:</b> nome sempre em Fraunces 600, nunca em caixa alta. O handle vem logo abaixo, em Nunito Sans 700, menor e na cor mutada. Não separar os dois, não inverter a ordem, não aplicar cor de acento no nome.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Favicon / ícone de app</div>
+      <div class="demo-row">
+        <svg width="56" height="56" viewBox="0 0 32 32" role="img" aria-label="Favicon: D brasa sobre nanquim"><rect width="32" height="32" rx="7" fill="#1B1A1F"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#EA7338" text-anchor="middle" font-weight="700">D</text></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Favicon em 32px"><rect width="32" height="32" rx="7" fill="#1B1A1F"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#EA7338" text-anchor="middle" font-weight="700">D</text></svg>
+      </div>
+      <p class="uso">Quadrado nanquim <code>#1B1A1F</code> com cantos de raio 7/32, letra "D" serifada na cor brasa <code>#EA7338</code>. É a única "marca gráfica" do projeto. Não criar variações; em contexto claro ou escuro, o ícone é o mesmo.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Detalhe de marca: o sublinhado orgânico</div>
+      <div class="sp-h2">Entende seu filho <span class="stroke">antes de rotular<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M4,9 C44,3 86,12 116,7 C150,2 176,11 196,6" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>.</div>
+      <p class="uso">Um traço SVG desenhado à mão, na cor de acento, sublinha a expressão mais importante do título. É o gesto de nanquim da marca: parece feito com pincel. <b>Usar no máximo uma vez por página</b>, sempre sobre a ideia central (não sobre qualquer palavra).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CORES ============ -->
+<section class="bloco" id="cores">
+  <div class="wrap">
+    <span class="kicker">03 · Cores</span>
+    <h2>A paleta Nanquim Brasa.</h2>
+    <p>A paleta vive em <b>tokens CSS</b> (custom properties) definidos no topo do <code>&lt;style&gt;</code> do <code>index.html</code> e replicados em <code>assets/paginas-tema.css</code>. Nunca usar hex solto no meio do código: <b>toda cor entra por token</b>. Os únicos hex fixos permitidos fora dos tokens são os da banda "Para famílias" (sempre nanquim) e do favicon.</p>
+
+    <h3>Modo claro (padrão) · nanquim sobre papel</h3>
+    <div class="paleta">
+      <div class="cor"><div class="sw" style="background:#F4F1EA"><span style="background:#1B1A1F;color:#F4F1EA">--bg</span></div><div class="info"><b>Papel · fundo</b><span class="hex">#F4F1EA</span><small>Fundo geral das páginas.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#FBF9F3"><span style="background:#1B1A1F;color:#F4F1EA">--bg-elev</span></div><div class="info"><b>Papel claro · cards</b><span class="hex">#FBF9F3</span><small>Superfícies elevadas: cards, FAQ, caixas.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#E7E2D7"><span style="background:#1B1A1F;color:#F4F1EA">--bg-deep</span></div><div class="info"><b>Papel fundo · faixas</b><span class="hex">#E7E2D7</span><small>Seções alternadas e rodapé, para dar ritmo.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#1B1A1F"><span style="background:#F4F1EA;color:#1B1A1F">--text-strong</span></div><div class="info"><b>Nanquim · títulos</b><span class="hex">#1B1A1F</span><small>Títulos e negritos. É a cor-mãe da marca.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#2B2925"><span style="background:#F4F1EA;color:#2B2925">--text</span></div><div class="info"><b>Tinta quente · corpo</b><span class="hex">#2B2925</span><small>Texto corrido.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#655F57"><span style="background:#F4F1EA;color:#655F57">--text-mute</span></div><div class="info"><b>Grafite mutado</b><span class="hex">#655F57</span><small>Parágrafos de apoio, legendas, links de menu.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#D75F28"><span style="background:#F4F1EA;color:#D75F28">--accent</span></div><div class="info"><b>Brasa · ação</b><span class="hex">#D75F28</span><small>CTAs, links, bullets, detalhes. Hover: #B84E20.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#9A7430"><span style="background:#F4F1EA;color:#9A7430">--kicker</span></div><div class="info"><b>Dourado · rótulos</b><span class="hex">#9A7430</span><small>Kickers (rótulos de seção em caixa alta).</small></div></div>
+      <div class="cor"><div class="sw" style="background:#DFD8C9"><span style="background:#1B1A1F;color:#F4F1EA">--border</span></div><div class="info"><b>Areia · bordas</b><span class="hex">#DFD8C9</span><small>Bordas de 1px em tudo que é card ou pílula.</small></div></div>
+    </div>
+
+    <h3>Modo escuro · nanquim cheio</h3>
+    <div class="paleta">
+      <div class="cor"><div class="sw" style="background:#1B1A1F"><span style="background:#F4F1EA;color:#1B1A1F">--bg</span></div><div class="info"><b>Nanquim · fundo</b><span class="hex">#1B1A1F</span><small>Fundo geral no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#26252B"><span style="background:#F4F1EA;color:#26252B">--bg-elev</span></div><div class="info"><b>Grafite · cards</b><span class="hex">#26252B</span><small>Cards e superfícies.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#121115"><span style="background:#F4F1EA;color:#121115">--bg-deep</span></div><div class="info"><b>Nanquim profundo · faixas</b><span class="hex">#121115</span><small>Faixas alternadas; #0E0D11 no rodapé.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#F5F1E8"><span style="background:#1B1A1F;color:#F5F1E8">--text-strong</span></div><div class="info"><b>Papel · títulos</b><span class="hex">#F5F1E8</span><small>Títulos no escuro; corpo usa #E6E1D6.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#A6A199"><span style="background:#1B1A1F;color:#A6A199">--text-mute</span></div><div class="info"><b>Cinza quente</b><span class="hex">#A6A199</span><small>Texto de apoio no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#EA7338"><span style="background:#141318;color:#EA7338">--accent</span></div><div class="info"><b>Brasa clara · ação</b><span class="hex">#EA7338</span><small>CTAs no escuro. Hover: #EC9059 (clareia, não escurece).</small></div></div>
+      <div class="cor"><div class="sw" style="background:#CDA04E"><span style="background:#1B1A1F;color:#CDA04E">--kicker</span></div><div class="info"><b>Dourado claro · rótulos</b><span class="hex">#CDA04E</span><small>Kickers no escuro.</small></div></div>
+      <div class="cor"><div class="sw" style="background:#343139"><span style="background:#F4F1EA;color:#1B1A1F">--border</span></div><div class="info"><b>Grafite borda</b><span class="hex">#343139</span><small>Bordas no escuro.</small></div></div>
+    </div>
+
+    <h3>Regras de uso da cor</h3>
+    <ul class="regras">
+      <li><b>Nanquim é a base e a estrutura.</b> O quase-preto <code>#1B1A1F</code> é a cor-mãe: fundo no escuro, títulos e traço no claro. É a "tinta" da marca; tudo o mais se apoia nela.</li>
+      <li><b>Brasa é ação, e só ação.</b> O laranja marca o que convida a fazer algo: botões, links, bullets, o "+" do FAQ, estrelas, o sublinhado do hero. Nunca usar como fundo de seção nem como cor de texto corrido.</li>
+      <li><b>Dourado é rótulo.</b> O kicker dourado nomeia seções em caixa alta. Não misturar: rótulo não é laranja, ação não é dourada. Exceção pontual: o marcador "·" das pílulas de tema usa o dourado.</li>
+      <li><b>Sobre o laranja, texto escuro.</b> Texto sobre o acento usa <code>--accent-on</code> (#141318 no escuro, #FBF9F3 no claro), nunca branco puro nem preto puro.</li>
+      <li><b>Decisão fechada de marca:</b> a paleta oficial é o nanquim <code>#1B1A1F</code> com a brasa <code>#EA7338</code> (escuro) / <code>#D75F28</code> (claro) e kickers dourados. <b>O verde-petróleo #15302A foi aposentado</b> e não deve reaparecer em fundo, texto, foto nem ícone. O <code>#B84E20</code> sobrevive só como hover da brasa no modo claro.</li>
+      <li><b>Hierarquia por três tons de fundo.</b> O ritmo vertical vem da alternância <code>--bg</code> → <code>--bg-deep</code> → <code>--bg</code>, sempre separada por borda de 1px. Não inventar um quarto fundo.</li>
+      <li><b>O brilho "wash".</b> As manchas radiais decorativas (hero e contato) usam <code>--wash</code>, o laranja com 14 a 16% de opacidade. É o único uso de laranja em área grande, e sempre atrás do conteúdo.</li>
+      <li><b>Neutros sem cor.</b> Nanquim e cinzas não puxam para verde nem para azul: são neutros de leve calor, para conversarem com a brasa e o dourado sem virar "frios".</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TIPOGRAFIA ============ -->
+<section class="bloco fundo" id="tipografia">
+  <div class="wrap">
+    <span class="kicker">04 · Tipografia</span>
+    <h2>Fraunces fala, Nunito Sans conversa.</h2>
+    <p>Duas famílias do Google Fonts, e mais nenhuma. <b>Fraunces</b> (serifada, ótica variável) é a voz dos títulos e das frases com emoção. <b>Nunito Sans</b> faz todo o resto: corpo, botões, rótulos, menus.</p>
+
+    <div class="tipo">
+      <div class="meta">Título de página (h1) · Fraunces 600 · clamp(2.25rem, 7vw, 3.5rem) · line-height 1.05 · letter-spacing -0.015em</div>
+      <div class="sp-h1">Psiquiatra infantil que entende <span class="it">seu filho</span>.</div>
+    </div>
+    <div class="tipo">
+      <div class="meta">Título de seção (h2) · Fraunces 600 · clamp(1.75rem, 4vw, 2.375rem) · line-height 1.1</div>
+      <div class="sp-h2">O que as famílias me perguntam.</div>
+    </div>
+    <div class="tipo">
+      <div class="meta">Citação emocional · Fraunces itálico 500 · clamp(1.4rem, 3.2vw, 1.875rem) · aspas na cor de acento</div>
+      <div class="sp-quote"><span class="mark">"</span>Eu já tentei tudo. Será que o problema sou eu?<span class="mark">"</span></div>
+    </div>
+    <div class="tipo">
+      <div class="meta">Kicker (rótulo de seção) · Nunito Sans 800 · 12px · caixa alta · letter-spacing 0.16em · cor dourada</div>
+      <span class="kicker">Se isso é a sua noite</span>
+    </div>
+    <div class="tipo">
+      <div class="meta">Lead · Nunito Sans 400 · 18px · line-height 1.5 · máx 46ch · cor mutada</div>
+      <p class="sp-lead">Para a mãe que já ouviu que é falta de limite e já passou por vários profissionais sem sair com um caminho.</p>
+    </div>
+    <div class="tipo">
+      <div class="meta">Corpo · Nunito Sans 400 · 15 a 17px · line-height 1.55 a 1.65 · máx 60 a 64ch · negrito puxa o --text-strong</div>
+      <p class="sp-body">No consultório, eu trato o comportamento como mensagem, não como defeito. Quase sempre ele tem uma <b>função</b>, e precisa ser entendido antes de ser corrigido.</p>
+    </div>
+
+    <h3>Regras de tipografia</h3>
+    <ul class="regras">
+      <li><b>Fraunces só nos pesos 400, 500 e 600</b> (e itálico 500 para citações). Nunca usar Fraunces em negrito 700+, em botões ou em texto corrido.</li>
+      <li><b>Nunito Sans nos pesos 400, 600, 700 e 800.</b> Botões e rótulos usam 800; links de menu e chips usam 700.</li>
+      <li><b>Títulos escalam com <code>clamp()</code></b>, nunca com media query de tamanho de fonte. Os valores acima são os oficiais; novos títulos devem reaproveitá-los.</li>
+      <li><b>Largura de leitura limitada em "ch".</b> Lead até 46ch, corpo até 60 a 64ch, cabeças de seção até 60ch. Linha longa cansa; o público já chega cansado.</li>
+      <li><b>O negrito é o grifo da marca.</b> Dentro do texto mutado, o <code>&lt;b&gt;</code> muda para a cor forte (nanquim no claro, papel no escuro). É assim que se destaca uma frase; não usar itálico nem sublinhado para ênfase.</li>
+      <li><b>Itálico é reservado</b> para a palavra emotiva do h1 (classe <code>.it</code>) e para as citações. Fora disso, não.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ LAYOUT ============ -->
+<section class="bloco" id="layout">
+  <div class="wrap">
+    <span class="kicker">05 · Layout e espaçamento</span>
+    <h2>Respiro é parte do acolhimento.</h2>
+    <p>O site é generoso em espaço em branco de propósito. Seções altas, colunas assimétricas e tudo fluido via <code>clamp()</code>.</p>
+
+    <div class="tbl-scroll">
+    <table>
+      <tr><th>Token / medida</th><th>Valor</th><th>Uso</th></tr>
+      <tr><td><code>--maxw</code></td><td><b>1320px</b></td><td>Largura máxima do conteúdo (<code>.wrap</code>), com padding lateral de 24px.</td></tr>
+      <tr><td>Padding de seção</td><td><b>clamp(4rem, 9vw, 5.75rem)</b></td><td>Vertical de cada <code>section.block</code>. O hero usa clamp próprio, um pouco maior no topo.</td></tr>
+      <tr><td>Grades de 2 colunas</td><td><b>1.12/0.88 · 0.82/1.18 · 0.85/1.15</b></td><td>Hero, Sobre e Para famílias. Sempre assimétricas, com gap de 56px, alinhadas ao centro.</td></tr>
+      <tr><td>Grade de passos</td><td><b>repeat(3, 1fr)</b> · gap 22px</td><td>Cards "Como funciona". Vira 1 coluna no mobile.</td></tr>
+      <tr><td>Coluna de artigo</td><td><b>760px</b></td><td>Páginas de tema (<code>.artigo .wrap</code>): uma coluna só, de leitura.</td></tr>
+      <tr><td>Altura da nav</td><td><b>64px</b></td><td>Com <code>scroll-padding-top: 78px</code> no html para âncoras não ficarem escondidas.</td></tr>
+      <tr><td>Breakpoints</td><td><b>860px e 600px</b></td><td>860: grades viram 1 coluna, fotos limitam a 420px. 600: menu vira sanduíche. Só esses dois.</td></tr>
+    </table>
+    </div>
+
+    <h3>Raios e sombras</h3>
+    <div class="tbl-scroll">
+    <table>
+      <tr><th>Elemento</th><th>Raio</th><th>Sombra</th></tr>
+      <tr><td>Botões, chips, pílulas</td><td><b>30px</b> (24px nas tags)</td><td>Nenhuma</td></tr>
+      <tr><td>Fotos e cards grandes</td><td><b>18px</b> (ig-card: 22px)</td><td>Cards de passo: <code>0 8px 24px -16px rgba(0,0,0,.3)</code></td></tr>
+      <tr><td>FAQ, caixas, aviso de cookies</td><td><b>12 a 14px</b></td><td>Cookies: <code>0 12px 40px rgba(14,13,17,.28)</code></td></tr>
+      <tr><td>Nav ao rolar</td><td>·</td><td><code>0 6px 24px rgba(14,13,17,.14)</code></td></tr>
+      <tr><td>Botão flutuante</td><td><b>50px</b></td><td><code>0 10px 28px -8px rgba(0,0,0,.4)</code></td></tr>
+    </table>
+    </div>
+    <ul class="regras">
+      <li><b>Sombras são raras e sempre suaves</b>, com tom de nanquim (rgba(14,13,17,…)) no lugar do antigo tom esverdeado. Nada de sombra dura ou colorida.</li>
+      <li><b>Borda de 1px em tudo.</b> Cards, pílulas e faixas se separam por <code>--border</code>, não por sombra. A sombra é reforço, não estrutura.</li>
+      <li><b>Aspect ratios das fotos:</b> retrato 4/5 (hero, formação), quadrado 1/1 (sobre, famílias), círculo (avatares).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ COMPONENTES ============ -->
+<section class="bloco fundo" id="componentes">
+  <div class="wrap">
+    <span class="kicker">06 · Componentes</span>
+    <h2>As peças do sistema, ao vivo.</h2>
+    <p>Todos os exemplos abaixo usam o CSS real do site. Ao criar uma página nova, <b>copie estes padrões</b>; não desenhe variações.</p>
+
+    <div class="demo">
+      <div class="meta">Botões</div>
+      <div class="demo-row">
+        <a class="btn lg" href="#componentes">Agendar a primeira consulta</a>
+        <a class="btn" href="#componentes">Agendar</a>
+        <a class="btn-ghost" href="#componentes">Conhecer meu trabalho</a>
+        <button class="theme-btn" type="button">Modo escuro</button>
+      </div>
+      <p class="uso"><b>.btn</b> é o CTA: fundo brasa, texto <code>--accent-on</code>, pílula de raio 30, Nunito Sans 800. No hover sobe 2px e clareia (escuro) ou escurece (claro). <b>.btn.lg</b> só para o CTA principal do hero e do contato. <b>.btn-ghost</b> é a ação secundária: transparente com borda, e no hover a borda acende em brasa. <b>Regra de ouro: um .btn laranja por dobra.</b> Se há dois convites lado a lado, o segundo é ghost.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Kicker + título de seção</div>
+      <span class="kicker">Como começa</span>
+      <h4 style="font-size:clamp(1.4rem,3vw,1.8rem);margin-top:8px">Dar o primeiro passo é mais simples do que parece.</h4>
+      <p class="uso">Toda seção abre com esse par: kicker dourado em caixa alta e h2 em Fraunces logo abaixo (margin-top de 10px). O kicker fala com a leitora ("Se isso é a sua noite", "Antes de você escrever"), não é um nome burocrático de seção.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Chips, tags e pílulas de tema</div>
+      <div class="demo-row">
+        <span class="chip"><span class="d">·</span>Psiquiatria de crianças e adolescentes</span>
+        <span class="chip"><span class="d">·</span>Treinamento parental</span>
+        <span class="tag">CRM 230017/SP</span>
+        <span class="tag">RQE 1391111</span>
+        <span class="theme"><span class="d">·</span>TDAH</span>
+        <span class="theme"><span class="d">·</span>Limites e rotina</span>
+      </div>
+      <p class="uso"><b>.chip</b> lista atendimentos (marcador "·" em brasa). <b>.tag</b> é credencial, menor e sem marcador. <b>.theme</b> lista assuntos (marcador dourado, e levanta no hover quando é link). Os três são pílulas com borda; nenhum tem fundo laranja.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Card de passo (Como funciona)</div>
+      <div class="step">
+        <div class="n">1</div>
+        <h4>Você manda uma mensagem</h4>
+        <p>Pelo WhatsApp, no seu tempo. Sem formulário longo e sem triagem fria.</p>
+      </div>
+      <p class="uso">Sempre em trio, numerados em Fraunces na cor de acento. O texto valida ("sem triagem fria") antes de instruir.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">FAQ (details/summary nativo)</div>
+      <details class="faq-item">
+        <summary>Você vai medicar meu filho?</summary>
+        <div class="a">Não é por aí que a gente começa. Remédio é uma ferramenta, entra quando faz diferença de verdade e sempre conversado com vocês.</div>
+      </details>
+      <p class="uso">Acordeão nativo, sem JavaScript. O "+" em brasa gira 45° ao abrir. As perguntas são as objeções reais, escritas como a mãe falaria. O FAQ da home tem espelho em schema FAQPage no head; ao mudar uma resposta, <b>atualizar os dois lugares</b>.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Listas do sistema</div>
+      <ul class="form-list">
+        <li>Bullet redondo em brasa: lista padrão de credenciais e artigos, com <b>negrito puxando a cor forte</b>.</li>
+      </ul>
+      <ul class="promessa">
+        <li>Check em brasa (.promessa): usada na página /agendar para promessas diretas.</li>
+      </ul>
+      <ol class="passos">
+        <li>Número em círculo brasa (.passos): sequência de passos nas páginas de conversão.</li>
+      </ol>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Avaliação (Google)</div>
+      <div class="review">
+        <div class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <p>"Muito dedicado a entender o caso de cada paciente, deixa tudo muito claro."</p>
+        <div class="who">Evandro R. · Local Guide no Google</div>
+      </div>
+      <p class="uso">Só trechos sóbrios de avaliações reais do Google, com atribuição. Sem foto do paciente, sem "muro de elogios", sem editar o texto além de cortar. Ver a seção de ética.</p>
+    </div>
+
+    <div class="demo">
+      <div class="meta">Caixas das páginas de tema (.cena e .alerta)</div>
+      <div class="cena"><p>"Ele consegue ficar duas horas no videogame, mas não senta dez minutos pra lição." Se essa cena é familiar, continue lendo.</p></div>
+      <div class="alerta">
+        <span class="kicker">Atenção</span>
+        <h4>Quando procurar ajuda sem esperar</h4>
+        <p>Alguns sinais pedem avaliação logo, sem esperar "pra ver se passa".</p>
+      </div>
+      <p class="uso"><b>.cena</b> traz uma cena da vida real, com filete lateral em brasa. <b>.alerta</b> usa o fundo <code>--wash</code> para avisos importantes, com kicker na cor de acento. São os dois únicos destaques de caixa nos artigos.</p>
+    </div>
+
+    <p class="nota-p" style="margin-top:26px">Também fazem parte do sistema (ver código no <code>index.html</code>): o <b>card de Instagram</b> (avatar circular de 132px com borda brasa), o <b>botão flutuante de WhatsApp</b> (aparece após 520px de rolagem e some quando o Contato entra na tela, para não competir com o CTA), o <b>aviso de cookies</b> LGPD e a <b>caixa de autoria</b> (.autoria) que fecha os artigos com foto, CRM e RQE.</p>
+  </div>
+</section>
+
+<!-- ============ FOTOGRAFIA ============ -->
+<section class="bloco" id="fotografia">
+  <div class="wrap">
+    <span class="kicker">07 · Fotografia</span>
+    <h2>Fotos reais, nunca banco de imagem.</h2>
+    <ul class="regras">
+      <li><b>Só fotos do próprio Diego</b> (consultório, IPq, retrato). Nada de banco de imagem, nada de criança-modelo sorrindo, nada de imagem gerada por IA.</li>
+      <li><b>Container .photo:</b> toda foto vive num contêiner com borda de 1px, raio 18px e um gradiente de nanquim/carvão de fallback atrás (<code>--photo-grad</code>), com um leve brilho de brasa. Se a imagem falhar, o gradiente segura o layout, e não há mais verde nesse fundo.</li>
+      <li><b>Formatos:</b> sempre o par <code>&lt;picture&gt;</code> com <code>.webp</code> + fallback <code>.jpg</code>, máximo 1300px no lado maior, com <code>width</code>/<code>height</code> declarados.</li>
+      <li><b>Nomes são SEO e são fixos:</b> <code>dr-diego-alves-rosa-psiquiatra-infantil</code> (hero), <code>dr-diego-alves-rosa-sobre</code>, <code>dr-diego-alves-rosa-ipq-hc-fmusp</code>, <code>psiquiatria-infantil-orientacao-de-pais</code>, <code>dr-diego-alves-rosa-instagram</code>. Ao trocar uma foto, <b>mantenha o nome do arquivo</b>.</li>
+      <li><b>Alt descritivo sempre</b>, citando nome e contexto ("Dr. Diego Alves Rosa, psiquiatra da infância e adolescência, em São Paulo").</li>
+      <li><b>Desempenho:</b> a foto do hero tem <code>preload</code> e <code>fetchpriority="high"</code>; todas as outras usam <code>loading="lazy"</code>.</li>
+      <li><b>Proporções:</b> retrato 4/5, quadrado 1/1, avatar circular. Não introduzir formatos novos (16/9, panorâmicas).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TEMA ============ -->
+<section class="bloco fundo" id="tema">
+  <div class="wrap">
+    <span class="kicker">08 · Tema claro e escuro</span>
+    <h2>Papel por padrão, nanquim por escolha.</h2>
+    <ul class="regras">
+      <li><b>Padrão é o modo CLARO para todo mundo</b> (nanquim sobre papel). O site não segue <code>prefers-color-scheme</code>; a decisão foi tomada e está fechada.</li>
+      <li><b>O botão no topo alterna</b> para o escuro (nanquim cheio) e a escolha fica salva em <code>localStorage</code> (chave <code>tema</code>). A URL aceita <code>?tema=claro</code> / <code>?tema=escuro</code> para testes e links.</li>
+      <li><b>Sem flash de tema:</b> um script inline no <code>&lt;head&gt;</code> aplica <code>data-theme="light"</code> antes da renderização. Toda página nova precisa desse script.</li>
+      <li><b>Trocar de tema é trocar tokens, nunca classes.</b> Os dois modos compartilham o mesmo HTML; se um componente precisa de CSS diferente por tema, ele está desenhado errado.</li>
+      <li><b>Exceção intencional:</b> a seção <b>"Para famílias" (#maes) é sempre escura</b>, mesmo no modo claro. É a banda emocional no meio do site, e faz isso redefinindo os tokens localmente. Agora ela é <b>nanquim #1B1A1F</b> (antes era o verde #15302A). Não "corrigir" isso.</li>
+    </ul>
+    <div class="banda-escura">
+      <span class="kicker">Se isso é a sua noite</span>
+      <p class="sp-quote"><span class="mark">"</span>Eu já tentei tudo. Será que o problema sou eu?<span class="mark">"</span></p>
+      <p>Assim fica a banda escura dentro do modo claro: nanquim <b>#1B1A1F</b> fixo, com os tokens do modo escuro reaplicados só nesse trecho.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOVIMENTO ============ -->
+<section class="bloco" id="movimento">
+  <div class="wrap">
+    <span class="kicker">09 · Movimento</span>
+    <h2>Discreto, curto e respeitoso.</h2>
+    <ul class="regras">
+      <li><b>Revelação ao rolar:</b> blocos sobem 20px com fade em 0.7s ao entrar na tela (classe <code>.reveal</code> + <code>.in</code>). Uma vez só, sem repetir.</li>
+      <li><b>Hover padrão:</b> cards e pílulas clicáveis sobem 2 a 3px e/ou acendem a borda em brasa, com transição de 0.15s. É o único "efeito" permitido em hover.</li>
+      <li><b>Durações oficiais:</b> 0.15s para interação (hover, cor), 0.25 a 0.3s para transições de estado (tema, menu, botão flutuante), 0.7s só para a revelação de scroll.</li>
+      <li><b><code>prefers-reduced-motion</code> é lei.</b> Com movimento reduzido, a revelação não roda e tudo aparece direto. Qualquer animação nova precisa da mesma guarda.</li>
+      <li><b>Proibido:</b> carrossel, autoplay, parallax, contadores animados, qualquer coisa que pisque ou insista.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ VOZ ============ -->
+<section class="bloco fundo" id="voz">
+  <div class="wrap">
+    <span class="kicker">10 · Voz e textos</span>
+    <h2>A voz de quem fala com uma mãe exausta.</h2>
+    <p>O texto é metade da marca. A régua: linguagem de conversa, simples, que <b>valida antes de orientar</b>, sem jargão e sem culpar ninguém. O leitor imaginado é uma mãe no fim de um dia difícil.</p>
+
+    <h3>Regras de escrita</h3>
+    <ul class="regras">
+      <li><b>NÃO usar travessão (—).</b> Preferir ponto, vírgula ou parênteses. Regra absoluta nas páginas de tema.</li>
+      <li><b>Evitar "cara de IA":</b> nada de frases simétricas ou repetitivas demais, listas com tudo em negrito, conectivos artificiais ("Além disso, é importante ressaltar que…").</li>
+      <li><b>Validar antes de orientar.</b> Primeiro reconhecer o que a pessoa vive ("Se essa frase passou pela sua cabeça hoje…"), depois explicar, e só então convidar.</li>
+      <li><b>Sem promessa milagrosa e sem alarme.</b> Nem "resolvemos em 3 sessões", nem terrorismo de sintoma.</li>
+      <li><b>Toda página orienta e encaminha para avaliação; nunca diagnostica.</b> Conteúdo dá clareza e próximos passos, jamais conclui "seu filho tem X".</li>
+      <li><b>Vocabulário da casa:</b> "a gente" em vez de "nós"; "remédio" convive com "medicação"; comportamento "tem função", não é "defeito"; "primeira conversa" em vez de "sessão de anamnese".</li>
+      <li><b>Kickers falam com a leitora</b> ("Antes de você escrever", "Quando quiser dar o próximo passo"), nunca são rótulos frios ("FAQ", "Contato").</li>
+      <li><b>CTAs são convites concretos:</b> "Falar no WhatsApp", "Agendar a primeira consulta". Nunca "Saiba mais", "Clique aqui", "Enviar".</li>
+    </ul>
+
+    <div class="voz-grid">
+      <div class="voz sim">
+        <span class="rotulo">✓ Assim</span>
+        <p>Não precisa chegar com nada pronto. Se já tem relatórios da escola, traga; se não tem, a gente começa do zero.</p>
+        <small>Valida, tira o peso, resolve a dúvida em linguagem de conversa.</small>
+      </div>
+      <div class="voz nao">
+        <span class="rotulo">✗ Assim não</span>
+        <p>É fundamental ressaltar que a avaliação diagnóstica multidisciplinar requer documentação prévia — laudos, relatórios e exames complementares.</p>
+        <small>Jargão, tom de manual, travessão e exigência onde deveria haver acolhimento.</small>
+      </div>
+      <div class="voz sim">
+        <span class="rotulo">✓ Assim</span>
+        <p>Não é por aí que a gente começa. Remédio é uma ferramenta, entra quando faz diferença de verdade e sempre conversado com vocês.</p>
+        <small>Responde a objeção real de frente, sem se defender e sem prometer.</small>
+      </div>
+      <div class="voz nao">
+        <span class="rotulo">✗ Assim não</span>
+        <p>Nosso protocolo terapêutico é individualizado, seguro e baseado nas mais recentes evidências científicas internacionais!</p>
+        <small>Autoelogio genérico, exclamação, nada que uma mãe exausta consiga usar.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÉTICA ============ -->
+<section class="bloco" id="etica">
+  <div class="wrap">
+    <span class="kicker">11 · Ética e limites</span>
+    <h2>O que a marca não faz.</h2>
+    <ul class="regras">
+      <li><b>Sem depoimentos de pacientes</b> produzidos para o site (vedado pela ética médica brasileira). A prova social vem da formação, do Instagram e de <b>trechos sóbrios de avaliações públicas do Google</b>, com atribuição, conforme a publicidade médica do CFM.</li>
+      <li><b>Nunca diagnosticar no conteúdo.</b> Artigos explicam sinais e encaminham para avaliação; não afirmam condição de ninguém.</li>
+      <li><b>Sem "antes e depois", sem promessa de resultado, sem preço exposto.</b> O modelo (particular com nota para reembolso) é transparente no site; o valor vai para a conversa no WhatsApp.</li>
+      <li><b>Não culpar os pais</b> em nenhuma frase, nem por implicação. Também não afirmar o oposto de forma clinicamente frágil (a formulação oficial é: comportamento tem função, precisa ser entendido antes de corrigido, e a família é parte da solução).</li>
+      <li><b>Credenciais sempre visíveis:</b> CRM 230017/SP e RQE 1391111 aparecem no Sobre, no rodapé e na caixa de autoria dos artigos.</li>
+      <li><b>LGPD:</b> aviso de cookies ativo (o GA usa cookies) e política de privacidade linkada no rodapé.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TÉCNICA ============ -->
+<section class="bloco fundo" id="tecnica">
+  <div class="wrap">
+    <span class="kicker">12 · Regras técnicas</span>
+    <h2>Como o sistema é construído.</h2>
+    <ul class="regras">
+      <li><b><code>index.html</code> é a fonte de verdade:</b> HTML + CSS + JS num arquivo só, sem build, sem framework, sem npm. <b>Leia o arquivo inteiro antes de editar.</b></li>
+      <li><b>Migração de paleta:</b> este caderno define <b>Nanquim Brasa</b> como o sistema atual. A troca dos tokens verde → nanquim precisa ser aplicada nos dois lugares que carregam a paleta (<code>index.html</code> e <code>assets/paginas-tema.css</code>), além do <code>&lt;meta name="theme-color"&gt;</code> e do favicon. Enquanto a migração não é feita, o código ainda pode conter o verde antigo; o alvo é este caderno.</li>
+      <li><b>Páginas de tema não duplicam CSS:</b> elas usam <code>assets/paginas-tema.css</code> e <code>assets/paginas-tema.js</code>. Só a home carrega o CSS embutido.</li>
+      <li><b>Tokens primeiro:</b> qualquer cor, largura ou gradiente novo entra como custom property no bloco de tokens, nos dois modos, nos dois arquivos.</li>
+      <li><b>JavaScript vanilla e progressivo:</b> o site funciona inteiro sem JS (FAQ é <code>details</code> nativo, menu degrada). JS só adiciona: tema, revelação, botão flutuante, analytics, cookies.</li>
+      <li><b>Medição de leads:</b> GA4 (<code>G-8VKMK5ZCKR</code>). Todo clique em WhatsApp ou e-mail dispara <code>generate_lead</code> com <code>channel</code> e <code>location</code>. Links novos de contato herdam a medição automaticamente (o listener é global); manter os padrões <code>wa.me</code> e <code>mailto:</code>.</li>
+      <li><b>SEO técnico do padrão:</b> canonical absoluto, Open Graph, JSON-LD (Physician na home, FAQPage no FAQ), <code>robots.txt</code>, <code>sitemap.xml</code> (páginas novas entram nele), favicon SVG embutido.</li>
+      <li><b>Links de WhatsApp</b> sempre com texto pré-preenchido ("Olá, Dr. Diego! Cheguei pelo seu site e…") e <code>target="_blank" rel="noopener"</code>.</li>
+      <li><b>Funil da home é fixo:</b> Hero → Atendimentos → Sobre → Formação → Para famílias (banda escura) → Instagram → FAQ → Leia também → Como funciona → Avaliações → Contato → Rodapé. Emoção → confiança → tira objeção → mostra que é simples → CTA. Não reordenar sem decisão explícita.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ DADOS ============ -->
+<section class="bloco" id="dados">
+  <div class="wrap">
+    <span class="kicker">13 · Dados fixos da marca</span>
+    <h2>O que nunca muda sem aviso.</h2>
+    <div class="tbl-scroll">
+    <table>
+      <tr><th>Item</th><th>Valor oficial</th></tr>
+      <tr><td>Nome</td><td><b>Dr. Diego Alves Rosa</b>, médico psiquiatra da infância e adolescência</td></tr>
+      <tr><td>Registros</td><td><b>CRM 230017/SP · RQE 1391111</b></td></tr>
+      <tr><td>Instagram</td><td><b>@diegoaalvesrosa</b> (instagram.com/diegoaalvesrosa)</td></tr>
+      <tr><td>WhatsApp</td><td><b>+55 11 91013-5794</b> (links via wa.me/5511910135794)</td></tr>
+      <tr><td>E-mail</td><td><b>diegoaalvesrosa@gmail.com</b> (a troca para contato@drdiegorosa.com.br só acontece depois de criar a caixa na hospedagem)</td></tr>
+      <tr><td>Endereço</td><td><b>Acácia · Psicologia &amp; Psiquiatria</b> — Rua Oscar Freire, 2250, cj. 105, Pinheiros, São Paulo/SP, 05409-011</td></tr>
+      <tr><td>Atendimento</td><td>Presencial: crianças, adolescentes e adultos. <b>Online: a partir de 15 anos.</b></td></tr>
+      <tr><td>Pagamento</td><td>Particular, com nota para reembolso. Valor não exposto no site.</td></tr>
+      <tr><td>Domínio</td><td><b>https://drdiegorosa.com.br</b></td></tr>
+    </table>
+    </div>
+    <p class="nota-p">Esses dados aparecem em vários lugares (head, JSON-LD, FAQ, contato, rodapé, páginas de tema). Ao alterar qualquer um, <b>procurar todas as ocorrências</b> antes de publicar.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <p class="cr"><b>Caderno de Marca · Nanquim Brasa</b> · documento interno do site drdiegorosa.com.br · substitui o antigo Verde Brasa<br>
+    Fontes deste caderno: <code>index.html</code> (fonte de verdade), <code>assets/paginas-tema.css</code>, <code>PROJETO.md</code> e <code>CLAUDE.md</code>. Em caso de conflito, o código vale mais que este documento; atualize o caderno em seguida.</p>
+  </div>
+</footer>
+
+<script>
+function flipTema(){
+  var root=document.documentElement;
+  var claro=root.getAttribute('data-theme')==='light';
+  if(claro){root.removeAttribute('data-theme');try{localStorage.setItem('tema','escuro')}catch(e){}}
+  else{root.setAttribute('data-theme','light');try{localStorage.setItem('tema','claro')}catch(e){}}
+  atualizaLabel();
+}
+function atualizaLabel(){
+  var claro=document.documentElement.getAttribute('data-theme')==='light';
+  document.querySelectorAll('.theme-btn').forEach(function(b){if(b.closest('nav'))b.textContent=claro?'Modo escuro':'Modo claro'});
+}
+atualizaLabel();
+</script>
+
+</body>
+</html>
